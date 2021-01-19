@@ -1,0 +1,49 @@
+// COLORS
+
+// Primary: #E6E9D6
+// Primary light: #FF3366
+// Primary dark: #BA265D
+
+// Grey light 1: #faf9f9
+// Grey light 2: #f4f2f2// Grey light 3: #f0eeee
+// Grey light 4: #ccc
+
+// Grey dark 1: #333
+// Grey dark 2: #777
+// Grey dark 3: #999
+
+:root {
+  --color-primary: #E6E9D6;
+  --color-secondary: #383138;
+  //--color-primary-dark: #ba265d;
+}
+
+//$bp-largest: 75em; //1200px
+//$bp-large: 68.75em; //1100px
+//$bp-medium: 56.25em; //900px
+//$bp-small: 37.5em; //600px
+//$bp-smallest: 31.25em; //500px
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px   10/16px = 62.5%
+
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  line-height: 1.6;
+
+  background: var(--color-secondary);
+}

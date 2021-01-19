@@ -1,0 +1,43 @@
+:root {
+  --color-primary: #E6E9D6;
+  --color-secondary: #383138;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  line-height: 1.6;
+  background: var(--color-secondary);
+}
+
+.logo-box {
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+  display: inline-block;
+}
+.logo-box__image {
+  width: 4rem;
+}
+
+.header {
+  min-height: 100vh;
+  background: url("../assets/background.jpg");
+}
+
+/*# sourceMappingURL=main.css.map */

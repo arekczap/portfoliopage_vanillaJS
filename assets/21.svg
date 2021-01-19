@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 375 375" style="enable-background:new 0 0 375 375;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<symbol  id="glyph0-1" viewBox="-25.2 -26 50.4 52.1">
+	<path class="st0" d="M-25.2,26L-5.8-26H5.8L25.2,26H10.1L6.9,15.8H-6.9L-10,26H-25.2z M0-11.1L-4.8,6.3h9.5L0-11.1z"/>
+</symbol>
+<g id="surface1">
+	<path class="st0" d="M0,0v375h375V0H0z M363.1,363.1H11.7V11.7h351.4V363.1z"/>
+	<g>
+		
+			<use xlink:href="#glyph0-1"  width="50.4" height="52.1" x="-25.2" y="-26" transform="matrix(3.4628 0 0 3.4628 187.1168 186.1011)" style="overflow:visible;"/>
+	</g>
+</g>
+</svg>
