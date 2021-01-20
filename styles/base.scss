@@ -42,8 +42,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-weight: 200;
-  line-height: 1.6;
-
+  letter-spacing: .1rem;
   background: var(--color-secondary);
+  color: var(--color-primary);
 }

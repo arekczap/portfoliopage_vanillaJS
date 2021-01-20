@@ -1,22 +1,93 @@
 
+.navigation-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 2.5rem 0 2.5rem;
+
+}
+
 .logo-box {
   width: 4rem;
   height: 4rem;
   background-color: transparent;
   display: inline-block;
 
+  &__link {
+    cursor: pointer;
+  }
   &__image {
     width: 4rem;
   }
 }
 
 
+.user-nav {
+  &__floor-one,
+  &__floor-two,
+  &__floor-three,
+  &__floor-four{
+    width: 3.5rem;
+    height: .2rem;
+    background-color: var(--color-primary);
+    opacity: .9;
+    margin-bottom: .4rem;
+    border-radius: 3px;
+  }
+
+  &__floor-two {
+    width: 2.5rem;
+    margin-left: 1rem;
+  }
+
+  &__floor-three {
+    width: 2.5rem;
+  }
+
+  &__floor-four {
+    margin-bottom: 0;
+  }
+}
+
+.header__text-box {
+
+  width: 100%;
+  position: absolute;
+  top: 43%;
+  left: 48%;
+  transform: translate(-50%, -50%);
 
 
+  .text-primary {
+    display: block;
 
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
 
+  }
 
+  .text-secondary,
+  .text-tertiary {
+    display: inline-block;
+    font-size: 3.6rem;
+    font-weight: 800;
+    margin-left: 6rem;
+    margin-top: .8rem;
 
-//.header__logo-image {
-//width: 4rem;
-//}
+  }
+
+  .text-tertiary {
+    margin-left: 12.2rem;
+  }
+
+  .heading-primary {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-left: 7rem;
+    margin-top: 2rem;
+  }
+
+}
+
