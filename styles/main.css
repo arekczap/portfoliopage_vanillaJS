@@ -177,28 +177,28 @@ body {
 }
 
 .about-content {
-  height: 100%;
   width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   position: relative;
 }
 .about-content__heading-secondary {
   font-size: 3.3rem;
   font-weight: 500;
-  margin-left: 4rem;
+  margin: 0 0 2rem 6rem;
 }
 .about-content__content-first, .about-content__content-second, .about-content__content-third {
   font-size: 1.3rem;
   text-align: center;
-  margin: 2rem 2rem 0 2rem;
+  margin: 0 2rem 0.5rem 2rem;
   font-weight: 300;
   letter-spacing: 1.8px;
 }
 .about-content__background-image {
   position: absolute;
-  top: 21rem;
+  top: 14rem;
   left: -15rem;
   opacity: 0.1;
   transform: rotate(-10deg);
@@ -206,39 +206,42 @@ body {
 .about-content__background-triangle {
   z-index: 0;
   position: absolute;
-  top: -15rem;
+  top: -25rem;
   left: 10rem;
-  width: 30rem;
+  width: 40rem;
   opacity: 0.7;
   overflow: hidden;
 }
 
 .skills-content {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .skills-content__heading-secondary {
   font-size: 3.3rem;
   font-weight: 500;
-  margin-bottom: 2.5rem;
-  margin-left: -2rem;
+  margin: 0 0 2rem 6rem;
+  display: block;
 }
 .skills-content__heading-tertiary {
+  width: 80%;
+  margin: 0 auto 1.5rem auto;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1.4rem;
   text-align: center;
-  margin: 0 2rem 1.5rem 2rem;
+}
+.skills-content .second {
+  margin-top: 1.5rem;
 }
 .skills-content__images-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  margin: 0 auto;
   width: 90%;
 }
 .skills-content__image {
@@ -247,7 +250,8 @@ body {
   margin: 1rem 1rem;
 }
 .skills-content__other-skills {
-  margin: 1.4rem 2rem 0 2rem;
+  width: 90%;
+  margin: 0 auto;
 }
 .skills-content__skill-name {
   display: flex;
@@ -261,6 +265,14 @@ body {
   width: 2rem;
   display: block;
   margin-right: 1.2rem;
+}
+.skills-content__background-triangle {
+  position: absolute;
+  left: -10rem;
+  top: -20rem;
+  width: 100rem;
+  opacity: 0.5;
+  z-index: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
