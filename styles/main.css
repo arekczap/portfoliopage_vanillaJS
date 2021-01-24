@@ -142,38 +142,37 @@ body {
 }
 
 .scroll {
-  position: fixed;
   display: flex;
   align-items: center;
+  position: fixed;
   bottom: 20rem;
-  right: 1rem;
+  right: 10rem;
   transform-origin: right;
   transform: rotate(-90deg);
-}
-.scroll__text {
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: inherit;
 }
 .scroll__separator {
   width: 3rem;
   height: 0.1rem;
-  margin-left: 0.4rem;
+  margin-right: 0.5rem;
   background-color: var(--color-primary);
+  transform: translateY(0.1rem);
 }
-.scroll__page-view {
-  width: 0.1rem;
-  height: 0.1rem;
-  background-color: var(--color-primary);
-  margin-left: 0.7rem;
+.scroll__text {
+  height: 2rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: inherit;
 }
-.scroll__active-view {
-  width: 0.5rem;
-  height: 0.5rem;
-  border: 0.7px solid lightyellow;
-  background-color: transparent;
-  border-radius: 50%;
-  transform: translateX(-0.3rem);
+.scroll .scroll-arrows {
+  width: 70px;
+  height: 70px;
+  bottom: 20px;
+  transform: rotate(90deg);
+}
+.scroll .scroll-arrows__arrow-one, .scroll .scroll-arrows__arrow-two, .scroll .scroll-arrows__arrow-three {
+  stroke: var(--color-primary);
+  fill: transparent;
+  stroke-width: 1px;
 }
 
 .about-content {

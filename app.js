@@ -9,37 +9,43 @@ if ( document.cookie !== "0") {
             clearInterval(scrollInterval)
         };
     }, 10);
-
 }
 
-
+const initializationSection = (nameSection) => {
+    switch(nameSection) {
+        case "top":
+            currentSection = 0;
+            break;
+        case "about":
+            currentSection = 1;
+            break;
+        case "skills":
+            currentSection = 2;
+            break;
+        case "project-one":
+            currentSection = 3;
+            break;
+        case "project-two":
+            currentSection = 4;
+            break;
+        case "contact":
+            currentSection = 5;
+            break;
+    }
+}
 
 
 // For tracking the section currently displayed
 let currentSection = 0;
 let canScroll = true;
 let scrollDir = 0;
-let quantityOfSections = document.body.children.length -5;
+let quantityOfSections = 5;
 
-// Touch data (for mobile)
-let touchStart = 0;
-let touchEnd = 0;
+// array of main views in document
+let views = ["top", "about", "skills", "project-one", "project-two", "contact"];
 
-// document.addEventListener('touchstart', (event) => {
-//         touchStart = event.changedTouches[0].clientY;
-//
-//     console.log(touchStart)
-// });
-//
-// document.addEventListener('touchend', (event) => {
-//         touchEnd = event.changedTouches[0].clientY;
-//             if (touchStart > touchEnd) {
-//                 performScroll(1);
-//             } else {
-//                 performScroll(-1);
-//             }
-// });
 
+// event on mouse wheel up or down
 document.addEventListener('wheel', (event) => {
 
     // Check if we can scroll yet, or if we're in the middle of a scroll
@@ -83,10 +89,31 @@ const performScroll = (scrollDir) => {
 
     //scrolling to next section
     if ( scrollDir === 1 && scrollMe) {
-        gsap.to(window, {duration: 0, scrollTo: "#view-" + currentSection});
+        console.log(currentSection);
+        gsap.to(window, {
+            duration: 1,
+            scrollTo: "#" + views[currentSection],
+            ease: "sine.inOut"
+        });
+
+        // gsap.to(document.querySelector(".scroll__active-view"), {
+        //     duration: 1,
+        //     x: -currentSection * 7
+        // })
 
         //scrolling to previous section
     } else if ( scrollDir === -1 && scrollMe) {
-        gsap.to(window, {duration: 0, scrollTo: "#view-" + currentSection});
+        console.log(currentSection);
+        gsap.to(window, {
+            duration: 1,
+            scrollTo: "#" + views[currentSection],
+            ease: "sine.inOut"
+        });
+
+        // gsap.to(document.querySelector(".scroll__active-view"), {
+        //     duration: 1,
+        //     x: -currentSection * 7
+        // })
     }
 };
+

@@ -116,167 +116,171 @@
 
 //======================== SCROLL STYLES ====================================
 .scroll {
-  position: fixed;
   display: flex;
   align-items: center;
+  position: fixed;
   bottom: 20rem;
-  right: 1rem;
+  right: 10rem;
   transform-origin: right;
   transform: rotate(-90deg);
 
+    &__separator {
+      width: 3rem;
+      height: .1rem;
+      margin-right: .5rem;
+      background-color: var(--color-primary);
+      transform: translateY(.1rem);
+    }
 
     &__text {
+      height: 2rem;
       font-size: .9rem;
       font-weight: 400;
       color: inherit;
     }
 
-    &__separator {
-      width: 3rem;
-      height: .1rem;
-      margin-left: .4rem;
-      background-color: var(--color-primary);
+    .scroll-arrows {
+      width:70px;
+      height: 70px;
+      //margin-left;
+      bottom: 20px;
+      transform: rotate(90deg);
+
+      &__arrow-one,
+      &__arrow-two,
+      &__arrow-three
+      {
+        stroke: var(--color-primary);
+        fill: transparent;
+        stroke-width: 1px;
+        //animation: arrow 2s infinite;
+        //-webkit-animation: arrow 2s infinite;
+      }
+
     }
 
-    &__page-view {
-      width: .1rem;
-      height: .1rem;
-      background-color: var(--color-primary);
-      margin-left: .7rem;
-    }
 
-    &__active-view {
-      width: .5rem;
-      height: .5rem;
-      border: .7px solid lightyellow;
-      background-color: transparent;
-      border-radius: 50%;
-      transform: translateX(-.3rem);
-
-      //animacja co .8 rem dla każdej nastepnej strony
-    }
 }
 
 //======================== SECTION ABOUT ====================================
-.about-content {
-  //height: 100%;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  .about-content {
+    //height: 100%;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    position: relative;
 
-    &__heading-secondary {
-      font-size: 3.3rem;
-      font-weight: 500;
-      margin: 0 0 2rem 6rem;
-    }
+      &__heading-secondary {
+        font-size: 3.3rem;
+        font-weight: 500;
+        margin: 0 0 2rem 6rem;
+      }
 
-    &__content-first,
-    &__content-second,
-    &__content-third {
-      font-size: 1.3rem;
-      text-align: center;
-      margin: 0 2rem .5rem 2rem;
-      font-weight: 300;
-      letter-spacing: 1.8px;
-      //opacity: .8;
-    }
+      &__content-first,
+      &__content-second,
+      &__content-third {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 0 2rem .5rem 2rem;
+        font-weight: 300;
+        letter-spacing: 1.8px;
+        //opacity: .8;
+      }
 
-  &__background-image {
-    position: absolute;
-    top: 14rem;
-    left: -15rem;
-    opacity: .1;
-    transform: rotate(-10deg);
-  }
-
-  &__background-triangle {
-    z-index: 0;
-    position: absolute;
-    top: -25rem;
-    left: 10rem;
-    width: 40rem;
-    opacity: .7;
-    overflow: hidden;
-  }
-}
-
-//======================== SECTION SKILLS ====================================
-.skills-content {
-  width: 100%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-
-
-    &__heading-secondary {
-      font-size: 3.3rem;
-      font-weight: 500;
-      margin: 0 0 2rem 6rem;
-      display: block;
-
-    }
-
-    &__heading-tertiary {
-      width: 80%;
-      margin: 0 auto 1.5rem auto;
-      text-transform: uppercase;
-      font-weight: 300;
-      font-size: 1.4rem;
-      text-align: center;
-    }
-  .second {
-    margin-top: 1.5rem;
-  }
-
-    &__images-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center;
-      margin: 0 auto;
-      width: 90%;
-
-    }
-
-    &__image {
-      border-radius: 50%;
-      height: 4rem;
-      margin: 1rem 1rem;
-    }
-
-    &__other-skills {
-      width: 90%;
-      margin: 0 auto;
-    }
-
-    &__skill-name {
-      display: flex;
-      align-items: center;
-      font-size: 1rem;
-      font-weight: 200;
-      line-height: 1.4rem;
-      margin-bottom: .4rem;
-    }
-
-    .check {
-      width: 2rem;
-      display: block;
-      margin-right: 1.2rem;
+    &__background-image {
+      position: absolute;
+      top: 14rem;
+      left: -15rem;
+      opacity: .1;
+      transform: rotate(-10deg);
     }
 
     &__background-triangle {
-      position: absolute;
-      left: -10rem;
-      top: -20rem;
-      width: 100rem;
-      opacity: .5;
       z-index: 0;
-
+      position: absolute;
+      top: -25rem;
+      left: 10rem;
+      width: 40rem;
+      opacity: .7;
+      overflow: hidden;
     }
-}
+  }
+
+//======================== SECTION SKILLS ====================================
+  .skills-content {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+      &__heading-secondary {
+        font-size: 3.3rem;
+        font-weight: 500;
+        margin: 0 0 2rem 6rem;
+        display: block;
+
+      }
+
+      &__heading-tertiary {
+        width: 80%;
+        margin: 0 auto 1.5rem auto;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.4rem;
+        text-align: center;
+      }
+
+      .second {
+        margin-top: 1.5rem;
+      }
+
+      &__images-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+        width: 90%;
+
+      }
+
+      &__image {
+        border-radius: 50%;
+        height: 4rem;
+        margin: 1rem 1rem;
+      }
+
+      &__other-skills {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      &__skill-name {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 200;
+        line-height: 1.4rem;
+        margin-bottom: .4rem;
+      }
+
+      .check {
+        width: 2rem;
+        display: block;
+        margin-right: 1.2rem;
+      }
+
+      &__background-triangle {
+        position: absolute;
+        left: -10rem;
+        top: -20rem;
+        width: 100rem;
+        opacity: .5;
+        z-index: 0;
+      }
+  }
 
 
 

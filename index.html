@@ -13,10 +13,13 @@
 
 <body>
         <!--================= HEADER ============================-->
-        <header class="header" id="view-0">
+        <header class="header" id="top">
             <div class="navigation-wrapper">
                 <div class="logo-box">
-                    <a href="#view-0" class="logo-box__link">
+                    <a href="#top"
+                       onclick='initializationSection("top")'
+                       class="logo-box__link"
+                    >
                         <img class="logo-box__image"
                              src="./assets/logo.png"
                              alt="logo image"
@@ -43,19 +46,19 @@
              <a href="#" class="media__link">facebook</a>
             </div>
             <div class="scroll">
+<!--                <div class="scroll__separator"></div>-->
                 <span class="scroll__text">przewiń aby odkryć</span>
-                <div class="scroll__separator"></div>
-                <div class="scroll__page-view"></div>
-                <div class="scroll__page-view"></div>
-                <div class="scroll__page-view"></div>
-                <div class="scroll__page-view"></div>
-                <div class="scroll__page-view"></div>
-                <div class="scroll__active-view"></div>
+                <svg class="scroll-arrows">
+<!--                    TODO: dokończyć strzałkę-->
+                    <path class="scroll-arrows__arrow-one" d="M0 0 L10 12 L20 0"></path>
+                    <path class="scroll-arrows__arrow-two" d="M0  L30 52 L60 20"></path>
+                    <path class="scroll-arrows__arrow-three" d="M0 40 L30 72 L60 40"></path>
+                </svg>
             </div>
         </header>
 
         <!--================= SECTION ABOUT ======================-->
-        <section class="about" id="view-1">
+        <section class="about" id="about">
             <div class="about-content">
                 <h2 class="about-content__heading-secondary">o mnie</h2>
                 <p class="about-content__content-first">Nazywam się Arkadiusz Czapski, mam 25 lat, mieszkam w Lublinie. W 2019r. ukończyłem studia inżynierskie na Politechnice Lubelskiej, kierunek mechatronika.</p>
@@ -74,7 +77,7 @@
 
 
         <!--==================SECTION SKILLS=====================-->
-        <section class="skills" id="view-2">
+        <section class="skills" id="skills">
             <div class="skills-content">
                 <h2 class="skills-content__heading-secondary">kwalifikacje</h2>
                 <h3 class="skills-content__heading-tertiary ">języki programowania i narzędzia</h3>
@@ -150,19 +153,25 @@
                      class="skills-content__background-triangle"
                 >
             </div>
-
         </section>
 
-        <section class="project-one" id="view-3">
+        <!--==================SECTION PROJECTS=====================-->
+        <section class="project-one" id="project-one">
             projekt 1
         </section>
 
-        <section class="project-two" id="view-4">
+
+
+
+
+
+
+        <section class="project-two" id="project-two">
             projek 2
         </section>
 
 
-        <section class="contact" id="view-5">
+        <section class="contact" id="contact">
             kontakt
         </section>
 
