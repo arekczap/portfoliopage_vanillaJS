@@ -6,7 +6,6 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0,
           maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="./styles/main.css">
@@ -14,34 +13,88 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="navigation-wrapper">
-            <div class="logo-box">
-                <a href="#" class="logo-box__link">
-                    <img class="logo-box__image" src="./assets/logo.png" alt="logo image">
-                </a>
+        <header class="header" id="view-0">
+            <div class="navigation-wrapper">
+                <div class="logo-box">
+                    <a href="#" class="logo-box__link">
+                        <img class="logo-box__image" src="./assets/logo.png" alt="logo image">
+                    </a>
+                </div>
+                <nav class="hamburger">
+                    <div class="hamburger__floor-one"></div>
+                    <div class="hamburger__floor-two"></div>
+                    <div class="hamburger__floor-three"></div>
+                    <div class="hamburger__floor-four"></div>
+                </nav>
             </div>
-            <nav class="user-nav">
-                <div class="user-nav__floor-one"></div>
-                <div class="user-nav__floor-two"></div>
-                <div class="user-nav__floor-three"></div>
-                <div class="user-nav__floor-four"></div>
-            </nav>
-        </div>
-        <div class="header__text-box">
-            <span class="text-primary">portfolio 2021</span>
-            <span class="text-secondary">arkadiusz</span>
-            <span class="text-tertiary">czapski</span>
-            <h1 class="heading-primary">~ front end developer</h1>
-        </div>
+
+             <div class="media">
+                 <a href="#" class="media__link">github</a>
+                 <a href="#" class="media__link">linkedin</a>
+                 <a href="#" class="media__link">instagram</a>
+                 <a href="#" class="media__link">facebook</a>
+             </div>
+            <div class="scroll">
+                <span class="scroll__text">przewiń aby odkryć</span>
+                <div class="scroll__separator"></div>
+                <div class="scroll__page-view"></div>
+                <div class="scroll__page-view"></div>
+                <div class="scroll__page-view"></div>
+                <div class="scroll__page-view"></div>
+                <div class="scroll__page-view"></div>
+                <div class="scroll__active-view"></div>
+            </div>
+<!--            <div class="main-text">-->
+<!--                <span class="main-text__primary">portfolio 2021</span>-->
+<!--                <span class="main-text__secondary">arkadiusz</span>-->
+<!--                <span class="main-text__tertiary">czapski</span>-->
+<!--                <h1 class="main-text__heading-primary">~ front end developer</h1>-->
+<!--            </div>-->
+        </header>
 
 
-    </header>
+
+
+
+            <section class="about" id="view-1">
+                o mnie
+            </section>
+
+            <section class="qualifications" id="view-2">
+                kwalifikacje
+            </section>
+
+            <section class="project-one" id="view-3">
+                projekt 1
+            </section>
+
+            <section class="project-two" id="view-4">
+                projek 2
+            </section>
+
+
+            <section class="contact" id="view-5">
+                kontakt
+            </section>
 
 
 
 
 
-<!--<script src="app.js"></script>-->
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

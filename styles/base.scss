@@ -37,12 +37,18 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px   10/16px = 62.5%
-
+  color: var(--color-primary);
+  overflow: hidden;
 }
 
 body {
+  position: relative;
+  height: 100%;
   font-family: "Montserrat", sans-serif;
   letter-spacing: .1rem;
   background: var(--color-secondary);
   color: var(--color-primary);
+  overflow: hidden;
+
+
 }

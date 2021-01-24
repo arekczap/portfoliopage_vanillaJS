@@ -16,23 +16,57 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  color: var(--color-primary);
+  overflow: hidden;
 }
 
 body {
+  position: relative;
+  height: 100%;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.1rem;
   background: var(--color-secondary);
   color: var(--color-primary);
+  overflow: hidden;
 }
 
 .header {
-  min-height: 100vh;
+  height: 100vh;
   background: url("../assets/background.jpg") no-repeat 82% 20%;
   background-size: 400%;
   position: relative;
 }
 
+.about {
+  height: 100vh;
+  background-color: var(--color-secondary);
+}
+
+.qualifications {
+  height: 100vh;
+  background-color: lightpink;
+}
+
+.project-one {
+  height: 100vh;
+  background-color: lightcyan;
+}
+
+.project-two {
+  height: 100vh;
+  background-color: lightcoral;
+}
+
+.contact {
+  height: 100vh;
+  background-color: lightblue;
+}
+
 .navigation-wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,7 +86,7 @@ body {
   width: 4rem;
 }
 
-.user-nav__floor-one, .user-nav__floor-two, .user-nav__floor-three, .user-nav__floor-four {
+.hamburger__floor-one, .hamburger__floor-two, .hamburger__floor-three, .hamburger__floor-four {
   width: 3.5rem;
   height: 0.2rem;
   background-color: var(--color-primary);
@@ -60,47 +94,96 @@ body {
   margin-bottom: 0.4rem;
   border-radius: 3px;
 }
-.user-nav__floor-two {
+.hamburger__floor-two {
   width: 2.5rem;
   margin-left: 1rem;
 }
-.user-nav__floor-three {
+.hamburger__floor-three {
   width: 2.5rem;
 }
-.user-nav__floor-four {
+.hamburger__floor-four {
   margin-bottom: 0;
 }
 
-.header__text-box {
+.main-text {
   width: 100%;
   position: absolute;
-  top: 43%;
+  top: 40%;
   left: 48%;
   transform: translate(-50%, -50%);
 }
-.header__text-box .text-primary {
+.main-text__primary {
   display: block;
   font-size: 2.4rem;
   font-weight: 300;
   margin-left: 3rem;
   margin-bottom: 2rem;
 }
-.header__text-box .text-secondary,
-.header__text-box .text-tertiary {
+.main-text__secondary, .main-text__tertiary {
   display: inline-block;
   font-size: 3.6rem;
   font-weight: 800;
   margin-left: 6rem;
   margin-top: 0.8rem;
 }
-.header__text-box .text-tertiary {
+.main-text__tertiary {
   margin-left: 12.2rem;
 }
-.header__text-box .heading-primary {
+.main-text__heading-primary {
   font-size: 1.8rem;
   font-weight: 300;
   margin-left: 7rem;
   margin-top: 2rem;
+}
+
+.media {
+  position: fixed;
+  bottom: 1.2rem;
+  left: 1.2rem;
+}
+.media__link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 300;
+  margin-left: 1rem;
+}
+.media__link:first-child {
+  margin-left: 0.5rem;
+}
+
+.scroll {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  bottom: 20rem;
+  right: 1.4rem;
+  transform-origin: right;
+  transform: rotate(-90deg);
+}
+.scroll__text {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: inherit;
+}
+.scroll__separator {
+  width: 3rem;
+  height: 0.1rem;
+  margin-left: 0.4rem;
+  background-color: var(--color-primary);
+}
+.scroll__page-view {
+  width: 0.1rem;
+  height: 0.1rem;
+  background-color: var(--color-primary);
+  margin-left: 0.7rem;
+}
+.scroll__active-view {
+  width: 0.5rem;
+  height: 0.5rem;
+  border: 0.7px solid lightyellow;
+  background-color: transparent;
+  border-radius: 50%;
+  transform: translateX(-0.3rem);
 }
 
 /*# sourceMappingURL=main.css.map */
