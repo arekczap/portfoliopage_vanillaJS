@@ -13,7 +13,7 @@
 // Grey dark 3: #999
 
 :root {
-  --color-primary: #E6E9D6;
+  --color-primary: #e6e9d6;
   --color-secondary: #383138;
   //--color-primary-dark: #ba265d;
 }
@@ -36,6 +36,8 @@
 
 html {
   box-sizing: border-box;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   font-size: 62.5%; //1rem = 10px   10/16px = 62.5%
   color: var(--color-primary);
   overflow: hidden;
@@ -44,6 +46,7 @@ html {
 body {
   position: relative;
   height: 100%;
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   letter-spacing: .1rem;
   background: var(--color-secondary);
