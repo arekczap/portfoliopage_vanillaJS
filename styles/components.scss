@@ -1,4 +1,4 @@
-
+//======================== NAVIGATION STYLES ====================================
 .navigation-wrapper {
   width: 100%;
   position: fixed;
@@ -11,6 +11,7 @@
 
 }
 
+//======================== LOGO STYLES ====================================
 .logo-box {
   width: 4rem;
   height: 4rem;
@@ -25,7 +26,7 @@
     }
 }
 
-
+//======================== HAMBURGER STYLES ====================================
 .hamburger {
     &__floor-one,
     &__floor-two,
@@ -53,6 +54,7 @@
     }
 }
 
+//======================== HEADER STYLES ====================================
 .main-text {
 
   width: 100%;
@@ -94,6 +96,7 @@
   }
 }
 
+//======================== MEDIA STYLES ====================================
 .media {
   position: fixed;
   bottom: 1.2rem;
@@ -111,12 +114,13 @@
     }
 }
 
+//======================== SCROLL STYLES ====================================
 .scroll {
   position: fixed;
   display: flex;
   align-items: center;
   bottom: 20rem;
-  right: 1.4rem;
+  right: 1rem;
   transform-origin: right;
   transform: rotate(-90deg);
 
@@ -153,7 +157,110 @@
     }
 }
 
+//======================== SECTION ABOUT ====================================
+.about-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 
+    &__heading-secondary {
+      font-size: 3.3rem;
+      font-weight: 500;
+      margin-left: 4rem;
+    }
+
+    &__content-first,
+    &__content-second,
+    &__content-third {
+      font-size: 1.3rem;
+      text-align: center;
+      margin: 2rem 2rem 0 2rem;
+      font-weight: 300;
+      letter-spacing: 1.8px;
+      //opacity: .8;
+    }
+
+  &__background-image {
+    position: absolute;
+    top: 21rem;
+    left: -15rem;
+    opacity: .1;
+    transform: rotate(-10deg);
+  }
+
+  &__background-triangle {
+    z-index: 0;
+    position: absolute;
+    top: -15rem;
+    left: 10rem;
+    width: 30rem;
+    opacity: .7;
+    overflow: hidden;
+  }
+}
+
+//======================== SECTION SKILLS ====================================
+.skills-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+    &__heading-secondary {
+      font-size: 3.3rem;
+      font-weight: 500;
+      margin-bottom: 2.5rem;
+      margin-left: -2rem;
+
+    }
+
+    &__heading-tertiary {
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 1.4rem;
+      text-align: center;
+      margin: 0 2rem 1.5rem 2rem;
+    }
+
+    &__images-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      width: 90%;
+
+    }
+
+    &__image {
+      border-radius: 50%;
+      height: 4rem;
+      margin: 1rem 1rem;
+    }
+
+    &__other-skills {
+      margin: 1.4rem 2rem 0 2rem;
+    }
+
+    &__skill-name {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 200;
+      line-height: 1.4rem;
+      margin-bottom: .4rem;
+    }
+
+    .check {
+      width: 2rem;
+      display: block;
+      margin-right: 1.2rem;
+    }
+}
 
 
 

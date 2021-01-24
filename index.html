@@ -2,10 +2,9 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0,
-          maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="mobile-web-app-capable" content="yes">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="./styles/main.css">
@@ -13,11 +12,15 @@
 </head>
 
 <body>
+        <!--        ============================= HEADER ==================================================-->
         <header class="header" id="view-0">
             <div class="navigation-wrapper">
                 <div class="logo-box">
-                    <a href="#" class="logo-box__link">
-                        <img class="logo-box__image" src="./assets/logo.png" alt="logo image">
+                    <a href="#view-0" class="logo-box__link">
+                        <img class="logo-box__image"
+                             src="./assets/logo.png"
+                             alt="logo image"
+                        >
                     </a>
                 </div>
                 <nav class="hamburger">
@@ -27,13 +30,18 @@
                     <div class="hamburger__floor-four"></div>
                 </nav>
             </div>
-
-             <div class="media">
-                 <a href="#" class="media__link">github</a>
-                 <a href="#" class="media__link">linkedin</a>
-                 <a href="#" class="media__link">instagram</a>
-                 <a href="#" class="media__link">facebook</a>
-             </div>
+            <div class="main-text">
+                <span class="main-text__primary">portfolio 2021</span>
+                <span class="main-text__secondary">arkadiusz</span>
+                <span class="main-text__tertiary">czapski</span>
+                <h1 class="main-text__heading-primary">~ front end developer</h1>
+            </div>
+            <div class="media">
+             <a href="#" class="media__link">github</a>
+             <a href="#" class="media__link">linkedin</a>
+             <a href="#" class="media__link">instagram</a>
+             <a href="#" class="media__link">facebook</a>
+            </div>
             <div class="scroll">
                 <span class="scroll__text">przewiń aby odkryć</span>
                 <div class="scroll__separator"></div>
@@ -44,38 +52,116 @@
                 <div class="scroll__page-view"></div>
                 <div class="scroll__active-view"></div>
             </div>
-<!--            <div class="main-text">-->
-<!--                <span class="main-text__primary">portfolio 2021</span>-->
-<!--                <span class="main-text__secondary">arkadiusz</span>-->
-<!--                <span class="main-text__tertiary">czapski</span>-->
-<!--                <h1 class="main-text__heading-primary">~ front end developer</h1>-->
-<!--            </div>-->
         </header>
 
+        <!--        =============================SECTION ABOUT==================================================-->
+        <section class="about" id="view-1">
+            <div class="about-content">
+                <h2 class="about-content__heading-secondary">o mnie</h2>
+                <p class="about-content__content-first">Nazywam się Arkadiusz Czapski, mam 25 lat, mieszkam w Lublinie. W 2019r. ukończyłem studia inżynierskie na Politechnice Lubelskiej, kierunek mechatronika.</p>
+                <p class="about-content__content-second">Moją pasją jednak jest programowanie, dlatego od stycznia 2020 r. zagłębiam się w pojęcia związane z zawodem Front-End Developer'a. W zakresie programowania i projektowania stron swoją wiedzę pozyskuję z materiałów dostępnych w internecie, czego efektem są moje projekty udostępnione na platformie github.</p>
+                <p class="about-content__content-third">Aktualnie poszukuję pracy na stanowisko Junior Front-End Developer'a.</p>
+                <img src="./assets/strzelec.svg"
+                     alt="obraz strzelca"
+                     class="about-content__background-image"
+                >
+                <img src="./assets/tri.svg"
+                     alt="trójkąt obraz"
+                     class="about-content__background-triangle"
+                >
+            </div>
+        </section>
 
 
+        <!--        =============================SECTION SKILLS==================================================-->
+        <section class="skills" id="view-2">
+            <div class="skills-content">
+                <h2 class="skills-content__heading-secondary">kwalifikacje</h2>
+                <h3 class="skills-content__heading-tertiary">języki programowania i narzędzia</h3>
+                    <div class="skills-content__images-wrapper">
+                        <img src="./assets/html5.png"
+                             alt="html5 logo"
+                             class="skills-content__image"
+                        >
+                        <img src="./assets/css3.png"
+                             alt="css logo"
+                             class="skills-content__image"
+                        >
+                        <img src="./assets/js.png"
+                             alt="javascript logo"
+                             class="skills-content__image"
+                        >
+                        <img src="./assets/Sass.png"
+                             alt="sass logo"
+                             class="skills-content__image"
+                        >
+                        <img src="./assets/Git.png"
+                             alt="git logo"
+                             class="skills-content__image"
+                        >
+                        <img src="./assets/figma.png"
+                             alt="figma logo"
+                             class="skills-content__image"
+                        >
+                        <img src="./assets/vsc.png"
+                             alt="vsc logo"
+                             class="skills-content__image"
+                             >
+                        <img src="./assets/webstorm.png"
+                             alt="webstorm logo"
+                             class="skills-content__image"
+                        >
+                    </div>
+                <div class="skills-content__other-skills">
+                    <h3 class="skills-content__heading-tertiary">pozostałe umiejętności</h3>
+                    <p class="skills-content__skill-name">
+                        <img src="./assets/check.svg"
+                             alt="check"
+                             class="check">
+                        Dbałość o Responsive Web Design
+                    </p>
+                    <p class="skills-content__skill-name">
+                        <img src="./assets/check.svg"
+                             alt="check"
+                             class="check">
+                        Umiejętność pracy w zespole
+                    </p>
+                    <p class="skills-content__skill-name">
+                        <img src="./assets/check.svg"
+                             alt="check"
+                             class="check">
+                        Znajomość podstawowych zapytań SQL
+                    </p>
+                    <p class="skills-content__skill-name">
+                        <img src="./assets/check.svg"
+                             alt="check"
+                             class="check">
+                        Podstawowa znajomość programu Photoshop
+                    </p>
+                    <p class="skills-content__skill-name">
+                        <img src="./assets/check.svg"
+                             alt="check"
+                             class="check check-last">
+                        Dobra organizacja pracy np. planowanie zadań
+                    </p>
 
 
-            <section class="about" id="view-1">
-                o mnie
-            </section>
+                </div>
+            </div>
+        </section>
 
-            <section class="qualifications" id="view-2">
-                kwalifikacje
-            </section>
+        <section class="project-one" id="view-3">
+            projekt 1
+        </section>
 
-            <section class="project-one" id="view-3">
-                projekt 1
-            </section>
-
-            <section class="project-two" id="view-4">
-                projek 2
-            </section>
+        <section class="project-two" id="view-4">
+            projek 2
+        </section>
 
 
-            <section class="contact" id="view-5">
-                kontakt
-            </section>
+        <section class="contact" id="view-5">
+            kontakt
+        </section>
 
 
 

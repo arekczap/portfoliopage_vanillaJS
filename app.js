@@ -25,18 +25,20 @@ let quantityOfSections = document.body.children.length -5;
 let touchStart = 0;
 let touchEnd = 0;
 
-document.addEventListener('touchstart', (event) => {
-        touchStart = event.changedTouches[0].clientY;
-});
-
-document.addEventListener('touchend', (event) => {
-        touchEnd = event.changedTouches[0].clientY;
-            if (touchStart > touchEnd) {
-                performScroll(1);
-            } else {
-                performScroll(-1);
-            }
-});
+// document.addEventListener('touchstart', (event) => {
+//         touchStart = event.changedTouches[0].clientY;
+//
+//     console.log(touchStart)
+// });
+//
+// document.addEventListener('touchend', (event) => {
+//         touchEnd = event.changedTouches[0].clientY;
+//             if (touchStart > touchEnd) {
+//                 performScroll(1);
+//             } else {
+//                 performScroll(-1);
+//             }
+// });
 
 document.addEventListener('wheel', (event) => {
 
