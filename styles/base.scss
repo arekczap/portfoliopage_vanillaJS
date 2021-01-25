@@ -40,7 +40,8 @@ html {
   min-height: -webkit-fill-available;
   font-size: 62.5%; //1rem = 10px   10/16px = 62.5%
   color: var(--color-primary);
-  overflow: hidden;
+  //TODO:odkomentowac
+  //overflow: hidden;
 }
 
 body {
@@ -51,7 +52,9 @@ body {
   letter-spacing: .1rem;
   background: var(--color-secondary);
   color: var(--color-primary);
-  overflow: hidden;
+
+  //TODO:odkomentowac
+  //overflow: hidden;
   display: flex;
   flex-direction: column;
 

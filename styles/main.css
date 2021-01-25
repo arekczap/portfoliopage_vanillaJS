@@ -19,7 +19,6 @@ html {
   min-height: -webkit-fill-available;
   font-size: 62.5%;
   color: var(--color-primary);
-  overflow: hidden;
 }
 
 body {
@@ -30,7 +29,6 @@ body {
   letter-spacing: 0.1rem;
   background: var(--color-secondary);
   color: var(--color-primary);
-  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
