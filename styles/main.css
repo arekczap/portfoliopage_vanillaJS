@@ -145,8 +145,8 @@ body {
   display: flex;
   align-items: center;
   position: fixed;
-  bottom: 20rem;
-  right: 10rem;
+  bottom: 13rem;
+  right: 1.3rem;
   transform-origin: right;
   transform: rotate(-90deg);
 }
@@ -156,23 +156,6 @@ body {
   margin-right: 0.5rem;
   background-color: var(--color-primary);
   transform: translateY(0.1rem);
-}
-.scroll__text {
-  height: 2rem;
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: inherit;
-}
-.scroll .scroll-arrows {
-  width: 70px;
-  height: 70px;
-  bottom: 20px;
-  transform: rotate(90deg);
-}
-.scroll .scroll-arrows__arrow-one, .scroll .scroll-arrows__arrow-two, .scroll .scroll-arrows__arrow-three {
-  stroke: var(--color-primary);
-  fill: transparent;
-  stroke-width: 1px;
 }
 
 .about-content {
@@ -218,7 +201,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
-.skills-content__heading-secondary {
+.skills-content__heading-secondary, .contact-content__heading-secondary {
   font-size: 3.3rem;
   font-weight: 500;
   margin: 0 0 2rem 6rem;
@@ -272,6 +255,53 @@ body {
   width: 100rem;
   opacity: 0.5;
   z-index: 0;
+}
+
+.contact-content {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-65%);
+}
+.contact-content__heading-secondary {
+  margin-bottom: 8rem;
+}
+.contact-content__text {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 0 2rem 0 2rem;
+}
+.contact-content__email, .contact-content__phone-number {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+.contact-content__email:after, .contact-content__phone-number:after {
+  content: "";
+  display: block;
+  width: 24rem;
+  height: 0.2rem;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+  margin-top: 1rem;
+}
+.contact-content__phone-number {
+  margin-top: 2rem;
+}
+.contact-content__phone-number:after {
+  position: absolute;
+  right: 0;
+}
+.contact-content__image-background {
+  position: absolute;
+  width: 20rem;
+  opacity: 0.2;
+  bottom: -50%;
+  right: 0;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=main.css.map */

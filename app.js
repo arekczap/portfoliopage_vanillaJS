@@ -11,6 +11,18 @@ if ( document.cookie !== "0") {
     }, 10);
 }
 
+
+// For tracking the section currently displayed
+let currentSection = 0;
+let canScroll = true;
+let scrollDir = 0;
+let quantityOfSections = 5;
+
+// array of main views in document
+let views = ["top", "about", "skills", "project-one", "project-two", "contact"];
+
+
+
 const initializationSection = (nameSection) => {
     switch(nameSection) {
         case "top":
@@ -34,15 +46,6 @@ const initializationSection = (nameSection) => {
     }
 }
 
-
-// For tracking the section currently displayed
-let currentSection = 0;
-let canScroll = true;
-let scrollDir = 0;
-let quantityOfSections = 5;
-
-// array of main views in document
-let views = ["top", "about", "skills", "project-one", "project-two", "contact"];
 
 
 // event on mouse wheel up or down
@@ -116,4 +119,3 @@ const performScroll = (scrollDir) => {
         // })
     }
 };
-

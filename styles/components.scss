@@ -119,8 +119,8 @@
   display: flex;
   align-items: center;
   position: fixed;
-  bottom: 20rem;
-  right: 10rem;
+  bottom: 13rem;
+  right: 1.3rem;
   transform-origin: right;
   transform: rotate(-90deg);
 
@@ -131,34 +131,6 @@
       background-color: var(--color-primary);
       transform: translateY(.1rem);
     }
-
-    &__text {
-      height: 2rem;
-      font-size: .9rem;
-      font-weight: 400;
-      color: inherit;
-    }
-
-    .scroll-arrows {
-      width:70px;
-      height: 70px;
-      //margin-left;
-      bottom: 20px;
-      transform: rotate(90deg);
-
-      &__arrow-one,
-      &__arrow-two,
-      &__arrow-three
-      {
-        stroke: var(--color-primary);
-        fill: transparent;
-        stroke-width: 1px;
-        //animation: arrow 2s infinite;
-        //-webkit-animation: arrow 2s infinite;
-      }
-
-    }
-
 
 }
 
@@ -286,9 +258,67 @@
 
 
 
+//======================== SECTION CONTaCT ====================================
+
+.contact-content {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-65%);
 
 
+  &__heading-secondary {
+    @extend .skills-content__heading-secondary;
+    margin-bottom: 8rem;
+  }
 
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 2rem 0 2rem;
+  }
+
+  &__email,
+  &__phone-number{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size:  2rem;
+    margin-top: 3rem;
+  }
+
+  &__email:after,
+  &__phone-number:after {
+    content: "";
+    display: block;
+    width: 24rem;
+    height: .2rem;
+    background-color: var(--color-primary);
+    border-radius: 2px;
+    margin-top: 1rem;
+
+  }
+
+  &__phone-number {
+    margin-top: 2rem;
+  }
+
+  &__phone-number:after {
+    position: absolute;
+    right: 0;
+  }
+
+
+  &__image-background {
+    position: absolute;
+    width: 20rem;
+    opacity: .2;
+    bottom: -50%;
+    right: 0;
+    z-index: -1;
+  }
+}
 
 
 
