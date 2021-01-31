@@ -18,10 +18,16 @@ let canScroll = true;
 let scrollDir = 0;
 let quantityOfSections = 5;
 
+// Touch data (for mobile)
+let touchStart = 0;
+let touchEnd = 0;
+
 // array of main views in document
 let views = ["top", "about", "skills", "project-one", "project-two", "contact"];
 
-
+selectors = {
+    scroll: document.querySelector(".scroll")
+}
 
 const initializationSection = (nameSection) => {
     switch(nameSection) {
@@ -45,6 +51,81 @@ const initializationSection = (nameSection) => {
             break;
     }
 }
+
+const scrollVisibility = () => {
+    let {scroll} = selectors;
+
+    if ( currentSection === 4 || currentSection === 3 || currentSection === 5) {
+        scroll.style.opacity = "0"
+        console.log("działa")
+    } else {
+        scroll.style.opacity = "1"
+    }
+
+}
+
+const performScroll = (scrollDir) => {
+
+    // can scroll on the end and start page
+    let scrollMe = true;
+
+    // current view of the section
+    currentSection += scrollDir;
+
+    //when count of current section > all count of sections
+    if ( currentSection > quantityOfSections ) {
+        currentSection = quantityOfSections;
+        scrollMe = false;
+    }
+
+    if (0 > currentSection) {
+        currentSection = 0;
+        scrollMe = false
+    }
+
+    //scroll visibility on project function
+    scrollVisibility();
+
+    //scrolling to next section
+    if ( scrollDir === 1 && scrollMe) {
+        console.log(currentSection);
+        gsap.to(window, {
+            duration: 1,
+            scrollTo: "#" + views[currentSection],
+            ease: "sine.inOut"
+        });
+
+
+        //scrolling to previous section
+    } else if ( scrollDir === -1 && scrollMe) {
+        console.log(currentSection);
+        gsap.to(window, {
+            duration: 1,
+            scrollTo: "#" + views[currentSection],
+            ease: "sine.inOut"
+        });
+
+        // gsap.to(document.querySelector(".scroll__active-view"), {
+        //     duration: 1,
+        //     x: -currentSection * 7
+        // })
+    }
+};
+
+
+document.addEventListener('touchstart', (event) => {
+    touchStart = event.changedTouches[0].clientY;
+    console.log(touchStart)
+});
+
+document.addEventListener('touchend', (event) => {
+    touchEnd = event.changedTouches[0].clientY;
+    if (touchStart > touchEnd) {
+        performScroll(1);
+    } else {
+        performScroll(-1);
+    }
+});
 
 
 
@@ -72,51 +153,4 @@ document.addEventListener('wheel', (event) => {
 
 });
 
-const performScroll = (scrollDir) => {
 
-    // can scroll on the end and start page
-    let scrollMe = true;
-
-    // current view of the section
-    currentSection += scrollDir;
-
-    //when count of current section > all count of sections
-    if ( currentSection > quantityOfSections ) {
-        currentSection = quantityOfSections;
-        scrollMe = false;
-    }
-
-    if (0 > currentSection) {
-        currentSection = 0;
-        scrollMe = false
-    }
-
-    //scrolling to next section
-    if ( scrollDir === 1 && scrollMe) {
-        console.log(currentSection);
-        gsap.to(window, {
-            duration: 1,
-            scrollTo: "#" + views[currentSection],
-            ease: "sine.inOut"
-        });
-
-        // gsap.to(document.querySelector(".scroll__active-view"), {
-        //     duration: 1,
-        //     x: -currentSection * 7
-        // })
-
-        //scrolling to previous section
-    } else if ( scrollDir === -1 && scrollMe) {
-        console.log(currentSection);
-        gsap.to(window, {
-            duration: 1,
-            scrollTo: "#" + views[currentSection],
-            ease: "sine.inOut"
-        });
-
-        // gsap.to(document.querySelector(".scroll__active-view"), {
-        //     duration: 1,
-        //     x: -currentSection * 7
-        // })
-    }
-};
