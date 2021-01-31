@@ -68,7 +68,7 @@ document.addEventListener('wheel', (event) => {
     // First, get the next section to scroll to by checking if the scroll position is greater or less than the position of the current position.
     scrollDir = event.deltaY > 1 ? 1 : -1;
     // TODO: odblokowac
-    // performScroll(scrollDir);
+    performScroll(scrollDir);
 
 });
 

@@ -41,12 +41,13 @@ html {
   font-size: 62.5%; //1rem = 10px   10/16px = 62.5%
   color: var(--color-primary);
   //TODO:odkomentowac
-  //overflow: hidden;
+  overflow: hidden;
 }
 
 body {
   position: relative;
   height: 100%;
+  width: 100%;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   letter-spacing: .1rem;
@@ -54,7 +55,7 @@ body {
   color: var(--color-primary);
 
   //TODO:odkomentowac
-  //overflow: hidden;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 

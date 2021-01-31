@@ -251,6 +251,7 @@
         width: 100rem;
         opacity: .5;
         z-index: 0;
+        overflow: hidden;
       }
   }
 
@@ -320,6 +321,97 @@
   }
 }
 
+//======================== SECTION PROJECT ONE ====================================
+
+.project-content {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+    &__heading-secondary {
+      @extend .skills-content__heading-secondary;
+
+    }
+
+    &__content-first,
+    &__content-second {
+      @extend .about-content__content-first;
+      font-size: 1rem;
+    }
+
+    &__button-wrapper {
+      width: 100%;
+      display: flex;
+      margin: 1rem 0 ;
+      justify-content: space-between;
+      color: white;
+    }
+
+    &__button {
+      width: 12rem;
+      height: 2.4rem;
+      background-color: rgba(110, 215, 250, .2);
+      opacity: .9;
+      border-radius: 15px;
+      border: none;
+      margin: 0 auto;
+      color: white;
+      letter-spacing: 2px;
+    }
+
+  &__button:focus {
+    outline: none;
+    transform: translate(1px, 1px);
+  }
+
+
+
+    &__image-wrapper {
+      position: relative;
+
+    }
+
+    &__image {
+      width: 90%;
+      margin: 0 calc((100vw - 90%)/2);
+    }
+
+    &__name {
+      width: 60%;
+      position: absolute;
+      right: 1rem;
+      bottom: -5rem;
+    }
+
+    &__circle {
+      z-index: -1;
+      border-radius: 50%;
+      width: 50rem;
+      height: 50rem;
+      background: #C4C4C4;
+      opacity: .03;
+      position: absolute;
+      left: 10rem;
+      top: -30rem;
+    }
+
+
+    &__actual-page {
+      display: flex;
+      margin-left: 1rem;
+    transform: translateY(2.5rem);
+    }
+
+    &__project-one,
+    &__project-two,
+    &__separator{
+      font-size: 2rem;
+      margin-left: 1rem;
+    }
+
+}
 
 
 
