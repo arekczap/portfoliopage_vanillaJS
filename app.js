@@ -90,7 +90,7 @@ const performScroll = (scrollDir) => {
     if ( scrollDir === 1 && scrollMe) {
         console.log(currentSection);
         gsap.to(window, {
-            duration: 1,
+            duration: .7,
             scrollTo: "#" + views[currentSection],
             ease: "sine.inOut"
         });
@@ -100,7 +100,7 @@ const performScroll = (scrollDir) => {
     } else if ( scrollDir === -1 && scrollMe) {
         console.log(currentSection);
         gsap.to(window, {
-            duration: 1,
+            duration: .7,
             scrollTo: "#" + views[currentSection],
             ease: "sine.inOut"
         });
@@ -114,15 +114,17 @@ const performScroll = (scrollDir) => {
 
 
 document.addEventListener('touchstart', (event) => {
-    touchStart = event.changedTouches[0].clientY;
-    console.log(touchStart)
+    touchStart =  event.touches[0].clientY;
+    console.log("start " + touchStart)
 });
 
 document.addEventListener('touchend', (event) => {
     touchEnd = event.changedTouches[0].clientY;
-    if (touchStart > touchEnd) {
+
+    console.log("end " + touchEnd)
+    if (touchStart > touchEnd + 10) {
         performScroll(1);
-    } else {
+    } else if ( touchStart + 10 < touchEnd  ) {
         performScroll(-1);
     }
 });
@@ -143,7 +145,7 @@ document.addEventListener('wheel', (event) => {
 
     setTimeout(() => {
         canScroll = true;
-    }, 500);
+    }, 700);
 
     // Perform the scroll to the next section
     // First, get the next section to scroll to by checking if the scroll position is greater or less than the position of the current position.
