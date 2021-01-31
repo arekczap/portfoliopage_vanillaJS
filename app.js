@@ -1,3 +1,10 @@
+// TODO: TEST mobile
+window.addEventListener('resize', () => {
+    document.querySelector(':root').style
+        .setProperty('--vh', window.innerHeight/100 + 'px');
+})
+
+
 window.onbeforeunload = function(e) {
     document.cookie = window.scrollY;
 };
