@@ -1,9 +1,14 @@
-.header {
+.top {
   height: 100vh;
   background: url("../assets/background.jpg") no-repeat 82% 20%;
   background-size: 400%;
-  z-index: 1;
+
   position: relative;
+}
+
+.header {
+  position: fixed;
+  z-index: 101;
 }
 
 

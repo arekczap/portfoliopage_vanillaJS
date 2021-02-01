@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.css" integrity="sha512-1No3nMY/zD37h1POyqULfwc9WMzWvXcal6F7/OIhNdWkTaEbt4Y6eqX0vXail7Zh5JjnBdMMKr+lRvqTNFr3Ow==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="./styles/main.css">
@@ -12,226 +13,220 @@
 </head>
 
 <body>
-        <!--================= HEADER ============================-->
-        <header class="header" id="top">
-            <div class="navigation-wrapper">
-                <div class="logo-box">
-                    <a href="#top"
-                       onclick='initializationSection("top")'
-                       class="logo-box__link"
+    <header class="header">
+        <div class="navigation-wrapper">
+            <div class="logo-box">
+                <a href="#top"
+                   class="logo-box__link"
+                >
+                    <img class="logo-box__image"
+                         src="./assets/logo.png"
+                         alt="logo image"
                     >
-                        <img class="logo-box__image"
-                             src="./assets/logo.png"
-                             alt="logo image"
-                        >
-                    </a>
-                </div>
-                <nav class="hamburger">
-                    <div class="hamburger__floor-one"></div>
-                    <div class="hamburger__floor-two"></div>
-                    <div class="hamburger__floor-three"></div>
-                    <div class="hamburger__floor-four"></div>
-                </nav>
+                </a>
             </div>
+            <nav class="hamburger">
+                <div class="hamburger__floor-one"></div>
+                <div class="hamburger__floor-two"></div>
+                <div class="hamburger__floor-three"></div>
+                <div class="hamburger__floor-four"></div>
+            </nav>
+
+            <div class="media">
+                <a href="#" class="media__link">github</a>
+                <a href="#" class="media__link">linkedin</a>
+                <a href="#" class="media__link">instagram</a>
+                <a href="#" class="media__link">facebook</a>
+            </div>
+        </div>
+    </header>
+    <div id="fullpage">
+        <!--================= top============================-->
+        <div class="section top">
+
             <div class="main-text">
                 <span class="main-text__primary">portfolio 2021</span>
                 <span class="main-text__secondary">arkadiusz</span>
                 <span class="main-text__tertiary">czapski</span>
                 <h1 class="main-text__heading-primary">~ front end developer</h1>
             </div>
-            <div class="media">
-             <a href="#" class="media__link">github</a>
-             <a href="#" class="media__link">linkedin</a>
-             <a href="#" class="media__link">instagram</a>
-             <a href="#" class="media__link">facebook</a>
-            </div>
+
             <div class="scroll">
                 <div class="scroll__separator"></div>
                 <span class="scroll__text">przewiń aby odkryć</span>
             </div>
-        </header>
+        </div>
 
-        <!--================= SECTION ABOUT ======================-->
-        <section class="about" id="about">
-            <div class="about-content">
-                <h2 class="about-content__heading-secondary">o mnie</h2>
-                <p class="about-content__content-first">Nazywam się Arkadiusz Czapski, mam 25 lat, mieszkam w Lublinie. W 2019r. ukończyłem studia inżynierskie na Politechnice Lubelskiej, kierunek mechatronika.</p>
-                <p class="about-content__content-second">Moją pasją jednak jest programowanie, dlatego od stycznia 2020 r. zagłębiam się w pojęcia związane z zawodem Front-End Developer'a. W zakresie programowania i projektowania stron swoją wiedzę pozyskuję z materiałów dostępnych w internecie, czego efektem są moje projekty udostępnione na platformie github.</p>
-                <p class="about-content__content-third">Aktualnie poszukuję pracy na stanowisko Junior Front-End Developer'a.</p>
-                <img src="./assets/strzelec.svg"
-                     alt="obraz strzelca"
-                     class="about-content__background-image"
-                >
-                <img src="./assets/tri.svg"
-                     alt="trójkąt obraz"
-                     class="about-content__background-triangle"
-                >
+
+            <!--================= SECTION ABOUT ======================-->
+            <div class="section about">
+                <div class="about-content">
+                    <h2 class="about-content__heading-secondary">o mnie</h2>
+                    <p class="about-content__content-first">Nazywam się Arkadiusz Czapski, mam 25 lat, mieszkam w Lublinie. W 2019r. ukończyłem studia inżynierskie na Politechnice Lubelskiej, kierunek mechatronika.</p>
+                    <p class="about-content__content-second">Moją pasją jednak jest programowanie, dlatego od stycznia 2020 r. zagłębiam się w pojęcia związane z zawodem Front-End Developer'a. W zakresie programowania i projektowania stron swoją wiedzę pozyskuję z materiałów dostępnych w internecie, czego efektem są moje projekty udostępnione na platformie github.</p>
+                    <p class="about-content__content-third">Aktualnie poszukuję pracy na stanowisko Junior Front-End Developer'a.</p>
+                    <img src="./assets/strzelec.svg"
+                         alt="obraz strzelca"
+                         class="about-content__background-image"
+                    >
+                    <img src="./assets/tri.svg"
+                         alt="trójkąt obraz"
+                         class="about-content__background-triangle"
+                    >
+                </div>
             </div>
-        </section>
 
 
-        <!--==================SECTION SKILLS=====================-->
-        <section class="skills" id="skills">
-            <div class="skills-content">
-                <h2 class="skills-content__heading-secondary">kwalifikacje</h2>
-                <h3 class="skills-content__heading-tertiary ">języki programowania i narzędzia</h3>
-                    <div class="skills-content__images-wrapper">
-                        <img src="./assets/html5.png"
-                             alt="html5 logo"
-                             class="skills-content__image"
-                        >
-                        <img src="./assets/css3.png"
-                             alt="css logo"
-                             class="skills-content__image"
-                        >
-                        <img src="./assets/js.png"
-                             alt="javascript logo"
-                             class="skills-content__image"
-                        >
-                        <img src="./assets/Sass.png"
-                             alt="sass logo"
-                             class="skills-content__image"
-                        >
-                        <img src="./assets/Git.png"
-                             alt="git logo"
-                             class="skills-content__image"
-                        >
-                        <img src="./assets/figma.png"
-                             alt="figma logo"
-                             class="skills-content__image"
-                        >
-                        <img src="./assets/vsc.png"
-                             alt="vsc logo"
-                             class="skills-content__image"
-                             >
-                        <img src="./assets/webstorm.png"
-                             alt="webstorm logo"
-                             class="skills-content__image"
-                        >
+            <!--==================SECTION SKILLS=====================-->
+            <div class="section skills">
+                <div class="skills-content">
+                    <h2 class="skills-content__heading-secondary">kwalifikacje</h2>
+                    <h3 class="skills-content__heading-tertiary ">języki programowania i narzędzia</h3>
+                        <div class="skills-content__images-wrapper">
+                            <img src="./assets/html5.png"
+                                 alt="html5 logo"
+                                 class="skills-content__image"
+                            >
+                            <img src="./assets/css3.png"
+                                 alt="css logo"
+                                 class="skills-content__image"
+                            >
+                            <img src="./assets/js.png"
+                                 alt="javascript logo"
+                                 class="skills-content__image"
+                            >
+                            <img src="./assets/Sass.png"
+                                 alt="sass logo"
+                                 class="skills-content__image"
+                            >
+                            <img src="./assets/Git.png"
+                                 alt="git logo"
+                                 class="skills-content__image"
+                            >
+                            <img src="./assets/figma.png"
+                                 alt="figma logo"
+                                 class="skills-content__image"
+                            >
+                            <img src="./assets/vsc.png"
+                                 alt="vsc logo"
+                                 class="skills-content__image"
+                                 >
+                            <img src="./assets/webstorm.png"
+                                 alt="webstorm logo"
+                                 class="skills-content__image"
+                            >
+                        </div>
+                    <div class="skills-content__other-skills">
+                        <h3 class="skills-content__heading-tertiary second">pozostałe umiejętności</h3>
+                        <p class="skills-content__skill-name">
+                            <img src="./assets/check.svg"
+                                 alt="check"
+                                 class="check">
+                            Dbałość o Responsive Web Design
+                        </p>
+                        <p class="skills-content__skill-name">
+                            <img src="./assets/check.svg"
+                                 alt="check"
+                                 class="check">
+                            Umiejętność pracy w zespole
+                        </p>
+                        <p class="skills-content__skill-name">
+                            <img src="./assets/check.svg"
+                                 alt="check"
+                                 class="check">
+                            Znajomość podstawowych zapytań SQL
+                        </p>
+                        <p class="skills-content__skill-name">
+                            <img src="./assets/check.svg"
+                                 alt="check"
+                                 class="check">
+                            Podstawowa znajomość programu Photoshop
+                        </p>
+                        <p class="skills-content__skill-name">
+                            <img src="./assets/check.svg"
+                                 alt="check"
+                                 class="check check-last">
+                            Dobra organizacja pracy np. planowanie zadań
+                        </p>
                     </div>
-                <div class="skills-content__other-skills">
-                    <h3 class="skills-content__heading-tertiary second">pozostałe umiejętności</h3>
-                    <p class="skills-content__skill-name">
-                        <img src="./assets/check.svg"
-                             alt="check"
-                             class="check">
-                        Dbałość o Responsive Web Design
-                    </p>
-                    <p class="skills-content__skill-name">
-                        <img src="./assets/check.svg"
-                             alt="check"
-                             class="check">
-                        Umiejętność pracy w zespole
-                    </p>
-                    <p class="skills-content__skill-name">
-                        <img src="./assets/check.svg"
-                             alt="check"
-                             class="check">
-                        Znajomość podstawowych zapytań SQL
-                    </p>
-                    <p class="skills-content__skill-name">
-                        <img src="./assets/check.svg"
-                             alt="check"
-                             class="check">
-                        Podstawowa znajomość programu Photoshop
-                    </p>
-                    <p class="skills-content__skill-name">
-                        <img src="./assets/check.svg"
-                             alt="check"
-                             class="check check-last">
-                        Dobra organizacja pracy np. planowanie zadań
-                    </p>
-                </div>
-<!--                <img src="./assets/tri.svg"-->
-<!--                     alt="triangle image"-->
-<!--                     class="skills-content__background-triangle"-->
-<!--                >-->
-            </div>
-        </section>
-
-        <!--==================SECTION PROJECTS=====================-->
-        <section class="project" id="project-one">
-            <div class="project-content">
-                <h2 class="project-content__heading-secondary">projekty</h2>
-                <p class="project-content__content-first">Quiz Game stworzyłem, aby zgbłębić temat pobierania danych z zewnętrznej bazy danych, przy czym poznałem platformę Google Cloud Firebase. Stworzyłem nierelacyjną bazę danych nastepnie pobierałem z niej dane do mojej aplikacji, dzięki czemu nauczyłem się podstaw asynchronicznego JavaScriptu orazy wykorzystywania Promise.</p>
-                <p class="project-content__content-second">Technologie których użyłem to HTML5, SCSS, JavaScript.</p>
-                <div class="project-content__button-wrapper">
-                    <button class="project-content__button project-live">Live</button>
-                    <button class="project-content__button project-code">Kod</button>
-                </div>
-                <div class="project-content__image-wrapper">
-                    <img src="./assets/projekt1.png" alt="projekt 1" class="project-content__image">
-                    <img src="./assets/project-one-name.png" alt="" class="project-content__name">
-                </div>
-                <div class="project-content__circle"></div>
-                <div class="project-content__actual-page">
-                    <span class="project-content__project-one">1</span>
-                    <div class="project-content__separator">-</div>
-                    <span class="project-content__project-two">2</span>
+    <!--                <img src="./assets/tri.svg"-->
+    <!--                     alt="triangle image"-->
+    <!--                     class="skills-content__background-triangle"-->
+    <!--                >-->
                 </div>
             </div>
-        </section>
 
-
-
-
-
-
-
-        <section class="project" id="project-two">
-            <div class="project-content">
-                <h2 class="project-content__heading-secondary">projekty</h2>
-                <p class="project-content__content-first">ToDo list zbudowałem na samym początku mojej przygody z programowaniem. Zapoznałem się z podstawowymi zagadnieniami związanymi z tablicami w JacaScripcie. </p>
-                <p class="project-content__content-second">Technologie których użyłem to HTML5, CSS, JavaScript.</p>
-                <div class="project-content__button-wrapper">
-                    <button class="project-content__button project-live">Live</button>
-                    <button class="project-content__button project-code">Kod</button>
-                </div>
-                <div class="project-content__image-wrapper">
-                    <img src="./assets/projekt2.png" alt="projekt 1" class="project-content__image">
-                    <img src="./assets/project-two-name.png" alt="" class="project-content__name project-name-two">
-                </div>
-                <div class="project-content__circle"></div>
-                <div class="project-content__actual-page">
-                    <span class="project-content__project-one">1</span>
-                    <div class="project-content__separator">-</div>
-                    <span class="project-content__project-two">2</span>
+            <!--==================SECTION PROJECTS=====================-->
+            <div class="section project">
+                <div class="project-content">
+                    <h2 class="project-content__heading-secondary">projekty</h2>
+                    <p class="project-content__content-first">Quiz Game stworzyłem, aby zgbłębić temat pobierania danych z zewnętrznej bazy danych, przy czym poznałem platformę Google Cloud Firebase. Stworzyłem nierelacyjną bazę danych nastepnie pobierałem z niej dane do mojej aplikacji, dzięki czemu nauczyłem się podstaw asynchronicznego JavaScriptu orazy wykorzystywania Promise.</p>
+                    <p class="project-content__content-second">Technologie których użyłem to HTML5, SCSS, JavaScript.</p>
+                    <div class="project-content__button-wrapper">
+                        <button class="project-content__button project-live">Live</button>
+                        <button class="project-content__button project-code">Kod</button>
+                    </div>
+                    <div class="project-content__image-wrapper">
+                        <img src="./assets/projekt1.png" alt="projekt 1" class="project-content__image">
+                        <img src="./assets/project-one-name.png" alt="" class="project-content__name">
+                    </div>
+                    <div class="project-content__circle"></div>
+                    <div class="project-content__actual-page">
+                        <span class="project-content__project-one">1</span>
+                        <div class="project-content__separator">-</div>
+                        <span class="project-content__project-two">2</span>
+                    </div>
                 </div>
             </div>
-        </section>
 
 
-        <section class="contact" id="contact">
-            <div class="contact-content">
-                <h2 class="contact-content__heading-secondary">kontakt</h2>
-                <p class="contact-content__text">Jeżeli poszukujesz osoby zaangażowanej i zafascynowanej programowaniem. Skontaktuj się ze mną !</p>
-                <span class="contact-content__email">arekczapski@gmail.com</span>
-                <span class="contact-content__phone-number">+48 723 771 721</span>
-                <img src="./assets/kontakt.svg"
-                     alt="contact image"
-                     class="contact-content__image-background"
-                >
+
+
+
+
+
+            <div class="section project">
+                <div class="project-content">
+                    <h2 class="project-content__heading-secondary">projekty</h2>
+                    <p class="project-content__content-first">ToDo list zbudowałem na samym początku mojej przygody z programowaniem. Zapoznałem się z podstawowymi zagadnieniami związanymi z tablicami w JacaScripcie. </p>
+                    <p class="project-content__content-second">Technologie których użyłem to HTML5, CSS, JavaScript.</p>
+                    <div class="project-content__button-wrapper">
+                        <button class="project-content__button project-live">Live</button>
+                        <button class="project-content__button project-code">Kod</button>
+                    </div>
+                    <div class="project-content__image-wrapper">
+                        <img src="./assets/projekt2.png" alt="projekt 1" class="project-content__image">
+                        <img src="./assets/project-two-name.png" alt="" class="project-content__name project-name-two">
+                    </div>
+                    <div class="project-content__circle"></div>
+                    <div class="project-content__actual-page">
+                        <span class="project-content__project-one">1</span>
+                        <div class="project-content__separator">-</div>
+                        <span class="project-content__project-two">2</span>
+                    </div>
+                </div>
             </div>
-        </section>
+
+
+            <div class="section contact">
+                <div class="contact-content">
+                    <h2 class="contact-content__heading-secondary">kontakt</h2>
+                    <p class="contact-content__text">Jeżeli poszukujesz osoby zaangażowanej i zafascynowanej programowaniem. Skontaktuj się ze mną !</p>
+                    <span class="contact-content__email">arekczapski@gmail.com</span>
+                    <span class="contact-content__phone-number">+48 723 771 721</span>
+                    <img src="./assets/kontakt.svg"
+                         alt="contact image"
+                         class="contact-content__image-background"
+                    >
+                </div>
+            </div>
+
+        </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
-    <script src="app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.extensions.min.js" integrity="sha512-pci5WG2+7QnpsinWWpGUd3RgI61fU1bWlQQQegC2mVqwOQC/+Xp0ROGO0AYB6dvoLBYRxwm+t+DWOVRkxmlcdQ==" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
 </body>
 </html>
