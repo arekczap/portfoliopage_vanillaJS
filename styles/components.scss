@@ -63,10 +63,13 @@
   left: 48%;
   transform: translate(-50%, -50%);
 
+  @media only screen and (min-width: $bp-smallest) {
+    left: 55%;
+  }
+
 
   &__primary {
     display: block;
-
     font-size: 2.4rem;
     font-weight: 300;
     margin-left: 3rem;
@@ -140,11 +143,21 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    //margin-top: 3rem;
+
+    @media only screen and (min-width: $bp-micro) {
+      width: 90%;
+      margin: 0 auto;
+    }
 
       &__heading-secondary {
         font-size: 3.3rem;
         font-weight: 500;
         margin: 0 0 2rem 6rem;
+
+        @media only screen and (min-width: $bp-micro) {
+          margin: 0 0 4rem 6rem;
+        }
       }
 
       &__content-first,
@@ -152,7 +165,7 @@
       &__content-third {
         font-size: 1.3rem;
         text-align: center;
-        margin: 0 2rem .5rem 2rem;
+        margin: 0 1rem .5rem 1rem;
         font-weight: 300;
         letter-spacing: 1.8px;
         //opacity: .8;
@@ -164,16 +177,29 @@
       left: -15rem;
       opacity: .1;
       transform: rotate(-10deg);
+
+      @media only screen and (min-width: $bp-smallest) {
+        width: 80rem;
+        left: -25rem;
+        top: -5rem;
+      }
     }
 
     &__background-triangle {
       z-index: 0;
       position: absolute;
-      top: -25rem;
+      top: -20rem;
       left: 10rem;
       width: 40rem;
       opacity: .7;
       overflow: hidden;
+      transform: rotate(30deg);
+
+
+      @media only screen and (min-width: $bp-smallest) {
+        width: 70rem;
+        top: -35rem;
+      }
     }
   }
 
@@ -181,18 +207,22 @@
   .skills-content {
     width: 100%;
     position: relative;
+    margin-top: 4rem;
 
 
       &__heading-secondary {
         font-size: 3.3rem;
         font-weight: 500;
-        margin: 0 0 2rem 6rem;
+        margin: 0 0 2rem 5rem;
         display: block;
 
+        @media only screen and (min-width: $bp-smallest) {
+          margin-bottom: 4rem;
+        }
       }
 
       &__heading-tertiary {
-        width: 80%;
+        width: 85%;
         margin: 0 auto 1.5rem auto;
         text-transform: uppercase;
         font-weight: 300;
@@ -210,8 +240,16 @@
         justify-content: space-around;
         align-items: center;
         margin: 0 auto;
-        width: 90%;
+        width: 80%;
 
+
+        @media only screen and (min-width: $bp-micro) {
+          width: 75%;
+        }
+
+        @media only screen and (min-width: $bp-smallest) {
+          width: 70%;
+        }
       }
 
       &__image {
@@ -276,7 +314,8 @@
     &__button-wrapper {
       width: 100%;
       display: flex;
-      margin: 1rem 0 ;
+      //margin: 1rem 1rem ;
+      margin: 2rem 0;
       justify-content: space-between;
       color: white;
     }
@@ -314,7 +353,11 @@
       width: 60%;
       position: absolute;
       right: 1rem;
-      bottom: -5rem;
+      bottom: -4rem;
+
+      @media only screen and (min-width: $bp-micro) {
+        bottom: -5rem;
+      }
     }
 
     &__circle {
@@ -333,7 +376,7 @@
     &__actual-page {
       display: flex;
       margin-left: 1rem;
-    transform: translateY(2.5rem);
+    transform: translateY(1.5rem);
     }
 
     &__project-one,

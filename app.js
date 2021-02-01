@@ -8,6 +8,10 @@ new fullpage('#fullpage', {
     scrollHorizontally: true,
     anchors:['top', 'about', 'skills', 'project-one', 'project-two', 'contact'],
     keyboardScrolling: true,
+    continuousHorizontal:true,
+    css3: true,
+
+
 });
 
 
