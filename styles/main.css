@@ -28,6 +28,11 @@ html {
     font-size: 75%;
   }
 }
+@media only screen and (min-width: 37.5em) {
+  html {
+    font-size: 80%;
+  }
+}
 
 body {
   position: relative !important;
@@ -281,6 +286,11 @@ body {
     width: 70%;
   }
 }
+@media only screen and (min-width: 37.5em) {
+  .skills-content__images-wrapper {
+    width: 60%;
+  }
+}
 .skills-content__image {
   border-radius: 50%;
   height: 4rem;
@@ -318,8 +328,19 @@ body {
   z-index: 1;
   position: relative;
 }
+@media only screen and (min-width: 37.5em) {
+  .project-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .project-content__content-first, .project-content__content-second {
   font-size: 1rem;
+}
+@media only screen and (min-width: 37.5em) {
+  .project-content__content-first, .project-content__content-second {
+    font-size: 1.1rem;
+  }
 }
 .project-content__button-wrapper {
   width: 100%;
@@ -350,6 +371,12 @@ body {
   width: 90%;
   margin: 0 calc((100vw - 90%)/2);
 }
+@media only screen and (min-width: 37.5em) {
+  .project-content__image {
+    width: 80%;
+    margin: 0 calc((100vw - 90%)/2);
+  }
+}
 .project-content__name {
   width: 60%;
   position: absolute;
@@ -359,6 +386,11 @@ body {
 @media only screen and (min-width: 25rem) {
   .project-content__name {
     bottom: -5rem;
+  }
+}
+@media only screen and (min-width: 37.5em) {
+  .project-content__name {
+    width: 50%;
   }
 }
 .project-content__circle {

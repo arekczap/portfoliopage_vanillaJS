@@ -50,6 +50,10 @@ html {
     font-size: 75%;
   }
 
+  @media only screen and (min-width: $bp-small) {
+    font-size:80%;
+  }
+
 
 }
 
