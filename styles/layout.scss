@@ -3,10 +3,6 @@
   background: url("../assets/background.jpg") no-repeat 82% 20%;
   background-size: 400%;
   position: relative;
-
-  @media only screen and (min-width: $bp-micro) {
-    background-size: 350%;
-  }
 }
 
 .header {

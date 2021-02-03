@@ -63,10 +63,6 @@
   left: 48%;
   transform: translate(-50%, -50%);
 
-  @media only screen and (min-width: $bp-smallest) {
-    left: 55%;
-  }
-
 
   &__primary {
     display: block;
@@ -145,19 +141,13 @@
     position: relative;
     //margin-top: 3rem;
 
-    @media only screen and (min-width: $bp-micro) {
-      width: 90%;
-      margin: 0 auto;
-    }
+
 
       &__heading-secondary {
         font-size: 3.3rem;
         font-weight: 500;
         margin: 0 0 2rem 6rem;
 
-        @media only screen and (min-width: $bp-micro) {
-          margin: 0 0 4rem 6rem;
-        }
       }
 
       &__content-first,
@@ -165,7 +155,7 @@
       &__content-third {
         font-size: 1.3rem;
         text-align: center;
-        margin: 0 1rem .5rem 1rem;
+        margin-bottom: .5rem;
         font-weight: 300;
         letter-spacing: 1.8px;
         //opacity: .8;
@@ -173,16 +163,10 @@
 
     &__background-image {
       position: absolute;
-      top: 14rem;
+
       left: -15rem;
       opacity: .1;
       transform: rotate(-10deg);
-
-      @media only screen and (min-width: $bp-smallest) {
-        width: 80rem;
-        left: -25rem;
-        top: -5rem;
-      }
     }
 
     &__background-triangle {
@@ -194,12 +178,6 @@
       opacity: .7;
       overflow: hidden;
       transform: rotate(30deg);
-
-
-      @media only screen and (min-width: $bp-smallest) {
-        width: 70rem;
-        top: -35rem;
-      }
     }
   }
 
@@ -215,10 +193,6 @@
         font-weight: 500;
         margin: 0 0 2rem 5rem;
         display: block;
-
-        @media only screen and (min-width: $bp-smallest) {
-          margin-bottom: 4rem;
-        }
       }
 
       &__heading-tertiary {
@@ -242,18 +216,6 @@
         margin: 0 auto;
         width: 80%;
 
-
-        @media only screen and (min-width: $bp-micro) {
-          width: 75%;
-        }
-
-        @media only screen and (min-width: $bp-smallest) {
-          width: 70%;
-        }
-
-        @media only screen and (min-width: $bp-small) {
-          width: 60%;
-        }
       }
 
       &__image {
@@ -300,16 +262,11 @@
 //======================== SECTION PROJECT ONE ====================================
 
 .project-content {
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
   z-index: 1;
   position: relative;
 
-
-  @media only screen and (min-width: $bp-small) {
-    width: 90%;
-    margin: 0 auto;
-
-  }
 
     &__heading-secondary {
       @extend .skills-content__heading-secondary;
@@ -320,10 +277,6 @@
     &__content-second {
       @extend .about-content__content-first;
       font-size: 1rem;
-
-      @media only screen and (min-width: $bp-small) {
-        font-size: 1.1rem;
-      }
     }
 
     &__button-wrapper {
@@ -352,8 +305,6 @@
     transform: translate(1px, 1px);
   }
 
-
-
     &__image-wrapper {
       position: relative;
 
@@ -361,13 +312,7 @@
 
     &__image {
       width: 90%;
-      margin: 0 calc((100vw - 90%)/2);
-
-
-      @media only screen and (min-width: $bp-small) {
-        width: 80%;
-        margin: 0 calc((100vw - 90%)/2);
-      }
+      //margin: 0 calc((100vw - 90%)/2);
     }
 
     &__name {
@@ -375,14 +320,6 @@
       position: absolute;
       right: 1rem;
       bottom: -4rem;
-
-      @media only screen and (min-width: $bp-micro) {
-        bottom: -5rem;
-      }
-
-      @media only screen and (min-width: $bp-small) {
-        width: 50%;
-      }
     }
 
     &__circle {

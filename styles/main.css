@@ -18,24 +18,10 @@ html {
   font-size: 62.5%;
   color: var(--color-primary);
 }
-@media only screen and (min-width: 25rem) {
-  html {
-    font-size: 70%;
-  }
-}
-@media only screen and (min-width: 31.25em) {
-  html {
-    font-size: 75%;
-  }
-}
-@media only screen and (min-width: 37.5em) {
-  html {
-    font-size: 80%;
-  }
-}
 
 body {
   position: relative !important;
+  width: 100vw;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.1rem;
@@ -50,11 +36,6 @@ body {
   background: url("../assets/background.jpg") no-repeat 82% 20%;
   background-size: 400%;
   position: relative;
-}
-@media only screen and (min-width: 25rem) {
-  .top {
-    background-size: 350%;
-  }
 }
 
 .header {
@@ -120,11 +101,6 @@ body {
   left: 48%;
   transform: translate(-50%, -50%);
 }
-@media only screen and (min-width: 31.25em) {
-  .main-text {
-    left: 55%;
-  }
-}
 .main-text__primary {
   display: block;
   font-size: 2.4rem;
@@ -187,42 +163,23 @@ body {
   flex-direction: column;
   position: relative;
 }
-@media only screen and (min-width: 25rem) {
-  .about-content {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
 .about-content__heading-secondary {
   font-size: 3.3rem;
   font-weight: 500;
   margin: 0 0 2rem 6rem;
 }
-@media only screen and (min-width: 25rem) {
-  .about-content__heading-secondary {
-    margin: 0 0 4rem 6rem;
-  }
-}
 .about-content__content-first, .project-content__content-first, .project-content__content-second, .about-content__content-second, .about-content__content-third {
   font-size: 1.3rem;
   text-align: center;
-  margin: 0 1rem 0.5rem 1rem;
+  margin-bottom: 0.5rem;
   font-weight: 300;
   letter-spacing: 1.8px;
 }
 .about-content__background-image {
   position: absolute;
-  top: 14rem;
   left: -15rem;
   opacity: 0.1;
   transform: rotate(-10deg);
-}
-@media only screen and (min-width: 31.25em) {
-  .about-content__background-image {
-    width: 80rem;
-    left: -25rem;
-    top: -5rem;
-  }
 }
 .about-content__background-triangle {
   z-index: 0;
@@ -233,12 +190,6 @@ body {
   opacity: 0.7;
   overflow: hidden;
   transform: rotate(30deg);
-}
-@media only screen and (min-width: 31.25em) {
-  .about-content__background-triangle {
-    width: 70rem;
-    top: -35rem;
-  }
 }
 
 .skills-content {
@@ -251,11 +202,6 @@ body {
   font-weight: 500;
   margin: 0 0 2rem 5rem;
   display: block;
-}
-@media only screen and (min-width: 31.25em) {
-  .skills-content__heading-secondary, .contact-content__heading-secondary, .project-content__heading-secondary {
-    margin-bottom: 4rem;
-  }
 }
 .skills-content__heading-tertiary {
   width: 85%;
@@ -275,21 +221,6 @@ body {
   align-items: center;
   margin: 0 auto;
   width: 80%;
-}
-@media only screen and (min-width: 25rem) {
-  .skills-content__images-wrapper {
-    width: 75%;
-  }
-}
-@media only screen and (min-width: 31.25em) {
-  .skills-content__images-wrapper {
-    width: 70%;
-  }
-}
-@media only screen and (min-width: 37.5em) {
-  .skills-content__images-wrapper {
-    width: 60%;
-  }
 }
 .skills-content__image {
   border-radius: 50%;
@@ -324,23 +255,13 @@ body {
 }
 
 .project-content {
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
   z-index: 1;
   position: relative;
 }
-@media only screen and (min-width: 37.5em) {
-  .project-content {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
 .project-content__content-first, .project-content__content-second {
   font-size: 1rem;
-}
-@media only screen and (min-width: 37.5em) {
-  .project-content__content-first, .project-content__content-second {
-    font-size: 1.1rem;
-  }
 }
 .project-content__button-wrapper {
   width: 100%;
@@ -369,29 +290,12 @@ body {
 }
 .project-content__image {
   width: 90%;
-  margin: 0 calc((100vw - 90%)/2);
-}
-@media only screen and (min-width: 37.5em) {
-  .project-content__image {
-    width: 80%;
-    margin: 0 calc((100vw - 90%)/2);
-  }
 }
 .project-content__name {
   width: 60%;
   position: absolute;
   right: 1rem;
   bottom: -4rem;
-}
-@media only screen and (min-width: 25rem) {
-  .project-content__name {
-    bottom: -5rem;
-  }
-}
-@media only screen and (min-width: 37.5em) {
-  .project-content__name {
-    width: 50%;
-  }
 }
 .project-content__circle {
   z-index: -1;

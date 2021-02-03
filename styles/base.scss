@@ -41,25 +41,11 @@ html {
   font-size: 62.5%; //1rem = 10px   10/16px = 62.5%
   color: var(--color-primary);
 
-
-  @media only screen and (min-width: $bp-micro) {
-    font-size: 70%;
-  }
-
-  @media only screen and (min-width: $bp-smallest) {
-    font-size: 75%;
-  }
-
-  @media only screen and (min-width: $bp-small) {
-    font-size:80%;
-  }
-
-
 }
 
 body {
   position: relative !important;
-  //width: 100%;
+  width: 100vw;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   letter-spacing: .1rem;
@@ -67,8 +53,5 @@ body {
   color: var(--color-primary);
   display: flex;
   flex-direction: column;
-}
 
-#fullpage {
-  //position: relative !important;
 }
