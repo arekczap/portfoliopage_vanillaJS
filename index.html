@@ -41,9 +41,9 @@
             </div>
         </div>
     </header>
-    <div id="fullpage">
+
         <!--================= top============================-->
-        <div class="section top">
+        <div class="top" id="top">
 
             <div class="main-text">
                 <span class="main-text__primary">portfolio 2021</span>
@@ -51,16 +51,11 @@
                 <span class="main-text__tertiary">czapski</span>
                 <h1 class="main-text__heading-primary">~ front end developer</h1>
             </div>
-
-            <div class="scroll">
-                <div class="scroll__separator"></div>
-                <span class="scroll__text">przewiń aby odkryć</span>
-            </div>
         </div>
 
 
             <!--================= SECTION ABOUT ======================-->
-            <div class="section about">
+            <section class="about" id="about">
                 <div class="about-content">
                     <h2 class="about-content__heading-secondary">o mnie</h2>
                     <p class="about-content__content-first">Nazywam się Arkadiusz Czapski, mam 25 lat, mieszkam w Lublinie. W 2019r. ukończyłem studia inżynierskie na Politechnice Lubelskiej, kierunek mechatronika.</p>
@@ -75,13 +70,13 @@
 <!--                         class="about-content__background-triangle"-->
 <!--                    >-->
                 </div>
-            </div>
+            </section>
 
 
             <!--==================SECTION SKILLS=====================-->
-            <div class="section skills">
+            <section class="skills" id="skills">
                 <div class="skills-content">
-                    <h2 class="skills-content__heading-secondary">kwalifikacje</h2>
+                    <h2 class="skills-content__heading-secondary">umiejętności</h2>
                     <h3 class="skills-content__heading-tertiary ">języki programowania i narzędzia</h3>
                         <div class="skills-content__images-wrapper">
                             <img src="./assets/html5.png"
@@ -155,10 +150,10 @@
     <!--                     class="skills-content__background-triangle"-->
     <!--                >-->
                 </div>
-            </div>
+            </section>
 
             <!--==================SECTION PROJECTS=====================-->
-            <div class="section project">
+            <section class="section project-one">
                 <div class="project-content">
                     <h2 class="project-content__heading-secondary">projekty</h2>
                     <p class="project-content__content-first">Quiz Game stworzyłem, aby zgbłębić temat pobierania danych z zewnętrznej bazy danych, przy czym poznałem platformę Google Cloud Firebase. Stworzyłem nierelacyjną bazę danych nastepnie pobierałem z niej dane do mojej aplikacji, dzięki czemu nauczyłem się podstaw asynchronicznego JavaScriptu orazy wykorzystywania Promise.</p>
@@ -172,23 +167,13 @@
                         <img src="./assets/project-one-name.png" alt="" class="project-content__name">
                     </div>
 <!--                    <div class="project-content__circle"></div>-->
-                    <div class="project-content__actual-page">
-                        <span class="project-content__project-one">1</span>
-                        <div class="project-content__separator">-</div>
-                        <span class="project-content__project-two">2</span>
-                    </div>
                 </div>
-            </div>
+            </section>
 
 
-
-
-
-
-
-            <div class="section project">
+            <section class="project-two" id="project">
                 <div class="project-content">
-                    <h2 class="project-content__heading-secondary">projekty</h2>
+<!--                    <h2 class="project-content__heading-secondary">projekty</h2>-->
                     <p class="project-content__content-first">ToDo List zbudowałem na samym początku mojej przygody z programowaniem. Zapoznałem się z podstawowymi zagadnieniami związanymi z tablicami w JacaScripcie. </p>
                     <p class="project-content__content-second">Technologie których użyłem to HTML5, CSS, JavaScript.</p>
                     <div class="project-content__button-wrapper">
@@ -200,16 +185,11 @@
                         <img src="./assets/project-two-name.png" alt="" class="project-content__name project-name-two">
                     </div>
 <!--                    <div class="project-content__circle"></div>-->
-                    <div class="project-content__actual-page">
-                        <span class="project-content__project-one">1</span>
-                        <div class="project-content__separator">-</div>
-                        <span class="project-content__project-two">2</span>
-                    </div>
                 </div>
-            </div>
+            </section>
 
 
-            <div class="section contact">
+            <section class="contact" id="contact">
                 <div class="contact-content">
                     <h2 class="contact-content__heading-secondary">kontakt</h2>
                     <p class="contact-content__text">Jeżeli poszukujesz osoby zaangażowanej i zafascynowanej programowaniem. Skontaktuj się ze mną !</p>
@@ -220,9 +200,8 @@
                          class="contact-content__image-background"
                     >
                 </div>
-            </div>
+            </section>
 
-        </div>
 
 
         <script src="app.js"></script>

@@ -113,40 +113,18 @@
     }
 }
 
-//======================== SCROLL STYLES ====================================
-.scroll {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  bottom: 14.4rem;
-  right: 1.3rem;
-  transform-origin: right;
-  transform: rotate(-90deg);
-
-    &__separator {
-      width: 3rem;
-      height: .1rem;
-      margin-right: .5rem;
-      background-color: var(--color-primary);
-      transform: translateY(.1rem);
-    }
-
-}
-
 //======================== SECTION ABOUT ====================================
   .about-content {
-    width: 100%;
+    //width: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
-    //margin-top: 3rem;
+    @include section-padding;
 
 
 
       &__heading-secondary {
-        font-size: 3.3rem;
-        font-weight: 500;
-        margin: 0 0 2rem 6rem;
+        @include heading-secondary-settings;
 
       }
 
@@ -185,14 +163,11 @@
   .skills-content {
     width: 100%;
     position: relative;
-    margin-top: 4rem;
+    @include section-padding;
 
 
       &__heading-secondary {
-        font-size: 3.3rem;
-        font-weight: 500;
-        margin: 0 0 2rem 5rem;
-        display: block;
+        @include heading-secondary-settings;
       }
 
       &__heading-tertiary {
@@ -262,14 +237,13 @@
 //======================== SECTION PROJECT ONE ====================================
 
 .project-content {
-  width: 95%;
-  margin: 0 auto;
   z-index: 1;
   position: relative;
+  @include section-padding;
 
 
     &__heading-secondary {
-      @extend .skills-content__heading-secondary;
+      @include heading-secondary-settings;
 
     }
 
@@ -316,23 +290,12 @@
     }
 
     &__name {
-      width: 60%;
+      height: 4rem;
       position: absolute;
       right: 1rem;
       bottom: -4rem;
     }
 
-    &__circle {
-      z-index: -1;
-      border-radius: 50%;
-      width: 50rem;
-      height: 50rem;
-      background: #C4C4C4;
-      opacity: .03;
-      position: absolute;
-      left: 10rem;
-      top: -30rem;
-    }
 
 
     &__actual-page {
@@ -356,12 +319,12 @@
 .contact-content {
   width: 100%;
   position: relative;
-
-
+  @include section-padding;
+margin-top: 15rem;
 
   &__heading-secondary {
-    @extend .skills-content__heading-secondary;
-    margin-bottom: 5rem;
+    @include heading-secondary-settings;
+
   }
 
   &__text {

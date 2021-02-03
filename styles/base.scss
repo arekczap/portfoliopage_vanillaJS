@@ -14,6 +14,7 @@
 
 :root {
   --color-primary: #e6e9d6;
+  --color-primary-lighter: rgba(56,49,56, .1);
   --color-secondary: #383138;
   //--color-primary-dark: #ba265d;
 }
@@ -40,13 +41,13 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px   10/16px = 62.5%
   color: var(--color-primary);
+  width: 100%;
 
 }
 
 body {
-  position: relative !important;
-  width: 100vw;
-  box-sizing: border-box;
+  width: 100%;
+  //position: relative !important;
   font-family: "Montserrat", sans-serif;
   letter-spacing: .1rem;
   background: var(--color-secondary);

@@ -1,0 +1,10 @@
+@mixin section-padding {
+  margin: 13rem auto 0 auto;
+  padding: 0 1rem;
+}
+
+@mixin heading-secondary-settings {
+  font-size: 3.3rem;
+  font-weight: 500;
+  margin: 0 auto 3rem 1.5rem;
+}
