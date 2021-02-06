@@ -97,9 +97,10 @@
 
 //======================== MEDIA STYLES ====================================
 .media {
-  position: fixed;
-  bottom: 1.2rem;
-  left: 1.2rem;
+  //position: absolute;
+  //top: 64rem;
+  //left: 1.2rem;
+
 
     &__link {
       color: var(--color-primary);
@@ -122,10 +123,12 @@
     @include section-padding;
 
 
-
       &__heading-secondary {
         @include heading-secondary-settings;
+      }
 
+      &__heading-secondary::after {
+        @include heading-secondary-bottom-dash;
       }
 
       &__content-first,
@@ -168,6 +171,10 @@
 
       &__heading-secondary {
         @include heading-secondary-settings;
+      }
+
+      &__heading-secondary::after {
+        @include heading-secondary-bottom-dash;
       }
 
       &__heading-tertiary {
@@ -236,15 +243,22 @@
 
 //======================== SECTION PROJECT ONE ====================================
 
+
 .project-content {
   z-index: 1;
   position: relative;
   @include section-padding;
 
+    &__small-margin {
+      margin: 10rem auto 0 auto;
+    }
 
     &__heading-secondary {
       @include heading-secondary-settings;
+    }
 
+    &__heading-secondary::after {
+      @include heading-secondary-bottom-dash;
     }
 
     &__content-first,
@@ -285,8 +299,8 @@
     }
 
     &__image {
-      width: 90%;
-      //margin: 0 calc((100vw - 90%)/2);
+      width: 100%;
+      margin: 0 auto;
     }
 
     &__name {
@@ -313,18 +327,20 @@
 
 }
 
-
 //======================== SECTION CONTaCT ====================================
 
 .contact-content {
   width: 100%;
   position: relative;
   @include section-padding;
-margin-top: 15rem;
+  margin-top: 18rem;
 
   &__heading-secondary {
     @include heading-secondary-settings;
+  }
 
+  &__heading-secondary::after {
+    @include heading-secondary-bottom-dash;
   }
 
   &__text {

@@ -1,10 +1,20 @@
 @mixin section-padding {
-  margin: 13rem auto 0 auto;
+  margin: 15rem auto 0 auto;
   padding: 0 1rem;
 }
 
 @mixin heading-secondary-settings {
   font-size: 3.3rem;
   font-weight: 500;
-  margin: 0 auto 3rem 1.5rem;
+  margin: 0 auto 4rem 1.5rem;
+}
+
+@mixin heading-secondary-bottom-dash {
+  content: "";
+  display: block;
+  width: 25rem;
+  margin-top: 1rem;
+  height: .2rem;
+  background-color: var(--color-primary);
+  border-radius: 5px;
 }
