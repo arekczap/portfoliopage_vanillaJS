@@ -22,12 +22,12 @@ html {
 }
 @media only screen and (min-width: 25rem) {
   html {
-    font-size: 67%;
+    font-size: 70%;
   }
 }
 @media only screen and (min-width: 31.25em) {
   html {
-    font-size: 70%;
+    font-size: 75%;
   }
 }
 
@@ -59,6 +59,15 @@ body {
 .skills,
 .contact {
   background-color: var(--color-secondary);
+}
+@media only screen and (min-width: 31.25em) {
+  .about,
+.project-one,
+.project-two,
+.skills,
+.contact {
+    margin: 0 1.5rem;
+  }
 }
 
 .navigation-wrapper {
@@ -107,7 +116,7 @@ body {
 .main-text {
   width: 100%;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 48%;
   transform: translate(-50%, -50%);
 }
@@ -215,7 +224,7 @@ body {
   margin: 0 auto 1.5rem auto;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 .skills-content .second {
@@ -241,7 +250,7 @@ body {
 .skills-content__skill-name {
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 200;
   line-height: 1.4rem;
   margin-bottom: 0.4rem;
@@ -285,7 +294,7 @@ body {
   border-radius: 5px;
 }
 .project-content__content-first, .project-content__content-second {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .project-content__button-wrapper {
   width: 100%;
@@ -311,10 +320,16 @@ body {
 }
 .project-content__image-wrapper {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .project-content__image {
   width: 100%;
-  margin: 0 auto;
+}
+@media only screen and (min-width: 31.25em) {
+  .project-content__image {
+    width: 90%;
+  }
 }
 .project-content__name {
   height: 4rem;
