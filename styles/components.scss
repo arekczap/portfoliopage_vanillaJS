@@ -109,9 +109,9 @@
 
 //======================== MEDIA STYLES ====================================
 .media {
-  //position: absolute;
-  //top: 64rem;
-  //left: 1.2rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 1.2rem;
 
 
     &__link {
@@ -181,14 +181,14 @@
 .about-content::after {
   content: "";
   display: block;
-    width: 50rem;
+  width: 50rem;
   height: 50rem;
   border-radius: 50%;
   background-color: var(--color-primary);
-  opacity: .04;
+  opacity: .02;
   position: absolute;
   right: -25rem;
-  top: -30rem;
+  top: -25rem;
   z-index: 0;
 }
 
@@ -257,18 +257,22 @@
       display: block;
       margin-right: 1.2rem;
     }
-
-    &__background-triangle {
-      position: absolute;
-      left: -10rem;
-      top: -20rem;
-      width: 100rem;
-      opacity: .5;
-      z-index: 0;
-      overflow: hidden;
-    }
   }
 
+.skills-content::after {
+  content: "";
+  display: block;
+  width: 60rem;
+  height: 150rem;
+  //border-radius: 50%;
+  transform: rotate(-80deg);
+  background-color: var(--color-primary);
+  opacity: .02;
+  position: absolute;
+  left: -10rem;
+  top: -50rem;
+  z-index: 0;
+}
 
 
 
@@ -372,13 +376,15 @@
       font-size: 2rem;
       margin-left: 1rem;
     }
-
 }
+
+
 
 //======================== SECTION CONTaCT ====================================
 
 .contact-content {
   width: 100%;
+  height: 80vh;
   position: relative;
   @include section-padding;
   margin-top: 18rem;
@@ -437,7 +443,7 @@
       position: absolute;
       width: 25rem;
       opacity: .2;
-      bottom: -50%;
+      bottom: 0;
       right: .5rem;
     }
 }

@@ -176,6 +176,11 @@ body {
   margin-top: 2rem;
 }
 
+.media {
+  position: absolute;
+  bottom: 2rem;
+  left: 1.2rem;
+}
 .media__link {
   color: var(--color-primary);
   text-decoration: none;
@@ -250,10 +255,10 @@ body {
   height: 50rem;
   border-radius: 50%;
   background-color: var(--color-primary);
-  opacity: 0.04;
+  opacity: 0.02;
   position: absolute;
   right: -25rem;
-  top: -30rem;
+  top: -25rem;
   z-index: 0;
 }
 
@@ -329,14 +334,19 @@ body {
   display: block;
   margin-right: 1.2rem;
 }
-.skills-content__background-triangle {
+
+.skills-content::after {
+  content: "";
+  display: block;
+  width: 60rem;
+  height: 150rem;
+  transform: rotate(-80deg);
+  background-color: var(--color-primary);
+  opacity: 0.02;
   position: absolute;
   left: -10rem;
-  top: -20rem;
-  width: 100rem;
-  opacity: 0.5;
+  top: -50rem;
   z-index: 0;
-  overflow: hidden;
 }
 
 .project-content {
@@ -438,6 +448,7 @@ body {
 
 .contact-content {
   width: 100%;
+  height: 80vh;
   position: relative;
   margin: 18rem auto 0 auto;
   padding: 0 1rem;
@@ -503,7 +514,7 @@ body {
   position: absolute;
   width: 25rem;
   opacity: 0.2;
-  bottom: -50%;
+  bottom: 0;
   right: 0.5rem;
 }
 
