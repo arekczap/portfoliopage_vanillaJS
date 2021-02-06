@@ -18,7 +18,8 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   color: var(--color-primary);
-  width: 100%;
+  width: 100vw;
+  scroll-behavior: smooth;
 }
 @media only screen and (min-width: 25rem) {
   html {
@@ -30,15 +31,17 @@ html {
     font-size: 75%;
   }
 }
+@media only screen and (min-width: 37.5em) {
+  html {
+    font-size: 80%;
+  }
+}
 
 body {
-  width: 100%;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.1rem;
   background: var(--color-secondary);
   color: var(--color-primary);
-  display: flex;
-  flex-direction: column;
 }
 
 .top {
@@ -46,11 +49,18 @@ body {
   background: url("../assets/background.jpg") no-repeat 82% 20%;
   background-size: cover;
   position: relative;
+  z-index: 2;
+}
+
+.site {
+  overflow: hidden;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
-  position: fixed;
-  z-index: 101;
+  z-index: 3;
 }
 
 .about,
@@ -69,6 +79,15 @@ body {
     margin: 0 1.5rem;
   }
 }
+@media only screen and (min-width: 46.5em) {
+  .about,
+.project-one,
+.project-two,
+.skills,
+.contact {
+    margin: 0 3rem;
+  }
+}
 
 .navigation-wrapper {
   width: 100%;
@@ -77,8 +96,9 @@ body {
   left: 0;
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 2.5rem 2.5rem 0 2.5rem;
+  padding: 3rem 3.5rem;
 }
 
 .logo-box {
@@ -120,6 +140,18 @@ body {
   left: 48%;
   transform: translate(-50%, -50%);
 }
+@media only screen and (min-width: 37.5em) {
+  .main-text {
+    width: 70%;
+    left: 45%;
+  }
+}
+@media only screen and (min-width: 46.5em) {
+  .main-text {
+    width: 50%;
+    left: 35%;
+  }
+}
 .main-text__primary {
   display: block;
   font-size: 2.4rem;
@@ -158,8 +190,18 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 15rem auto 0 auto;
+  margin: 18rem auto 0 auto;
   padding: 0 1rem;
+}
+@media only screen and (min-width: 31.25em) {
+  .about-content {
+    margin-top: 18rem;
+  }
+}
+@media only screen and (min-width: 46.5em) {
+  .about-content {
+    margin-top: 22rem;
+  }
 }
 .about-content__heading-secondary {
   font-size: 3.3rem;
@@ -184,9 +226,11 @@ body {
 }
 .about-content__background-image {
   position: absolute;
-  left: -15rem;
+  width: calc(100% - 10rem);
+  left: 5rem;
+  bottom: -12rem;
   opacity: 0.1;
-  transform: rotate(-10deg);
+  outline: none;
 }
 .about-content__background-triangle {
   z-index: 0;
@@ -199,11 +243,35 @@ body {
   transform: rotate(30deg);
 }
 
+.about-content::after {
+  content: "";
+  display: block;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  opacity: 0.04;
+  position: absolute;
+  right: -25rem;
+  top: -30rem;
+  z-index: 0;
+}
+
 .skills-content {
   width: 100%;
   position: relative;
-  margin: 15rem auto 0 auto;
+  margin: 18rem auto 0 auto;
   padding: 0 1rem;
+}
+@media only screen and (min-width: 31.25em) {
+  .skills-content {
+    margin-top: 18rem;
+  }
+}
+@media only screen and (min-width: 46.5em) {
+  .skills-content {
+    margin-top: 22rem;
+  }
 }
 .skills-content__heading-secondary {
   font-size: 3.3rem;
@@ -236,12 +304,13 @@ body {
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
+  padding: 0 0.5rem;
 }
 .skills-content__image {
   border-radius: 50%;
   height: 4rem;
-  margin: 1rem 1rem;
+  margin: 1.5rem 0;
 }
 .skills-content__other-skills {
   width: 90%;
@@ -273,8 +342,18 @@ body {
 .project-content {
   z-index: 1;
   position: relative;
-  margin: 15rem auto 0 auto;
+  margin: 18rem auto 0 auto;
   padding: 0 1rem;
+}
+@media only screen and (min-width: 31.25em) {
+  .project-content {
+    margin-top: 18rem;
+  }
+}
+@media only screen and (min-width: 46.5em) {
+  .project-content {
+    margin-top: 22rem;
+  }
 }
 .project-content__small-margin {
   margin: 10rem auto 0 auto;
@@ -295,6 +374,16 @@ body {
 }
 .project-content__content-first, .project-content__content-second {
   font-size: 1.1rem;
+}
+@media only screen and (min-width: 37.5em) {
+  .project-content__content-first, .project-content__content-second {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 31.25em) {
+  .project-content__content-first, .project-content__content-second {
+    font-size: 1.2rem;
+  }
 }
 .project-content__button-wrapper {
   width: 100%;
@@ -350,9 +439,22 @@ body {
 .contact-content {
   width: 100%;
   position: relative;
-  margin: 15rem auto 0 auto;
+  margin: 18rem auto 0 auto;
   padding: 0 1rem;
   margin-top: 18rem;
+}
+@media only screen and (min-width: 31.25em) {
+  .contact-content {
+    margin-top: 18rem;
+  }
+}
+@media only screen and (min-width: 46.5em) {
+  .contact-content {
+    margin-top: 22rem;
+  }
+}
+.contact-content__larger-margin {
+  margin: 21rem auto 0 auto;
 }
 .contact-content__heading-secondary {
   font-size: 3.3rem;
@@ -399,11 +501,10 @@ body {
 }
 .contact-content__image-background {
   position: absolute;
-  width: 20rem;
+  width: 25rem;
   opacity: 0.2;
   bottom: -50%;
-  right: 0;
-  z-index: -1;
+  right: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
