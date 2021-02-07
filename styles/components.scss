@@ -137,6 +137,9 @@
     //z-index: 102;
     //overflow: hidden;
 
+    @media only screen and (min-width: $bp-medium) {
+      width: 80%;
+    }
 
 
     &__heading-secondary {
@@ -156,288 +159,385 @@
       font-weight: 300;
       letter-spacing: 1.8px;
       //opacity: .8;
+
+
+      @media only screen and (min-width: $bp-medium) {
+        text-align: left;
+      }
+
+      @media only screen and (min-width: $bp-medium) {
+        margin-left: 1rem;
+      }
+
     }
 
     &__background-image {
       position: absolute;
       width: calc(100% - 10rem);
-      left:5rem;
-      bottom: -15rem;
+      left: 5rem;
+      bottom: -10rem;
       opacity: .1;
       transform: rotate(-10deg);
       outline: none;
-    }
-
-  }
-
-.about-content::after {
-  content: "";
-  display: block;
-  width: 50rem;
-  height: 50rem;
-  border-radius: 50%;
-  background-color: var(--color-primary);
-  opacity: .02;
-  position: absolute;
-  right: -25rem;
-  top: -25rem;
-  z-index: 0;
-}
-
-
-//======================== SECTION SKILLS ====================================
-  .skills-content {
-    width: 100%;
-    position: relative;
-    @include section-padding;
-
-
-    &__heading-secondary {
-      @include heading-secondary-settings;
-    }
-
-    &__heading-secondary::after {
-      @include heading-secondary-bottom-dash;
-    }
-
-    &__heading-tertiary {
-      width: 85%;
-      margin: 0 auto 1.5rem auto;
-      text-transform: uppercase;
-      font-weight: 300;
-      font-size: 1.5rem;
-      text-align: center;
-    }
-
-    .second {
-      margin-top: 1.5rem;
-    }
-
-    &__images-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center;
-      margin: 0 auto;
-      width: 100%;
-      padding: 0 .5rem;
-
-    }
-
-    &__image {
-      border-radius: 50%;
-      height: 4rem;
-      margin: 1.5rem 0;
-    }
-
-    &__other-skills {
-      width: 90%;
-      margin: 0 auto;
-    }
-
-    &__skill-name {
-      display: flex;
-      align-items: center;
-      font-size: 1.1rem;
-      font-weight: 200;
-      line-height: 1.4rem;
-      margin-bottom: .4rem;
-    }
-
-    .check {
-      width: 2rem;
-      display: block;
-      margin-right: 1.2rem;
-    }
-  }
-
-.skills-content::after {
-  content: "";
-  display: block;
-  width: 60rem;
-  height: 150rem;
-  //border-radius: 50%;
-  transform: rotate(-80deg);
-  background-color: var(--color-primary);
-  opacity: .02;
-  position: absolute;
-  left: -10rem;
-  top: -50rem;
-  z-index: 0;
-}
-
-
-
-
-//======================== SECTION PROJECT ONE ====================================
-
-
-.project-content {
-  z-index: 1;
-  position: relative;
-  @include section-padding;
-
-    &__small-margin {
-      margin: 10rem auto 0 auto;
-    }
-
-    &__heading-secondary {
-      @include heading-secondary-settings;
-    }
-
-    &__heading-secondary::after {
-      @include heading-secondary-bottom-dash;
-    }
-
-    &__content-first,
-    &__content-second {
-      @extend .about-content__content-first;
-      font-size: 1.1rem;
-
-
-
-      @media only screen and (min-width: $bp-small) {
-        font-size: 1.3rem;
-      }
-
 
       @media only screen and (min-width: $bp-smallest) {
-        font-size: 1.2rem;
+        width: 60%;
       }
-    }
 
-    &__button-wrapper {
-      width: 100%;
-      display: flex;
-      //margin: 1rem 1rem ;
-      margin: 2rem 0;
-      justify-content: space-between;
-      color: white;
-    }
-
-    &__button {
-      width: 12rem;
-      height: 2.4rem;
-      background-color: rgba(110, 215, 250, .2);
-      opacity: .9;
-      border-radius: 15px;
-      border: none;
-      margin: 0 auto;
-      color: white;
-      letter-spacing: 2px;
-    }
-
-    &__button:focus {
-      outline: none;
-      transform: translate(1px, 1px);
-    }
-
-    &__image-wrapper {
-      position: relative;
-      display: flex;
-      justify-content: center;
-    //
-    }
-
-    &__image {
-      width: 100%;
-
-      @media only screen and (min-width: $bp-smallest) {
-        width: 90%;
+      @media only screen and (min-width: $bp-medium) {
+        left: 30rem;
       }
+
     }
-
-    &__name {
-      height: 4rem;
-      position: absolute;
-      right: 1rem;
-      bottom: -4rem;
-    }
-
-
-
-    &__actual-page {
-      display: flex;
-      margin-left: 1rem;
-    transform: translateY(1.5rem);
-    }
-
-    &__project-one,
-    &__project-two,
-    &__separator{
-      font-size: 2rem;
-      margin-left: 1rem;
-    }
-}
-
-
-
-//======================== SECTION CONTaCT ====================================
-
-.contact-content {
-  width: 100%;
-  height: 80vh;
-  position: relative;
-  @include section-padding;
-  margin-top: 18rem;
-
-
-    &__larger-margin {
-      margin: 21rem auto 0 auto;
-    }
-    &__heading-secondary {
-      @include heading-secondary-settings;
-    }
-
-    &__heading-secondary::after {
-      @include heading-secondary-bottom-dash;
-    }
-
-    &__text {
-      font-size: 1.8rem;
-      font-weight: 300;
-      text-align: center;
-      padding: 0 2rem 0 2rem;
-    }
-
-    &__email,
-    &__phone-number{
-      display: inline-block;
-      width: 100%;
-      text-align: center;
-      font-size:  2rem;
-      margin-top: 3rem;
-    }
-
-    &__email:after,
-    &__phone-number:after {
+  }
+    .about-content::after {
       content: "";
       display: block;
-      width: 24rem;
-      height: .2rem;
+      width: 40rem;
+      height: 40rem;
+      border-radius: 50%;
       background-color: var(--color-primary);
-      border-radius: 2px;
-      margin-top: 1rem;
-
-    }
-
-    &__phone-number {
-      margin-top: 2rem;
-    }
-
-    &__phone-number:after {
+      opacity: .02;
       position: absolute;
-      right: 0;
+      right: -25rem;
+      top: -25rem;
+      z-index: 0;
+
+      @media only screen and (min-width: $bp-medium) {
+        width: 30rem;
+        height: 30rem;
+      }
     }
 
 
-    &__image-background {
+    //======================== SECTION SKILLS ====================================
+    .skills-content {
+      width: 100%;
+      position: relative;
+      z-index: 4;
+      @include section-padding;
+
+      @media only screen and (min-width: $bp-medium) {
+        display: block;
+
+      }
+
+      &__wrapper {
+
+        @media only screen and (min-width: $bp-medium) {
+          width: 60%;
+          margin: 1rem 45%;
+        }
+      }
+
+      &__background-image {
+        display: none;
+        position: absolute;
+        top: 15rem;
+
+        @media only screen and (min-width: $bp-medium) {
+          display: block;
+          width: 50%;
+          opacity: .5;
+          left: -3rem;
+
+        }
+      }
+
+
+      &__heading-secondary {
+        @include heading-secondary-settings;
+      }
+
+      &__heading-secondary::after {
+        @include heading-secondary-bottom-dash;
+      }
+
+      &__heading-tertiary {
+        width: 85%;
+        margin: 0 auto 1.5rem auto;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      .second {
+        margin-top: 1.5rem;
+      }
+
+      &__images-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 .5rem;
+
+
+        @media only screen and (min-width: $bp-medium) {
+          width: 80%;
+        }
+      }
+
+      &__image {
+        border-radius: 50%;
+        height: 4rem;
+        margin: 1.5rem 0;
+
+
+        @media only screen and (min-width: $bp-medium) {
+          height: 3rem;
+        }
+      }
+
+      &__other-skills {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      &__skill-name {
+        display: flex;
+        align-items: center;
+        font-size: 1.1rem;
+        font-weight: 200;
+        line-height: 1.4rem;
+        margin-bottom: .4rem;
+      }
+
+      .check {
+        width: 2rem;
+        display: block;
+        margin-right: 1.2rem;
+      }
+    }
+
+    .skills-content::after {
+      content: "";
+      display: block;
+      width: 60rem;
+      height: 150rem;
+      //border-radius: 50%;
+      transform: rotate(-80deg);
+      background-color: var(--color-primary);
+      opacity: .02;
       position: absolute;
-      width: 25rem;
-      opacity: .2;
-      bottom: 0;
-      right: .5rem;
+      left: -10rem;
+      top: -50rem;
+      z-index: -1;
     }
-}
+
+
+    //======================== SECTION PROJECT ONE ====================================
+
+
+    .project-content {
+      z-index: 1;
+      position: relative;
+      @include section-padding;
+
+      @media only screen and (min-width: $bp-medium) {
+        width: 100%
+      }
+
+      &__small-margin {
+        margin: 10rem auto 0 2rem;
+
+      }
+
+      &__heading-secondary {
+        @include heading-secondary-settings;
+      }
+
+      &__heading-secondary::after {
+        @include heading-secondary-bottom-dash;
+      }
+
+      &__wrapper {
+
+        @media only screen and (min-width: $bp-medium) {
+          width: 100vw;
+          display: flex;
+          align-items: center;
+          margin-left: -5rem;
+        }
+      }
+
+      &__text-wrapper {
+
+        @media only screen and (min-width: $bp-medium) {
+          width: 60rem;
+        }
+
+      }
+
+      &__content-first,
+      &__content-second {
+        @extend .about-content__content-first;
+        font-size: 1.1rem;
+
+
+        @media only screen and (min-width: $bp-small) {
+          font-size: 1.3rem;
+        }
+        @media only screen and (min-width: $bp-smallest) {
+          font-size: 1.2rem;
+        }
+
+        @media only screen and (min-width: $bp-medium) {
+          font-size: 1.1rem;
+        }
+
+      }
+
+      &__button-wrapper {
+        width: 100%;
+        display: flex;
+        //margin: 1rem 1rem ;
+        margin: 2rem 0;
+        justify-content: space-between;
+        color: white;
+      }
+
+      &__button {
+        width: 12rem;
+        height: 2.4rem;
+        background-color: rgba(110, 215, 250, .2);
+        opacity: .9;
+        border-radius: 15px;
+        border: none;
+        margin: 0 auto;
+        color: white;
+        letter-spacing: 2px;
+      }
+
+      &__button:focus {
+        outline: none;
+        transform: translate(1px, 1px);
+      }
+
+      &__image-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        @media only screen and (min-width: $bp-medium) {
+          align-items: c;
+        }
+      }
+
+      &__image {
+        width: 100%;
+
+        @media only screen and (min-width: $bp-smallest) {
+          width: 90%;
+        }
+
+        //@media only screen and (min-width: $bp-medium) {
+        //  width: 90%;
+        //
+        //}
+      }
+
+      &__name {
+        height: 4rem;
+        position: absolute;
+        right: 1rem;
+        bottom: -4rem;
+      }
+
+
+      &__actual-page {
+        display: flex;
+        margin-left: 1rem;
+        transform: translateY(1.5rem);
+      }
+
+      &__project-one,
+      &__project-two,
+      &__separator {
+        font-size: 2rem;
+        margin-left: 1rem;
+      }
+    }
+
+
+    //======================== SECTION CONTaCT ====================================
+
+    .contact-content {
+      width: 100%;
+      height: 80vh;
+      position: relative;
+      @include section-padding;
+      margin-top: 18rem;
+
+
+      &__larger-margin {
+        margin: 21rem auto 0 auto;
+
+        @media only screen and (min-width: $bp-medium) {
+          margin: 15rem auto 0 auto;
+        }
+      }
+
+      &__heading-secondary {
+        @include heading-secondary-settings;
+      }
+
+      &__heading-secondary::after {
+        @include heading-secondary-bottom-dash;
+      }
+
+      &__text {
+        font-size: 1.8rem;
+        font-weight: 300;
+        text-align: center;
+        padding: 0 2rem 0 2rem;
+      }
+
+      &__email,
+      &__phone-number {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 3rem;
+      }
+
+      &__email:after,
+      &__phone-number:after {
+        content: "";
+        display: block;
+        width: 25rem;
+        height: .2rem;
+        background-color: var(--color-primary);
+        border-radius: 2px;
+        margin-top: 1rem;
+        margin-left: -5rem;
+
+        @media only screen and (min-width: $bp-small-medium) {
+          width: 40rem;
+        }
+      }
+
+      &__phone-number {
+        margin-top: 2rem;
+      }
+
+      &__phone-number:after {
+        position: absolute;
+        right: -5rem;
+      }
+
+
+      &__image-background {
+        position: absolute;
+        width: 25rem;
+        opacity: .2;
+        bottom: 0;
+        right: .5rem;
+      }
+    }
 
 

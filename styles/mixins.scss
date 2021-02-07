@@ -10,12 +10,23 @@
   @media only screen and (min-width: $bp-small-medium) {
     margin-top: 22rem;
   }
+
+
+  @media only screen and (min-width: $bp-medium) {
+    margin-top: 15rem;
+    margin-left: 2rem;
+  }
 }
 
 @mixin heading-secondary-settings {
   font-size: 3.3rem;
   font-weight: 500;
   margin: 0 auto 4rem 1.5rem;
+
+
+  @media only screen and (min-width: $bp-medium) {
+    margin-left: 0;
+  }
 }
 
 @mixin heading-secondary-bottom-dash {

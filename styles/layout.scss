@@ -2,6 +2,8 @@
   height: 100vh;
   background: url("../assets/background.jpg") no-repeat 82% 20%;
   background-size: cover;
+  background-attachment: fixed;
+  //position: fixed;
   position: relative;
   z-index: 2;
 }
