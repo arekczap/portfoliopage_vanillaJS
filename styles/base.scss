@@ -19,12 +19,28 @@
   //--color-primary-dark: #ba265d;
 }
 
-$bp-largest: 75em; //1200px
-$bp-large: 68.75em; //1100px
-$bp-medium: 56.25em; //900px
-$bp-small-medium: 46.5em; //750px
-$bp-small: 37.5em; //600px
-$bp-smallest: 31.25em; //500px
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  width: 10px;
+}
+
+$bp-desktop-large: 100rem; //1600px
+$bp-desktop: 87.5rem; //1400px
+$bp-largest: 75rem; //1200px
+$bp-large: 68.75rem; //1100px
+$bp-medium: 56.25rem; //900px
+$bp-small-medium: 46.5rem; //750px
+$bp-small: 37.5rem; //600px
+$bp-smallest: 31.25rem; //500px
 $bp-micro: 25rem; //400px
 
 
@@ -42,7 +58,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem = 10px   10/16px = 62.5%
   color: var(--color-primary);
-  width: 100vw;
+  width: 100%;
   scroll-behavior: smooth;
 
 
@@ -61,6 +77,8 @@ html {
   @media only screen and (min-width: $bp-medium) {
     font-size: 90%;
   }
+
+
 }
 
 body {
@@ -70,5 +88,8 @@ body {
   background: var(--color-secondary);
   color: var(--color-primary);
 
-  //overflow:auto;
+  @media only screen and (min-width: $bp-large) {
+    font-size: 95%;
+
+  }
 }

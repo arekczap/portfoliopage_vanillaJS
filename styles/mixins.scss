@@ -12,10 +12,21 @@
   }
 
 
-  @media only screen and (min-width: $bp-medium) {
+  @media only screen and  (min-width: $bp-medium) {
     margin-top: 15rem;
     margin-left: 2rem;
   }
+
+  @media only screen and  (min-width: $bp-large) {
+    margin-top: 20rem;
+    margin-left: 2rem;
+
+  }
+  @media only screen and (min-width: $bp-largest) {
+    margin: 18rem auto 0 2rem;
+    padding: 0 0;
+  }
+
 }
 
 @mixin heading-secondary-settings {
@@ -26,6 +37,10 @@
 
   @media only screen and (min-width: $bp-medium) {
     margin-left: 0;
+  }
+
+  @media only screen and (min-width: $bp-largest) {
+    margin: 0 auto 8rem 1.5rem;
   }
 }
 

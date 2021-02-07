@@ -1,3 +1,5 @@
+
+
 //======================== NAVIGATION STYLES ====================================
 .navigation-wrapper {
   width: 100%;
@@ -11,7 +13,7 @@
   background-color: transparent;
   justify-content: space-between;
   padding: 3rem 2.5rem ;
-  transition: top 0.4s;
+  transition: top 0.4s, background-color .3s;
 }
 
 //======================== LOGO STYLES ====================================
@@ -163,11 +165,9 @@
 
       @media only screen and (min-width: $bp-medium) {
         text-align: left;
-      }
-
-      @media only screen and (min-width: $bp-medium) {
         margin-left: 1rem;
       }
+
 
     }
 
@@ -207,6 +207,12 @@
         width: 30rem;
         height: 30rem;
       }
+
+      @media only screen and (min-width: $bp-largest) {
+        width: 50rem;
+        height: 50rem;
+        top: -45rem;
+      }
     }
 
 
@@ -233,14 +239,21 @@
       &__background-image {
         display: none;
         position: absolute;
-        top: 15rem;
+        top: 12rem;
 
-        @media only screen and (min-width: $bp-medium) {
+        @media screen and (min-width: $bp-medium) {
           display: block;
           width: 50%;
           opacity: .5;
           left: -3rem;
+        }
 
+        @media only screen and (min-width: $bp-large) {
+          top: 8rem;
+        }
+
+        @media only screen and (min-width: $bp-largest) {
+          top: 10rem;
         }
       }
 
@@ -290,6 +303,7 @@
         @media only screen and (min-width: $bp-medium) {
           height: 3rem;
         }
+
       }
 
       &__other-skills {
@@ -341,9 +355,18 @@
         width: 100%
       }
 
-      &__small-margin {
-        margin: 10rem auto 0 2rem;
 
+
+      &__small-margin {
+        margin: 10rem auto 0 0;
+
+        @media only screen and (min-width: $bp-medium) {
+          margin: 10rem auto 0 2rem;
+        }
+
+        //@media only screen and (min-width: $bp-medium) {
+        //  margin: 10rem auto 0 2rem;
+        //}
       }
 
       &__heading-secondary {
@@ -360,13 +383,20 @@
           width: 100vw;
           display: flex;
           align-items: center;
-          margin-left: -5rem;
+          margin-left: -5.5rem;
         }
+
+        @media only screen and (min-width: $bp-large) {
+          width: 90vw;
+          margin: 0 -2rem;
+
+        }
+
       }
 
       &__text-wrapper {
 
-        @media only screen and (min-width: $bp-medium) {
+        @media screen and (min-width: $bp-medium) {
           width: 60rem;
         }
 
@@ -423,7 +453,7 @@
         justify-content: center;
 
         @media only screen and (min-width: $bp-medium) {
-          align-items: c;
+          align-items: center;
         }
       }
 
@@ -467,7 +497,7 @@
 
     .contact-content {
       width: 100%;
-      height: 80vh;
+      height: 80%;
       position: relative;
       @include section-padding;
       margin-top: 18rem;
@@ -478,6 +508,11 @@
 
         @media only screen and (min-width: $bp-medium) {
           margin: 15rem auto 0 auto;
+        }
+
+        @media only screen and (min-width: $bp-large) {
+          margin: 18rem auto 0 auto;
+
         }
       }
 
@@ -514,10 +549,14 @@
         background-color: var(--color-primary);
         border-radius: 2px;
         margin-top: 1rem;
-        margin-left: -5rem;
+        //margin-left: -5rem;
 
         @media only screen and (min-width: $bp-small-medium) {
           width: 40rem;
+        }
+
+        @media only screen and (min-width: $bp-medium) {
+          margin-top: 3rem;
         }
       }
 
@@ -527,7 +566,7 @@
 
       &__phone-number:after {
         position: absolute;
-        right: -5rem;
+        //right: -5rem;
       }
 
 
