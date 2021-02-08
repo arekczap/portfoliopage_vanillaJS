@@ -63,20 +63,31 @@ html {
 
 
   @media only screen and (min-width: $bp-micro) {
-    font-size: 70%;
+    font-size: 67%;
   }
 
   @media only screen and (min-width: $bp-smallest) {
-    font-size: 75%;
+    font-size: 70%;
   }
 
   @media only screen and (min-width: $bp-small) {
-    font-size: 85%;
+    font-size: 75%;
   }
+  //
+  //@media only screen and (min-width: $bp-small) {
+  //  font-size: 85%;
+  //}
+  //
+  //@media only screen and (min-width: $bp-medium) {
+  //  font-size: 95%;
+  //}
+  //
+  //@media only screen and (min-width: $bp-large) {
+  //  font-size: 100%;
+  //
+  //}
 
-  @media only screen and (min-width: $bp-medium) {
-    font-size: 90%;
-  }
+
 
 
 }
@@ -88,8 +99,5 @@ body {
   background: var(--color-secondary);
   color: var(--color-primary);
 
-  @media only screen and (min-width: $bp-large) {
-    font-size: 95%;
 
-  }
 }

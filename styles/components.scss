@@ -3,7 +3,6 @@
 //======================== NAVIGATION STYLES ====================================
 .navigation-wrapper {
   width: 100%;
-  height: 10px;
   position: fixed;
   top: 0;
   left: 0;
@@ -12,9 +11,13 @@
   flex-direction: row;
   background-color: transparent;
   justify-content: space-between;
-  padding: 3rem 2.5rem ;
+  padding: 1rem 2rem ;
   transition: top 0.4s, background-color .3s;
+
+
 }
+
+
 
 //======================== LOGO STYLES ====================================
 .logo-box {
@@ -62,29 +65,33 @@
 //======================== HEADER STYLES ====================================
 .main-text {
 
-  width: 100%;
+  width: 95%;
   position: absolute;
-  top: 45%;
-  left: 48%;
-  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 0;
+  //transform: translate(-50%, -50%);
 
-
-
-  @media only screen and (min-width: $bp-small) {
-    width: 70%;
-    left: 45%;
+  @media only screen and (min-width: $bp-micro) {
+    left: 5%;
   }
 
-  @media only screen and (min-width: $bp-small-medium) {
-    width: 50%;
-    left: 35%;
-  }
+
+  //@media only screen and (min-width: $bp-small) {
+  //  width: 70%;
+  //  left: 45%;
+  //}
+  //
+  //@media only screen and (min-width: $bp-small-medium) {
+  //  width: 50%;
+  //  left: 35%;
+  //}
+
 
   &__primary {
     display: block;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     font-weight: 300;
-    margin-left: 3rem;
+    margin-left: 2.5rem;
     margin-bottom: 2rem;
 
   }
@@ -92,21 +99,21 @@
   &__secondary,
   &__tertiary {
     display: inline-block;
-    font-size: 3.6rem;
+    font-size: 3.8rem;
     font-weight: 800;
-    margin-left: 6rem;
+    margin-left: 5rem;
     margin-top: .8rem;
 
   }
 
   &__tertiary {
-    margin-left: 12.2rem;
+    margin-left: 11rem;
   }
 
   &__heading-primary {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 300;
-    margin-left: 7rem;
+    margin-left: 6rem;
     margin-top: 2rem;
   }
 }
@@ -139,10 +146,9 @@
     //z-index: 102;
     //overflow: hidden;
 
-    @media only screen and (min-width: $bp-medium) {
-      width: 80%;
-    }
-
+    //@media only screen and (min-width: $bp-medium) {
+    //  width: 80%;
+    //}
 
     &__heading-secondary {
       @include heading-secondary-settings;
@@ -155,7 +161,7 @@
     &__content-first,
     &__content-second,
     &__content-third {
-      font-size: 1.3rem;
+      font-size: 1.6rem;
       text-align: center;
       margin-bottom: .5rem;
       font-weight: 300;
@@ -163,57 +169,63 @@
       //opacity: .8;
 
 
-      @media only screen and (min-width: $bp-medium) {
-        text-align: left;
-        margin-left: 1rem;
-      }
+      //@media only screen and (min-width: $bp-medium) {
+      //  text-align: left;
+      //  margin-left: 1rem;
+      //}
 
 
     }
 
     &__background-image {
-      position: absolute;
-      width: calc(100% - 10rem);
-      left: 5rem;
-      bottom: -10rem;
-      opacity: .1;
-      transform: rotate(-10deg);
-      outline: none;
+      display: none;
 
-      @media only screen and (min-width: $bp-smallest) {
-        width: 60%;
-      }
 
-      @media only screen and (min-width: $bp-medium) {
-        left: 30rem;
-      }
+      //position: absolute;
+      //width: calc(100% - 10rem);
+      //left: 5rem;
+      //bottom: -10rem;
+      //opacity: .1;
+      //transform: rotate(-10deg);
+      //outline: none;
+
+      //@media only screen and (min-width: $bp-smallest) {
+      //  width: 60%;
+      //}
+      //
+      //@media only screen and (min-width: $bp-medium) {
+      //  left: 30rem;
+      //}
+
+
+      //@media only screen and (min-width: $bp-largest) {
+      //  left: 35rem;
+      //  bottom: -7rem;
+      //}
+
+
 
     }
   }
-    .about-content::after {
-      content: "";
-      display: block;
-      width: 40rem;
-      height: 40rem;
-      border-radius: 50%;
-      background-color: var(--color-primary);
-      opacity: .02;
-      position: absolute;
-      right: -25rem;
-      top: -25rem;
-      z-index: 0;
-
-      @media only screen and (min-width: $bp-medium) {
-        width: 30rem;
-        height: 30rem;
-      }
-
-      @media only screen and (min-width: $bp-largest) {
-        width: 50rem;
-        height: 50rem;
-        top: -45rem;
-      }
-    }
+    //.about-content::after {
+    //  content: "";
+    //  display: block;
+    //  width: 40rem;
+    //  height: 40rem;
+    //  border-radius: 50%;
+    //  background-color: var(--color-primary);
+    //  opacity: .02;
+    //  position: absolute;
+    //  right: -25rem;
+    //  top: -25rem;
+    //  z-index: 0;
+    //
+    //  //@media only screen and (min-width: $bp-medium) {
+    //  //  display: none;
+    //  //}
+    //
+    //
+    //}
 
 
     //======================== SECTION SKILLS ====================================
@@ -223,17 +235,20 @@
       z-index: 4;
       @include section-padding;
 
-      @media only screen and (min-width: $bp-medium) {
-        display: block;
-
-      }
+      //@media only screen and (min-width: $bp-medium) {
+      //  display: block;
+      //
+      //}
 
       &__wrapper {
 
-        @media only screen and (min-width: $bp-medium) {
-          width: 60%;
-          margin: 1rem 45%;
-        }
+        //@media only screen and (min-width: $bp-medium) {
+        //  width: 60%;
+        //  margin: 1rem 45%;
+        //}
+
+
+
       }
 
       &__background-image {
@@ -241,20 +256,20 @@
         position: absolute;
         top: 12rem;
 
-        @media screen and (min-width: $bp-medium) {
-          display: block;
-          width: 50%;
-          opacity: .5;
-          left: -3rem;
-        }
-
-        @media only screen and (min-width: $bp-large) {
-          top: 8rem;
-        }
-
-        @media only screen and (min-width: $bp-largest) {
-          top: 10rem;
-        }
+        //@media screen and (min-width: $bp-medium) {
+        //  display: block;
+        //  width: 50%;
+        //  opacity: .5;
+        //  left: -3rem;
+        //}
+        //
+        //@media only screen and (min-width: $bp-large) {
+        //  top: 8rem;
+        //}
+        //
+        //@media only screen and (min-width: $bp-largest) {
+        //  top: 10rem;
+        //}
       }
 
 
@@ -267,12 +282,17 @@
       }
 
       &__heading-tertiary {
-        width: 85%;
+        width: 100%;
         margin: 0 auto 1.5rem auto;
         text-transform: uppercase;
         font-weight: 300;
-        font-size: 1.5rem;
+        font-size: 1.9rem;
         text-align: center;
+
+        //@media only screen and (min-width: $bp-desktop-large) {
+        //  margin: 0 0;
+        //
+        //}
       }
 
       .second {
@@ -289,9 +309,10 @@
         padding: 0 .5rem;
 
 
-        @media only screen and (min-width: $bp-medium) {
-          width: 80%;
-        }
+        //@media only screen and (min-width: $bp-medium) {
+        //  width: 80%;
+        //}
+
       }
 
       &__image {
@@ -300,9 +321,9 @@
         margin: 1.5rem 0;
 
 
-        @media only screen and (min-width: $bp-medium) {
-          height: 3rem;
-        }
+        //@media only screen and (min-width: $bp-medium) {
+        //  height: 3rem;
+        //}
 
       }
 
@@ -314,7 +335,7 @@
       &__skill-name {
         display: flex;
         align-items: center;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         font-weight: 200;
         line-height: 1.4rem;
         margin-bottom: .4rem;
@@ -327,20 +348,21 @@
       }
     }
 
-    .skills-content::after {
-      content: "";
-      display: block;
-      width: 60rem;
-      height: 150rem;
-      //border-radius: 50%;
-      transform: rotate(-80deg);
-      background-color: var(--color-primary);
-      opacity: .02;
-      position: absolute;
-      left: -10rem;
-      top: -50rem;
-      z-index: -1;
-    }
+    //.skills-content::after {
+    //  content: "";
+    //  display: block;
+    //  width: 3000px;
+    //  height: 10rem;
+    //  //border-radius: 50%;
+    //  //transform: rotate(-80deg);
+    //  background-color: var(--color-primary);
+    //  //opacity: .02;
+    //  opacity: .2;
+    //  position: absolute;
+    //  left: -50rem;
+    //  top: -5rem;
+    //  z-index: -1;
+    //}
 
 
     //======================== SECTION PROJECT ONE ====================================
@@ -351,18 +373,18 @@
       position: relative;
       @include section-padding;
 
-      @media only screen and (min-width: $bp-medium) {
-        width: 100%
-      }
+      //@media only screen and (min-width: $bp-medium) {
+      //  width: 100%
+      //}
 
 
 
       &__small-margin {
         margin: 10rem auto 0 0;
 
-        @media only screen and (min-width: $bp-medium) {
-          margin: 10rem auto 0 2rem;
-        }
+        //@media only screen and (min-width: $bp-medium) {
+        //  margin: 10rem auto 0 2rem;
+        //}
 
         //@media only screen and (min-width: $bp-medium) {
         //  margin: 10rem auto 0 2rem;
@@ -379,45 +401,49 @@
 
       &__wrapper {
 
-        @media only screen and (min-width: $bp-medium) {
-          width: 100vw;
-          display: flex;
-          align-items: center;
-          margin-left: -5.5rem;
-        }
-
-        @media only screen and (min-width: $bp-large) {
-          width: 90vw;
-          margin: 0 -2rem;
-
-        }
-
+        //@media only screen and (min-width: $bp-medium) {
+        //  width: 100vw;
+        //  display: flex;
+        //  align-items: center;
+        //  margin-left: -5.5rem;
+        //}
+        //
+        //@media only screen and (min-width: $bp-large) {
+        //  width: 90vw;
+        //  margin: 0 -2rem;
+        //}
+        //
+        //@media only screen and (min-width: $bp-largest) {
+        //  width: 100%;
+        //  margin: 0 0;
+        //}
       }
 
       &__text-wrapper {
 
-        @media screen and (min-width: $bp-medium) {
-          width: 60rem;
-        }
+        //@media screen and (min-width: $bp-medium) {
+        //  width: 60rem;
+        //}
 
       }
 
       &__content-first,
       &__content-second {
         @extend .about-content__content-first;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
 
 
-        @media only screen and (min-width: $bp-small) {
-          font-size: 1.3rem;
-        }
-        @media only screen and (min-width: $bp-smallest) {
-          font-size: 1.2rem;
-        }
+        //@media only screen and (min-width: $bp-small) {
+        //  font-size: 1.3rem;
+        //}
+        //@media only screen and (min-width: $bp-smallest) {
+        //  font-size: 1.2rem;
+        //}
+        //
+        //@media only screen and (min-width: $bp-medium) {
+        //  font-size: 1.1rem;
+        //}
 
-        @media only screen and (min-width: $bp-medium) {
-          font-size: 1.1rem;
-        }
 
       }
 
@@ -432,7 +458,7 @@
 
       &__button {
         width: 12rem;
-        height: 2.4rem;
+        height: 2.6rem;
         background-color: rgba(110, 215, 250, .2);
         opacity: .9;
         border-radius: 15px;
@@ -452,22 +478,18 @@
         display: flex;
         justify-content: center;
 
-        @media only screen and (min-width: $bp-medium) {
-          align-items: center;
-        }
+        //@media only screen and (min-width: $bp-medium) {
+        //  align-items: center;
+        //}
       }
 
       &__image {
         width: 100%;
 
-        @media only screen and (min-width: $bp-smallest) {
-          width: 90%;
-        }
-
-        //@media only screen and (min-width: $bp-medium) {
+        //@media only screen and (min-width: $bp-smallest) {
         //  width: 90%;
-        //
         //}
+
       }
 
       &__name {
@@ -483,13 +505,6 @@
         margin-left: 1rem;
         transform: translateY(1.5rem);
       }
-
-      &__project-one,
-      &__project-two,
-      &__separator {
-        font-size: 2rem;
-        margin-left: 1rem;
-      }
     }
 
 
@@ -497,24 +512,35 @@
 
     .contact-content {
       width: 100%;
-      height: 80%;
+      height: 45rem;
       position: relative;
       @include section-padding;
-      margin-top: 18rem;
+      margin-top: 14rem;
 
 
-      &__larger-margin {
-        margin: 21rem auto 0 auto;
-
-        @media only screen and (min-width: $bp-medium) {
-          margin: 15rem auto 0 auto;
-        }
-
-        @media only screen and (min-width: $bp-large) {
-          margin: 18rem auto 0 auto;
-
-        }
+      @media only screen and (min-width: $bp-micro) {
+        margin-top: 16rem;
       }
+
+      @media only screen and (min-width: $bp-smallest) {
+        margin-top: 17rem;
+      }
+
+      @media only screen and (min-width: $bp-small) {
+        margin-top: 18rem;
+      }
+      //
+      //&__larger-margin {
+      //  margin: 21rem auto 0 auto;
+      //
+      //  //@media only screen and (min-width: $bp-medium) {
+      //  //  margin: 15rem auto 0 auto;
+      //  //}
+      //  //
+      //  //@media only screen and (min-width: $bp-large) {
+      //  //  margin: 18rem auto 0 auto;
+      //  //}
+      //}
 
       &__heading-secondary {
         @include heading-secondary-settings;
@@ -529,6 +555,8 @@
         font-weight: 300;
         text-align: center;
         padding: 0 2rem 0 2rem;
+
+
       }
 
       &__email,
@@ -549,15 +577,15 @@
         background-color: var(--color-primary);
         border-radius: 2px;
         margin-top: 1rem;
-        //margin-left: -5rem;
+        margin-left: -5rem;
 
-        @media only screen and (min-width: $bp-small-medium) {
-          width: 40rem;
-        }
-
-        @media only screen and (min-width: $bp-medium) {
-          margin-top: 3rem;
-        }
+        //@media only screen and (min-width: $bp-small-medium) {
+        //  width: 40rem;
+        //}
+        //
+        //@media only screen and (min-width: $bp-medium) {
+        //  margin-top: 3rem;
+        //}
       }
 
       &__phone-number {
@@ -566,7 +594,7 @@
 
       &__phone-number:after {
         position: absolute;
-        //right: -5rem;
+        right: -5rem;
       }
 
 
@@ -574,7 +602,7 @@
         position: absolute;
         width: 25rem;
         opacity: .2;
-        bottom: 0;
+        bottom: 2rem;
         right: .5rem;
       }
     }
