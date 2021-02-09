@@ -73,6 +73,10 @@ html {
   @media only screen and (min-width: $bp-small) {
     font-size: 75%;
   }
+
+  @media only screen and (min-width: $bp-small-medium) {
+    font-size: 80%;
+  }
   //
   //@media only screen and (min-width: $bp-small) {
   //  font-size: 85%;

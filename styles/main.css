@@ -49,6 +49,11 @@ html {
     font-size: 75%;
   }
 }
+@media only screen and (min-width: 46.5rem) {
+  html {
+    font-size: 80%;
+  }
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -73,6 +78,8 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 @media only screen and (min-width: 25rem) {
   .site {
@@ -87,6 +94,11 @@ body {
 @media only screen and (min-width: 37.5rem) {
   .site {
     padding: 0 2.5rem;
+  }
+}
+@media only screen and (min-width: 46.5rem) {
+  .site {
+    padding: 0 3rem;
   }
 }
 
@@ -159,6 +171,12 @@ body {
     left: 5%;
   }
 }
+@media only screen and (min-width: 37.5rem) {
+  .main-text {
+    width: 70%;
+    left: 15%;
+  }
+}
 .main-text__primary {
   display: block;
   font-size: 2.5rem;
@@ -216,7 +234,12 @@ body {
 }
 @media only screen and (min-width: 37.5rem) {
   .about-content {
-    margin: 14rem auto 0 auto;
+    margin: 16rem auto 0 auto;
+  }
+}
+@media only screen and (min-width: 46.5rem) {
+  .about-content {
+    margin: 18rem auto 0 auto;
   }
 }
 .about-content__heading-secondary {
@@ -262,7 +285,12 @@ body {
 }
 @media only screen and (min-width: 37.5rem) {
   .skills-content {
-    margin: 14rem auto 0 auto;
+    margin: 16rem auto 0 auto;
+  }
+}
+@media only screen and (min-width: 46.5rem) {
+  .skills-content {
+    margin: 18rem auto 0 auto;
   }
 }
 .skills-content__background-image {
@@ -304,6 +332,16 @@ body {
   width: 100%;
   padding: 0 0.5rem;
 }
+@media only screen and (min-width: 37.5rem) {
+  .skills-content__images-wrapper {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 46.5rem) {
+  .skills-content__images-wrapper {
+    width: 75%;
+  }
+}
 .skills-content__image {
   border-radius: 50%;
   height: 4rem;
@@ -344,7 +382,12 @@ body {
 }
 @media only screen and (min-width: 37.5rem) {
   .project-content {
-    margin: 14rem auto 0 auto;
+    margin: 16rem auto 0 auto;
+  }
+}
+@media only screen and (min-width: 46.5rem) {
+  .project-content {
+    margin: 18rem auto 0 auto;
   }
 }
 .project-content__small-margin {
@@ -428,7 +471,12 @@ body {
 }
 @media only screen and (min-width: 37.5rem) {
   .contact-content {
-    margin: 14rem auto 0 auto;
+    margin: 16rem auto 0 auto;
+  }
+}
+@media only screen and (min-width: 46.5rem) {
+  .contact-content {
+    margin: 18rem auto 0 auto;
   }
 }
 @media only screen and (min-width: 25rem) {
@@ -444,6 +492,11 @@ body {
 @media only screen and (min-width: 37.5rem) {
   .contact-content {
     margin-top: 18rem;
+  }
+}
+@media only screen and (min-width: 46.5rem) {
+  .contact-content {
+    margin-top: 20rem;
   }
 }
 .contact-content__heading-secondary {
