@@ -76,7 +76,7 @@
   }
 
   @media only screen and (min-width: $bp-small) {
-    width: 70%;
+    width: 68%;
     left: 15%;
 
   }
@@ -266,15 +266,21 @@
         //  margin: 1rem 45%;
         //}
 
-
+        @media only screen and (min-width: $bp-medium) {
+          display: flex;
+        }
 
       }
 
       &__background-image {
         display: none;
-        position: absolute;
-        top: 12rem;
 
+
+        @media only screen and (min-width: $bp-medium) {
+          display: block;
+          width: 50%;
+          opacity: .7;
+        }
         //@media screen and (min-width: $bp-medium) {
         //  display: block;
         //  width: 50%;
@@ -308,6 +314,9 @@
         font-size: 1.9rem;
         text-align: center;
 
+        @media only screen and (min-width: $bp-medium) {
+          font-size: 1.5rem;
+        }
         //@media only screen and (min-width: $bp-desktop-large) {
         //  margin: 0 0;
         //
@@ -330,15 +339,16 @@
 
         @media only screen and (min-width: $bp-small) {
           width: 85%;
-
-
         }
-
         @media only screen and (min-width: $bp-small-medium) {
           width: 75%;
-
-
         }
+
+        @media only screen and (min-width: $bp-medium) {
+          width: 90%;
+          padding: 0 0rem;
+        }
+
       }
 
       &__image {
@@ -365,6 +375,10 @@
         font-weight: 200;
         line-height: 1.4rem;
         margin-bottom: .4rem;
+
+        @media only screen and (min-width: $bp-medium) {
+          font-size: 1.1rem;
+        }
       }
 
       .check {
