@@ -51,7 +51,12 @@ html {
 }
 @media only screen and (min-width: 46.5rem) {
   html {
-    font-size: 80%;
+    font-size: 85%;
+  }
+}
+@media only screen and (min-width: 56.25rem) {
+  html {
+    font-size: 90%;
   }
 }
 
@@ -97,6 +102,11 @@ body {
   }
 }
 @media only screen and (min-width: 46.5rem) {
+  .site {
+    padding: 0 3.5rem;
+  }
+}
+@media only screen and (min-width: 56.25rem) {
   .site {
     padding: 0 3rem;
   }
@@ -242,6 +252,11 @@ body {
     margin: 18rem auto 0 auto;
   }
 }
+@media only screen and (min-width: 56.25rem) {
+  .about-content {
+    margin: 16rem auto 0 auto;
+  }
+}
 .about-content__heading-secondary {
   font-size: 3.8rem;
   font-weight: 500;
@@ -263,8 +278,26 @@ body {
   font-weight: 300;
   letter-spacing: 1.8px;
 }
+@media only screen and (min-width: 56.25rem) {
+  .about-content__content-first, .project-content__content-first, .project-content__content-second, .about-content__content-second, .about-content__content-third {
+    text-align: left;
+    font-size: 1.3rem;
+    width: 70%;
+  }
+}
 .about-content__background-image {
   display: none;
+}
+@media only screen and (min-width: 56.25rem) {
+  .about-content__background-image {
+    display: block;
+    position: absolute;
+    opacity: 0.1;
+    width: 50%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-25%);
+  }
 }
 
 .skills-content {
@@ -291,6 +324,11 @@ body {
 @media only screen and (min-width: 46.5rem) {
   .skills-content {
     margin: 18rem auto 0 auto;
+  }
+}
+@media only screen and (min-width: 56.25rem) {
+  .skills-content {
+    margin: 16rem auto 0 auto;
   }
 }
 .skills-content__background-image {
@@ -390,6 +428,11 @@ body {
     margin: 18rem auto 0 auto;
   }
 }
+@media only screen and (min-width: 56.25rem) {
+  .project-content {
+    margin: 16rem auto 0 auto;
+  }
+}
 .project-content__small-margin {
   margin: 10rem auto 0 0;
 }
@@ -440,6 +483,11 @@ body {
 .project-content__image {
   width: 100%;
 }
+@media only screen and (min-width: 46.5rem) {
+  .project-content__image {
+    width: 85%;
+  }
+}
 .project-content__name {
   height: 4rem;
   position: absolute;
@@ -479,6 +527,11 @@ body {
     margin: 18rem auto 0 auto;
   }
 }
+@media only screen and (min-width: 56.25rem) {
+  .contact-content {
+    margin: 16rem auto 0 auto;
+  }
+}
 @media only screen and (min-width: 25rem) {
   .contact-content {
     margin-top: 16rem;
@@ -497,6 +550,11 @@ body {
 @media only screen and (min-width: 46.5rem) {
   .contact-content {
     margin-top: 20rem;
+  }
+}
+@media only screen and (min-width: 56.25rem) {
+  .contact-content {
+    margin-top: 19rem;
   }
 }
 .contact-content__heading-secondary {

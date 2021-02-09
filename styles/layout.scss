@@ -38,6 +38,10 @@
   }
 
   @media only screen and (min-width: $bp-small-medium) {
+    padding: 0 3.5rem;
+  }
+
+  @media only screen and (min-width: $bp-medium) {
     padding: 0 3rem;
   }
 }

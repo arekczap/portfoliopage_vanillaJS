@@ -18,6 +18,10 @@
     margin: 18rem auto 0 auto;
   }
 
+  @media only screen and (min-width: $bp-medium) {
+    margin: 16rem auto 0 auto;
+  }
+
 
   //@media only screen and (min-width: $bp-smallest) {
   //  margin-top: 16rem;
