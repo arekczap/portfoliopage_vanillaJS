@@ -441,6 +441,10 @@
 
       &__wrapper {
 
+        @media only screen and (min-width: $bp-medium) {
+          display: flex;
+          justify-content: center;
+        }
         //@media only screen and (min-width: $bp-medium) {
         //  width: 100vw;
         //  display: flex;
@@ -464,13 +468,22 @@
         //@media screen and (min-width: $bp-medium) {
         //  width: 60rem;
         //}
-
+        @media only screen and (min-width: $bp-medium) {
+          width: 60%;
+          margin-left: -2rem;
+        }
       }
 
       &__content-first,
       &__content-second {
         @extend .about-content__content-first;
         font-size: 1.3rem;
+
+        @media only screen and (min-width: $bp-medium) {
+          margin: 0 0 0 .5rem;
+          width: 100%;
+          font-size: 1.1rem;
+        }
 
 
         //@media only screen and (min-width: $bp-small) {
@@ -517,7 +530,12 @@
         position: relative;
         display: flex;
         justify-content: center;
+        align-items: center;
 
+        @media only screen and (min-width: $bp-medium) {
+          width: 60%;
+          margin-right: -2rem;
+        }
 
       }
 
@@ -527,9 +545,9 @@
         @media only screen and (min-width: $bp-small-medium) {
           width: 85%;
         }
-        //@media only screen and (min-width: $bp-smallest) {
-        //  width: 90%;
-        //}
+        @media only screen and (min-width: $bp-medium) {
+          width: 100%;
+        }
 
       }
 
