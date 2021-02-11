@@ -13,9 +13,7 @@
 </head>
 
 <body>
-
 <div class="top" id="top">
-
     <div class="main-text">
         <span class="main-text__primary">portfolio 2021</span>
         <span class="main-text__secondary">arkadiusz</span>
@@ -42,26 +40,61 @@
                     >
                 </a>
             </div>
-            <nav class="hamburger">
-                <div class="hamburger__floor-one"></div>
-                <div class="hamburger__floor-two"></div>
-                <div class="hamburger__floor-three"></div>
-                <div class="hamburger__floor-four"></div>
-            </nav>
-
-
+            <div onclick="hideAndShowNav()" class="nav-wrapper">
+                <div class="hamburger">
+                    <div class="hamburger__floor-one"></div>
+                    <div class="hamburger__floor-two"></div>
+                    <div class="hamburger__floor-three"></div>
+                    <div class="hamburger__floor-four"></div>
+                </div>
+                <nav class="navigation-global" style="top: -100vh;">
+                    <ul>
+                        <li><a href="#top"
+                               class="navigation-global__link"
+                               onclick="hideNavBar()">
+                            home
+                            </a>
+                        </li>
+                        <li><a href="#about"
+                               class="navigation-global__link"
+                               onclick="hideNavBar()">
+                            about
+                            </a>
+                        </li>
+                        <li><a href="#skills"
+                               class="navigation-global__link"
+                               onclick="hideNavBar()">
+                            skills
+                            </a>
+                        </li>
+                        <li><a href="#project"
+                               class="navigation-global__link"
+                               onclick="hideNavBar()">
+                            projects
+                            </a>
+                        </li>
+                        <li><a href="#contact"
+                               class="navigation-global__link"
+                               onclick="hideNavBar()">
+                            contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
     </header>
+
 
 <!--        ================= top============================-->
 
 
 
 <!--            ================= SECTION ABOUT ======================-->
-            <section class="about" id="about">
+            <section class="about" >
                 <div class="about-content">
-                    <h2 class="about-content__heading-secondary">o mnie</h2>
+                    <h2 class="about-content__heading-secondary" id="about">o mnie</h2>
                     <p class="about-content__content-first">Nazywam się Arkadiusz Czapski, mam 25 lat, mieszkam w Lublinie.  <br/> W 2019r. ukończyłem studia inżynierskie na Politechnice Lubelskiej, kierunek mechatronika.</p>
                     <p class="about-content__content-second">Moją pasją jednak jest programowanie, dlatego od stycznia 2020 r. zagłębiam się w pojęcia związane z zawodem Front-End Developer'a. <br/>W zakresie programowania i projektowania stron swoją wiedzę pozyskuję z materiałów dostępnych w internecie, czego efektem są moje projekty udostępnione na platformie github.</p>
                     <p class="about-content__content-third">Aktualnie poszukuję pracy na stanowisko Junior Front-End Developer'a.</p>
@@ -74,9 +107,9 @@
 
 
             <!--==================SECTION SKILLS=====================-->
-            <section class="skills" id="skills">
+            <section class="skills">
                 <div class="skills-content">
-                    <h2 class="skills-content__heading-secondary">umiejętności</h2>
+                    <h2 class="skills-content__heading-secondary"  id="skills" >umiejętności</h2>
                     <div class="skills-content__wrapper">
                         <img src="./assets/skills%20bgc.svg" alt="skills image" class="skills-content__background-image">
                         <div class="skills-content__column">
@@ -156,9 +189,9 @@
             </section>
 
 <!--            ==================SECTION PROJECTS=====================-->
-            <section class="section project-one">
+            <section class="section project-one" >
                 <div class="project-content">
-                    <h2 class="project-content__heading-secondary">projekty</h2>
+                    <h2 class="project-content__heading-secondary" id="project">projekty</h2>
                     <div class="project-content__wrapper">
                         <div class="project-content__text-wrapper">
                             <p class="project-content__content-first">Quiz Game stworzyłem, aby zgbłębić temat pobierania danych z zewnętrznej bazy danych, przy czym poznałem platformę Google Cloud Firebase. Stworzyłem nierelacyjną bazę danych nastepnie pobierałem z niej dane do mojej aplikacji, dzięki czemu nauczyłem się podstaw asynchronicznego JavaScriptu orazy wykorzystywania Promise.</p>
@@ -180,7 +213,7 @@
             </section>
 
 
-            <section class="project-two" id="project">
+            <section class="project-two">
                 <div class="project-content project-content__small-margin">
                     <div class="project-content__wrapper">
                         <div class="project-content__text-wrapper">
@@ -202,9 +235,9 @@
             </section>
 
 
-            <section class="contact" id="contact">
+            <section class="contact" >
                 <div class="contact-content   contact-content__larger-margin">
-                    <h2 class="contact-content__heading-secondary">kontakt</h2>
+                    <h2 class="contact-content__heading-secondary" id="contact">kontakt</h2>
                     <p class="contact-content__text">Jeżeli poszukujesz osoby zaangażowanej i zafascynowanej programowaniem, skontaktuj się ze mną !</p>
                     <span class="contact-content__email">arekczapski@gmail.com</span>
                     <span class="contact-content__phone-number">+48 723 771 721</span>
