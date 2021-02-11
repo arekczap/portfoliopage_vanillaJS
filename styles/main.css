@@ -59,6 +59,11 @@ html {
     font-size: 90%;
   }
 }
+@media only screen and (min-width: 68.75rem) {
+  html {
+    font-size: 95%;
+  }
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -295,8 +300,14 @@ body {
     opacity: 0.1;
     width: 50%;
     right: 0;
-    top: 50%;
+    top: 40%;
     transform: translateY(-25%);
+  }
+}
+@media only screen and (min-width: 68.75rem) {
+  .about-content__background-image {
+    width: 40%;
+    top: 45%;
   }
 }
 
@@ -480,12 +491,21 @@ body {
   .project-content__wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 56.25rem) {
   .project-content__text-wrapper {
     width: 60%;
     margin-left: -2rem;
+    margin-right: 0.5rem;
+  }
+}
+@media only screen and (min-width: 68.75rem) {
+  .project-content__text-wrapper {
+    width: 55%;
+    margin-left: -1rem;
+    margin-right: 0.5rem;
   }
 }
 .project-content__content-first, .project-content__content-second {
@@ -493,7 +513,7 @@ body {
 }
 @media only screen and (min-width: 56.25rem) {
   .project-content__content-first, .project-content__content-second {
-    margin: 0 0 0 0.5rem;
+    margin: 0 0 0.5rem;
     width: 100%;
     font-size: 1.1rem;
   }
@@ -504,6 +524,11 @@ body {
   margin: 2rem 0;
   justify-content: space-between;
   color: white;
+}
+@media only screen and (min-width: 56.25rem) {
+  .project-content__button-wrapper {
+    margin: 1rem 0 0 0;
+  }
 }
 .project-content__button {
   width: 12rem;
@@ -525,10 +550,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  text-align: right;
 }
 @media only screen and (min-width: 56.25rem) {
   .project-content__image-wrapper {
     width: 60%;
+    display: flex;
+    flex-direction: column;
     margin-right: -2rem;
   }
 }
@@ -542,6 +571,19 @@ body {
 }
 @media only screen and (min-width: 56.25rem) {
   .project-content__image {
+    width: 100%;
+  }
+}
+.project-content__project-name {
+  width: 100%;
+  font-size: 3.8rem;
+  -webkit-text-stroke: 0.5px white;
+  /* width and color */
+  font-weight: 600;
+  color: transparent;
+}
+@media only screen and (min-width: 56.25rem) {
+  .project-content__project-name-one {
     width: 100%;
   }
 }
@@ -611,7 +653,7 @@ body {
 }
 @media only screen and (min-width: 56.25rem) {
   .contact-content {
-    margin-top: 19rem;
+    margin-top: 17rem;
   }
 }
 .contact-content__heading-secondary {
@@ -634,12 +676,25 @@ body {
   text-align: center;
   padding: 0 2rem 0 2rem;
 }
+@media only screen and (min-width: 56.25rem) {
+  .contact-content__text {
+    font-size: 2.2rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .contact-content__email, .contact-content__phone-number {
   display: inline-block;
   width: 100%;
   text-align: center;
   font-size: 2rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
+  z-index: 2;
+}
+@media only screen and (min-width: 68.75rem) {
+  .contact-content__email, .contact-content__phone-number {
+    font-size: 1.8rem;
+  }
 }
 .contact-content__email:after, .contact-content__phone-number:after {
   content: "";
@@ -651,6 +706,17 @@ body {
   margin-top: 1rem;
   margin-left: -5rem;
 }
+@media only screen and (min-width: 56.25rem) {
+  .contact-content__email:after, .contact-content__phone-number:after {
+    width: 40rem;
+  }
+}
+@media only screen and (min-width: 68.75rem) {
+  .contact-content__email:after, .contact-content__phone-number:after {
+    margin: 1.5rem auto;
+    width: 30rem;
+  }
+}
 .contact-content__phone-number {
   margin-top: 2rem;
 }
@@ -658,12 +724,19 @@ body {
   position: absolute;
   right: -5rem;
 }
+@media only screen and (min-width: 68.75rem) {
+  .contact-content__phone-number:after {
+    right: 0;
+    position: relative;
+  }
+}
 .contact-content__image-background {
   position: absolute;
   width: 25rem;
   opacity: 0.2;
   bottom: 2rem;
   right: 0.5rem;
+  z-index: 3;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -197,8 +197,13 @@
         opacity: .1;
         width: 50%;
         right: 0;
-        top: 50%;
+        top: 40%;
         transform: translateY(-25%);
+      }
+
+      @media only screen and (min-width: $bp-large) {
+        width: 40%;
+        top: 45%;
       }
       //position: absolute;
       //width: calc(100% - 10rem);
@@ -444,6 +449,7 @@
         @media only screen and (min-width: $bp-medium) {
           display: flex;
           justify-content: center;
+          align-items: center;
         }
         //@media only screen and (min-width: $bp-medium) {
         //  width: 100vw;
@@ -471,6 +477,13 @@
         @media only screen and (min-width: $bp-medium) {
           width: 60%;
           margin-left: -2rem;
+          margin-right: .5rem;
+        }
+
+        @media only screen and (min-width: $bp-large) {
+          width: 55%;
+          margin-left: -1rem;
+          margin-right: .5rem;
         }
       }
 
@@ -480,7 +493,7 @@
         font-size: 1.3rem;
 
         @media only screen and (min-width: $bp-medium) {
-          margin: 0 0 0 .5rem;
+          margin: 0 0 .5rem;
           width: 100%;
           font-size: 1.1rem;
         }
@@ -507,6 +520,11 @@
         margin: 2rem 0;
         justify-content: space-between;
         color: white;
+
+        @media only screen and (min-width: $bp-medium) {
+          margin: 1rem 0 0 0;
+
+        }
       }
 
       &__button {
@@ -531,9 +549,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        text-align: right;
+
 
         @media only screen and (min-width: $bp-medium) {
           width: 60%;
+
+          //temporary
+          display: flex;
+          flex-direction: column;
           margin-right: -2rem;
         }
 
@@ -551,11 +576,29 @@
 
       }
 
+      &__project-name {
+        width: 100%;
+        font-size: 3.8rem;
+        -webkit-text-stroke: .5px white; /* width and color */
+        font-weight: 600;
+        color: transparent;
+
+      }
+
+
+      &__project-name-one {
+        @media only screen and (min-width: $bp-medium) {
+          width: 100%;
+        }
+      }
+
       &__name {
         height: 4rem;
         position: absolute;
         right: 1rem;
         bottom: -4rem;
+
+
       }
 
 
@@ -594,7 +637,7 @@
       }
 
       @media only screen and (min-width: $bp-medium) {
-      margin-top: 19rem;
+      margin-top: 17rem;
     }
       //
       //&__larger-margin {
@@ -623,7 +666,11 @@
         text-align: center;
         padding: 0 2rem 0 2rem;
 
-
+        @media only screen and (min-width: $bp-medium) {
+          font-size: 2.2rem;
+          width: 90%;
+          margin: 0 auto;
+        }
       }
 
       &__email,
@@ -632,7 +679,13 @@
         width: 100%;
         text-align: center;
         font-size: 2rem;
-        margin-top: 3rem;
+        margin-top: 5rem;
+        z-index: 2;
+
+
+        @media only screen and (min-width: $bp-large) {
+          font-size: 1.8rem;
+        }
       }
 
       &__email:after,
@@ -646,6 +699,16 @@
         margin-top: 1rem;
         margin-left: -5rem;
 
+
+        @media only screen and (min-width: $bp-medium) {
+          width: 40rem;
+        }
+
+        @media only screen and (min-width: $bp-large) {
+          margin: 1.5rem auto;
+          width: 30rem;
+
+        }
         //@media only screen and (min-width: $bp-small-medium) {
         //  width: 40rem;
         //}
@@ -657,11 +720,21 @@
 
       &__phone-number {
         margin-top: 2rem;
+
+        @media only screen and (min-width: $bp-large) {
+          //margin-top: 3rem;
+        }
       }
 
       &__phone-number:after {
         position: absolute;
         right: -5rem;
+
+
+        @media only screen and (min-width: $bp-large) {
+          right: 0;
+          position: relative;
+        }
       }
 
 
@@ -671,6 +744,7 @@
         opacity: .2;
         bottom: 2rem;
         right: .5rem;
+        z-index: 3;
       }
     }
 
