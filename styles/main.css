@@ -64,6 +64,11 @@ html {
     font-size: 95%;
   }
 }
+@media only screen and (min-width: 100rem) {
+  html {
+    font-size: 95%;
+  }
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -142,6 +147,11 @@ body {
   padding: 1rem 2rem;
   transition: top 0.4s, background-color 0.3s;
 }
+@media only screen and (min-width: 56.25rem) {
+  .navigation-wrapper {
+    padding: 1rem 5rem;
+  }
+}
 
 .logo-box {
   width: 4rem;
@@ -192,6 +202,18 @@ body {
     left: 15%;
   }
 }
+@media only screen and (min-width: 68.75rem) {
+  .main-text {
+    width: 60%;
+    left: 8%;
+  }
+}
+@media only screen and (min-width: 100rem) {
+  .main-text {
+    width: 50%;
+    left: 10%;
+  }
+}
 .main-text__primary {
   display: block;
   font-size: 2.5rem;
@@ -199,12 +221,22 @@ body {
   margin-left: 2.5rem;
   margin-bottom: 2rem;
 }
+@media only screen and (min-width: 68.75rem) {
+  .main-text__primary {
+    font-size: 3rem;
+  }
+}
 .main-text__secondary, .main-text__tertiary {
   display: inline-block;
   font-size: 3.8rem;
   font-weight: 800;
   margin-left: 5rem;
   margin-top: 0.8rem;
+}
+@media only screen and (min-width: 68.75rem) {
+  .main-text__secondary, .main-text__tertiary {
+    font-size: 5rem;
+  }
 }
 .main-text__tertiary {
   margin-left: 11rem;
@@ -214,6 +246,11 @@ body {
   font-weight: 300;
   margin-left: 6rem;
   margin-top: 2rem;
+}
+@media only screen and (min-width: 68.75rem) {
+  .main-text__heading-primary {
+    font-size: 3rem;
+  }
 }
 
 .media {

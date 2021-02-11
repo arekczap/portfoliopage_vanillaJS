@@ -85,6 +85,11 @@ html {
   @media only screen and (min-width: $bp-large) {
     font-size: 95%;
   }
+
+
+  @media only screen and (min-width: $bp-desktop-large) {
+    font-size: 95%;
+  }
   //
   //@media only screen and (min-width: $bp-small) {
   //  font-size: 85%;
