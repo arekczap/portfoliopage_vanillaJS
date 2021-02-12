@@ -4,7 +4,7 @@
   --color-secondary: #383138;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 10px;
 }
 
@@ -13,7 +13,11 @@
   border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb:hover {
+.transparent-scrollBar::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+}
+
+body::-webkit-scrollbar-thumb:hover {
   width: 10px;
 }
 

@@ -16,12 +16,17 @@
   --color-primary: #e6e9d6;
   --color-primary-lighter: rgba(56,49,56, .1);
   --color-secondary: #383138;
+
   //--color-primary-dark: #ba265d;
 }
 
-::-webkit-scrollbar {
+
+
+body::-webkit-scrollbar {
   width: 10px;
 }
+
+
 
 
 ::-webkit-scrollbar-thumb {
@@ -29,7 +34,11 @@
   border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb:hover {
+.transparent-scrollBar::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+}
+
+body::-webkit-scrollbar-thumb:hover {
   width: 10px;
 }
 
