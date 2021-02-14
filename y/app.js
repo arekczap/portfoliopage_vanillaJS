@@ -8,6 +8,13 @@
     let touchStart = 0;
     let touchEnd = 0;
 
+    let checkRefresh = () => {
+        if (window.scrollY !== 0) {
+            selectors.navigationWrapper.style.top = "0";
+            selectors.navigationWrapper.style.backgroundColor = "rgba(84,74,84,.7)";
+        }
+    }
+
     document.addEventListener('wheel', (event) => {
         if (!canScroll) {
             return;
