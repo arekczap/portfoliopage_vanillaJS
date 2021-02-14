@@ -600,7 +600,10 @@ body {
     margin: 1rem 0 0 0;
   }
 }
-.project-content__button {
+.project-content__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 12rem;
   height: 2.6rem;
   background-color: rgba(110, 215, 250, 0.2);
@@ -608,12 +611,10 @@ body {
   border-radius: 15px;
   border: none;
   margin: 0 auto;
+  font-size: 1.5rem;
   color: white;
-  letter-spacing: 2px;
-}
-.project-content__button:focus {
-  outline: none;
-  transform: translate(1px, 1px);
+  letter-spacing: 4px;
+  text-decoration: none;
 }
 .project-content__image-wrapper {
   position: relative;

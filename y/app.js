@@ -38,31 +38,25 @@
     let scrollTopNavigation = (actualScrollDirection) => {
         let {navigationWrapper, hamburgerNavigation} = selectors;
 
-        if (actualScrollDirection === 1 && hamburgerNavigation.dataset.active === "no") {
-            navigationWrapper.style.top = "-6rem";
-
-        } else {
+        if (actualScrollDirection === -1 && hamburgerNavigation.dataset.active === "no") {
             navigationWrapper.style.top = "0";
             navigationWrapper.style.backgroundColor = "rgba(84,74,84,.7)";
 
-            if ( window.scrollY === 0 ) {
+            if (window.scrollY === 0) {
                 navigationWrapper.style.backgroundColor = "transparent";
             }
+        } else {
+            navigationWrapper.style.top = "-6rem";
         }
     };
 
     let hideNavBar = () => {
         let {navigationWrapper} = selectors;
         navigationWrapper.style.top = "-6rem";
-
-        if (window.scrollY !== 0) {
-            navigationWrapper.style.backgroundColor = "transparent";
-        }
     }
 
     let showNavBar = () => {
         let {navigationWrapper} = selectors;
-
         navigationWrapper.style.top = "0";
         navigationWrapper.style.backgroundColor = "transparent";
     }
@@ -81,6 +75,5 @@
             hamburgerNavigation.dataset.active = "no";
         }
     }
-
 
 

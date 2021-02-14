@@ -417,18 +417,20 @@
     &__button-wrapper {
       width: 100%;
       display: flex;
-      //margin: 1rem 1rem ;
       margin: 2rem 0;
       justify-content: space-between;
       color: white;
 
       @media only screen and (min-width: $bp-medium) {
         margin: 1rem 0 0 0;
-
       }
     }
 
-    &__button {
+    &__link {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 12rem;
       height: 2.6rem;
       background-color: rgba(110, 215, 250, .2);
@@ -436,13 +438,11 @@
       border-radius: 15px;
       border: none;
       margin: 0 auto;
+      font-size: 1.5rem;
       color: white;
-      letter-spacing: 2px;
-    }
+      letter-spacing: 4px;
+      text-decoration: none;
 
-    &__button:focus {
-      outline: none;
-      transform: translate(1px, 1px);
     }
 
     &__image-wrapper {
