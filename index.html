@@ -1,258 +1,170 @@
-<!doctype html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Witaj | Arkadiusz Czapski</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
+    <!doctype html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Witaj | Arkadiusz Czapski</title>
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/main.css">
-
-</head>
-
-<body >
-<div class="top" id="top">
-    <div class="main-text">
-        <span class="main-text__primary">portfolio 2021</span>
-        <span class="main-text__secondary">arkadiusz</span>
-        <span class="main-text__tertiary">czapski</span>
-        <h1 class="main-text__heading-primary">~ front end developer</h1>
-    </div>
-    <div class="media">
-        <a href="https://github.com/arekczap" target="_blank" class="media__link">github</a>
-        <a href="https://www.linkedin.com/in/arkadiusz-czapski" target="_blank" class="media__link">linkedin</a>
-        <a href="https://www.instagram.com/arktosek/" target="_blank" class="media__link">instagram</a>
-        <a href="https://www.facebook.com/arekczapski9" target="_blank" class="media__link">facebook</a>
-    </div>
-</div>
-    <div class="site">
-    <header class="header">
-        <div class="navigation-wrapper">
-            <div class="logo-box">
-                <a href="#top"
-                   class="logo-box__link"
-                >
-
-
-                    <img class="logo-box__image"
-                         src="./assets/logo.png"
-                         alt="logo image"
-                         onclick="showNavBar()"
-                    >
-                </a>
+    <body >
+        <div class="top" id="top">
+            <div class="main-text">
+                <span class="main-text__primary">portfolio 2021</span>
+                <span class="main-text__secondary">arkadiusz</span>
+                <span class="main-text__tertiary">czapski</span>
+                <h1 class="main-text__heading-primary">~ front end developer</h1>
             </div>
-            <div onclick="hideAndShowNav()" class="nav-wrapper">
-                <div class="hamburger">
-                    <div class="hamburger__floor-one"></div>
-                    <div class="hamburger__floor-two"></div>
-                    <div class="hamburger__floor-three"></div>
-                    <div class="hamburger__floor-four"></div>
-                </div>
-                <nav class="navigation-global" style="top: -100vh;">
-                    <ul>
-                        <li><a href="#top"
-                               class="navigation-global__link"
-                               onclick="showNavBar()" >
-                            przywitanie
-                            </a>
-                        </li>
-                        <li><a href="#about"
-                               class="navigation-global__link"
-                               onclick="hideNavBar()">
-                            o mnie
-                            </a>
-                        </li>
-                        <li><a href="#skills"
-                               class="navigation-global__link"
-                               onclick="hideNavBar()">
-                            umiejętności
-                            </a>
-                        </li>
-                        <li><a href="#project"
-                               class="navigation-global__link"
-                               onclick="hideNavBar()">
-                            projekty
-                            </a>
-                        </li>
-                        <li><a href="#contact"
-                               class="navigation-global__link"
-                               onclick="hideNavBar()">
-                            kontakt
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="media">
+                <a href="https://github.com/arekczap" target="_blank" class="media__link">github</a>
+                <a href="https://www.linkedin.com/in/arkadiusz-czapski" target="_blank" class="media__link">linkedin</a>
+                <a href="https://www.instagram.com/arktosek/" target="_blank" class="media__link">instagram</a>
+                <a href="https://www.facebook.com/arekczapski9" target="_blank" class="media__link">facebook</a>
             </div>
         </div>
-
-    </header>
-
-
-<!--        ================= top============================-->
-
-
-
-<!--            ================= SECTION ABOUT ======================-->
-            <section class="about" >
-                <div class="about-content">
-                    <h2 class="about-content__heading-secondary" id="about">o mnie</h2>
-                    <p class="about-content__content-first">Nazywam się Arkadiusz Czapski, mam 25 lat, mieszkam w Lublinie.  <br/> W 2019r. ukończyłem studia inżynierskie na Politechnice Lubelskiej, kierunek mechatronika.</p>
-                    <p class="about-content__content-second">Moją pasją jednak jest programowanie, dlatego od stycznia 2020 r. zagłębiam się w pojęcia związane z zawodem Front-End Developer'a. <br/>W zakresie programowania i projektowania stron swoją wiedzę pozyskuję z materiałów dostępnych w internecie, czego efektem są moje projekty udostępnione na platformie github.</p>
-                    <p class="about-content__content-third">Aktualnie poszukuję pracy na stanowisko Junior Front-End Developer'a.</p>
-                    <img src="./assets/strzelec.svg"
-                         alt="obraz strzelca"
-                         class="about-content__background-image"
-                    >
-                </div>
-            </section>
-
-
-            <!--==================SECTION SKILLS=====================-->
-            <section class="skills">
-                <div class="skills-content">
-                    <h2 class="skills-content__heading-secondary"  id="skills" >umiejętności</h2>
-                    <div class="skills-content__wrapper">
-                        <img src="./assets/skills%20bgc.svg" alt="skills image" class="skills-content__background-image">
-                        <div class="skills-content__column">
-                        <h3 class="skills-content__heading-tertiary ">języki programowania i narzędzia</h3>
-                            <div class="skills-content__images-wrapper">
-                                <img src="./assets/html5.png"
-                                     alt="html5 logo"
-                                     class="skills-content__image"
-                                >
-                                <img src="./assets/css3.png"
-                                     alt="css logo"
-                                     class="skills-content__image"
-                                >
-                                <img src="./assets/js.png"
-                                     alt="javascript logo"
-                                     class="skills-content__image"
-                                >
-                                <img src="./assets/Sass.png"
-                                     alt="sass logo"
-                                     class="skills-content__image"
-                                >
-                            </div>
-                            <div class="skills-content__images-wrapper">
-                                <img src="./assets/Git.png"
-                                     alt="git logo"
-                                     class="skills-content__image"
-                                >
-                                <img src="./assets/figma.png"
-                                     alt="figma logo"
-                                     class="skills-content__image"
-                                >
-                                <img src="./assets/vsc.png"
-                                     alt="vsc logo"
-                                     class="skills-content__image"
-                                     >
-                                <img src="./assets/webstorm.png"
-                                     alt="webstorm logo"
-                                     class="skills-content__image"
-                                >
-                            </div>
-                        <div class="skills-content__other-skills">
-                            <h3 class="skills-content__heading-tertiary second">pozostałe umiejętności</h3>
-                            <p class="skills-content__skill-name">
-                                <img src="./assets/check.svg"
-                                     alt="check"
-                                     class="check">
-                                Dbałość o Responsive Web Design
-                            </p>
-                            <p class="skills-content__skill-name">
-                                <img src="./assets/check.svg"
-                                     alt="check"
-                                     class="check">
-                                Umiejętność pracy w zespole
-                            </p>
-                            <p class="skills-content__skill-name">
-                                <img src="./assets/check.svg"
-                                     alt="check"
-                                     class="check">
-                                Znajomość podstawowych zapytań SQL
-                            </p>
-                            <p class="skills-content__skill-name">
-                                <img src="./assets/check.svg"
-                                     alt="check"
-                                     class="check">
-                                Podstawowa znajomość programu Photoshop
-                            </p>
-                            <p class="skills-content__skill-name">
-                                <img src="./assets/check.svg"
-                                     alt="check"
-                                     class="check check-last">
-                                Dobra organizacja pracy np. planowanie zadań
-                            </p>
+        <div class="site">
+            <header class="header">
+                <div class="navigation-wrapper">
+                    <div class="logo-box">
+                        <a href="#top" class="logo-box__link">
+                            <img class="logo-box__image" src="./assets/logo.png" alt="logo image" onclick="showNavBar()">
+                        </a>
+                    </div>
+                    <div onclick="hideAndShowNav()" class="nav-wrapper">
+                        <div class="hamburger">
+                            <div class="hamburger__floor-one"></div>
+                            <div class="hamburger__floor-two"></div>
+                            <div class="hamburger__floor-three"></div>
+                            <div class="hamburger__floor-four"></div>
                         </div>
-                        </div>
+                        <nav class="navigation-global" style="top: -100vh" data-active="no">
+                            <ul>
+                                <li><a href="#top" class="navigation-global__link" onclick="showNavBar()" >przywitanie</a></li>
+                                <li><a href="#about" class="navigation-global__link" onclick="hideNavBar()">o mnie</a></li>
+                                <li><a href="#skills" class="navigation-global__link" onclick="hideNavBar()">umiejętności</a></li>
+                                <li><a href="#project" class="navigation-global__link" onclick="hideNavBar()">projekty</a></li>
+                                <li><a href="#contact" class="navigation-global__link" onclick="hideNavBar()">kontakt</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-            </section>
 
-<!--            ==================SECTION PROJECTS=====================-->
-            <section class="section project-one" >
-                <div class="project-content">
-                    <h2 class="project-content__heading-secondary" id="project">projekty</h2>
-                    <div class="project-content__wrapper">
-                        <div class="project-content__text-wrapper">
-                            <p class="project-content__content-first">Quiz Game stworzyłem, aby zgbłębić temat pobierania danych z zewnętrznej bazy danych, przy czym poznałem platformę Google Cloud Firebase. Stworzyłem nierelacyjną bazę danych nastepnie pobierałem z niej dane do mojej aplikacji, dzięki czemu nauczyłem się podstaw asynchronicznego JavaScriptu orazy wykorzystywania Promise.</p>
-                            <p class="project-content__content-second">Technologie których użyłem to HTML5, SCSS, JavaScript.</p>
+            </header>
+                <!--================= SECTION ABOUT ======================-->
+                <section class="about" >
+                    <div class="about-content">
+                        <h2 class="about-content__heading-secondary" id="about">o mnie</h2>
+                        <p class="about-content__content-first">Nazywam się Arkadiusz Czapski, mam 25 lat, mieszkam w Lublinie.  <br/> W 2019r. ukończyłem studia inżynierskie na Politechnice Lubelskiej, kierunek mechatronika.</p>
+                        <p class="about-content__content-second">Moją pasją jednak jest programowanie, dlatego od stycznia 2020 r. zagłębiam się w pojęcia związane z zawodem Front-End Developer'a. <br/>W zakresie programowania i projektowania stron swoją wiedzę pozyskuję z materiałów dostępnych w internecie, czego efektem są moje projekty udostępnione na platformie github.</p>
+                        <p class="about-content__content-third">Aktualnie poszukuję pracy na stanowisko Junior Front-End Developer'a.</p>
+                        <img src="./assets/strzelec.svg" alt="obraz strzelca" class="about-content__background-image">
+                    </div>
+                </section>
+
+
+                <!--==================SECTION SKILLS=====================-->
+                <section class="skills">
+                    <div class="skills-content">
+                        <h2 class="skills-content__heading-secondary"  id="skills" >umiejętności</h2>
+                        <div class="skills-content__wrapper">
+                            <img src="./assets/skills%20bgc.svg" alt="skills image" class="skills-content__background-image">
+                            <div class="skills-content__column">
+                            <h3 class="skills-content__heading-tertiary ">języki programowania i narzędzia</h3>
+                                <div class="skills-content__images-wrapper">
+                                    <img src="./assets/html5.png" alt="html5 logo" class="skills-content__image">
+                                    <img src="./assets/css3.png" alt="css logo" class="skills-content__image">
+                                    <img src="./assets/js.png" alt="javascript logo" class="skills-content__image">
+                                    <img src="./assets/Sass.png" alt="sass logo" class="skills-content__image">
+                                </div>
+                                <div class="skills-content__images-wrapper">
+                                    <img src="./assets/Git.png" alt="git logo" class="skills-content__image">
+                                    <img src="./assets/figma.png" alt="figma logo" class="skills-content__image">
+                                    <img src="./assets/vsc.png" alt="vsc logo" class="skills-content__image">
+                                    <img src="./assets/webstorm.png" alt="webstorm logo" class="skills-content__image"
+                                    >
+                                </div>
+                            <div class="skills-content__other-skills">
+                                <h3 class="skills-content__heading-tertiary second">pozostałe umiejętności</h3>
+                                <p class="skills-content__skill-name">
+                                    <img src="./assets/check.svg" alt="check" class="check">Dbałość o Responsive Web Design
+                                </p>
+                                <p class="skills-content__skill-name">
+                                    <img src="./assets/check.svg" alt="check" class="check">Umiejętność pracy w zespole
+                                </p>
+                                <p class="skills-content__skill-name">
+                                    <img src="./assets/check.svg" alt="check" class="check">Znajomość podstawowych zapytań SQL
+                                </p>
+                                <p class="skills-content__skill-name">
+                                    <img src="./assets/check.svg" alt="check" class="check">Podstawowa znajomość programu Photoshop
+                                </p>
+                                <p class="skills-content__skill-name">
+                                    <img src="./assets/check.svg" alt="check" class="check check-last">Dobra organizacja pracy np. planowanie zadań
+                                </p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        <!--            ==================SECTION PROJECTS=====================-->
+                <section class="section project-one" >
+                    <div class="project-content">
+                        <h2 class="project-content__heading-secondary" id="project">projekty</h2>
+                        <div class="project-content__wrapper">
+                            <div class="project-content__text-wrapper">
+                                <p class="project-content__content-first">Quiz Game stworzyłem, aby zgbłębić temat pobierania danych z zewnętrznej bazy danych, przy czym poznałem platformę Google Cloud Firebase. Stworzyłem nierelacyjną bazę danych nastepnie pobierałem z niej dane do mojej aplikacji, dzięki czemu nauczyłem się podstaw asynchronicznego JavaScriptu orazy wykorzystywania Promise.</p>
+                                <p class="project-content__content-second">Technologie których użyłem to HTML5, SCSS, JavaScript.</p>
 
                             <div class="project-content__button-wrapper">
                                 <button class="project-content__button project-live">Live</button>
                                 <button class="project-content__button project-code">Kod</button>
                             </div>
-                        </div>
-                        <div class="project-content__image-wrapper">
-                            <img src="./assets/projekt1.png" alt="projekt 1" class="project-content__image">
-<!--                            TEMPORARY-->
-                            <span class="project-content__project-name">Quiz Game</span>
-<!--                            <img src="./assets/project-one-name.png" alt="" class="project-content__name project-content__project-name-one">-->
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="project-two">
-                <div class="project-content project-content__small-margin">
-                    <div class="project-content__wrapper">
-                        <div class="project-content__text-wrapper">
-                            <p class="project-content__content-first">ToDo List zbudowałem na samym początku mojej przygody z programowaniem. Zapoznałem się z podstawowymi zagadnieniami związanymi z tablicami w JacaScripcie. </p>
-                            <p class="project-content__content-second">Technologie których użyłem to HTML5, CSS, JavaScript.</p>
-                            <div class="project-content__button-wrapper">
-                                <button class="project-content__button project-live">Live</button>
-                                <button class="project-content__button project-code">Kod</button>
+                            </div>
+                            <div class="project-content__image-wrapper">
+                                <img src="./assets/projekt1.png" alt="projekt 1" class="project-content__image">
+                                <span class="project-content__project-name">Quiz Game</span>
                             </div>
                         </div>
-                        <div class="project-content__image-wrapper">
-                            <img src="./assets/projekt2.png" alt="projekt 1" class="project-content__image">
-                            <span class="project-content__project-name">ToDo List</span>
-<!--                            <img src="./assets/project-two-name.png" alt="" class="project-content__name project-name-two">-->
-                        </div>
-    <!--                    <div class="project-content__circle"></div>-->
                     </div>
-                </div>
-            </section>
+                </section>
 
 
-            <section class="contact" >
-                <div class="contact-content   contact-content__larger-margin">
-                    <h2 class="contact-content__heading-secondary" id="contact">kontakt</h2>
-                    <p class="contact-content__text">Jeżeli poszukujesz osoby zaangażowanej i zafascynowanej programowaniem, skontaktuj się ze mną !</p>
-                    <span class="contact-content__email">arekczapski@gmail.com</span>
-                    <span class="contact-content__phone-number">+48 723 771 721</span>
-                    <img src="./assets/kontakt.svg"
-                         alt="contact image"
-                         class="contact-content__image-background"
-                    >
-                </div>
-            </section>
+                <section class="project-two">
+                    <div class="project-content project-content__small-margin">
+                        <div class="project-content__wrapper">
+                            <div class="project-content__text-wrapper">
+                                <p class="project-content__content-first">ToDo List zbudowałem na samym początku mojej przygody z programowaniem. Zapoznałem się z podstawowymi zagadnieniami związanymi z tablicami w JacaScripcie. </p>
+                                <p class="project-content__content-second">Technologie których użyłem to HTML5, CSS, JavaScript.</p>
+                                <div class="project-content__button-wrapper">
+                                    <button class="project-content__button project-live">Live</button>
+                                    <button class="project-content__button project-code">Kod</button>
+                                </div>
+                            </div>
+                            <div class="project-content__image-wrapper">
+                                <img src="./assets/projekt2.png" alt="projekt 1" class="project-content__image">
+                                <span class="project-content__project-name">ToDo List</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-
-    </div>
-        <script src="app.js"></script>
-</body>
-</html>
+            <!--            ==================SECTION CONTACT=====================-->
+                <section class="contact" >
+                    <div class="contact-content   contact-content__larger-margin">
+                        <h2 class="contact-content__heading-secondary" id="contact">kontakt</h2>
+                        <p class="contact-content__text">Jeżeli poszukujesz osoby zaangażowanej i zafascynowanej programowaniem, skontaktuj się ze mną !</p>
+                        <span class="contact-content__email">arekczapski@gmail.com</span>
+                        <span class="contact-content__phone-number">+48 723 771 721</span>
+                        <img src="./assets/kontakt.svg"
+                             alt="contact image"
+                             class="contact-content__image-background"
+                        >
+                    </div>
+                </section>
+        </div>
+            <script src="app.js"></script>
+    </body>
+    </html>

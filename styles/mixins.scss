@@ -1,83 +1,42 @@
-@mixin section-padding {
-  margin: 10rem auto 0 auto;
+  @mixin section-padding {
+    margin: 10rem auto 0 auto;
 
 
-  @media only screen and (min-width: $bp-micro) {
-    margin: 12rem auto 0 auto;
+    @media only screen and (min-width: $bp-micro) {
+      margin: 12rem auto 0 auto;
+    }
+
+    @media only screen and (min-width: $bp-smallest) {
+      margin: 13rem auto 0 auto;
+    }
+
+    @media only screen and (min-width: $bp-small) {
+      margin: 16rem auto 0 auto;
+    }
+
+    @media only screen and (min-width: $bp-small-medium) {
+      margin: 18rem auto 0 auto;
+    }
+
+    @media only screen and (min-width: $bp-medium) {
+      margin: 16rem auto 0 auto;
+    }
   }
 
-  @media only screen and (min-width: $bp-smallest) {
-    margin: 13rem auto 0 auto;
+  @mixin heading-secondary-settings {
+    font-size: 3.8rem;
+    font-weight: 500;
+    margin: 0 auto 4rem 1.5rem;
   }
 
-  @media only screen and (min-width: $bp-small) {
-    margin: 16rem auto 0 auto;
+  @mixin heading-secondary-bottom-dash {
+    content: "";
+    display: block;
+    width: 25rem;
+    margin-top: 1rem;
+    height: .2rem;
+    background-color: var(--color-primary);
+    border-radius: 5px;
   }
-
-  @media only screen and (min-width: $bp-small-medium) {
-    margin: 18rem auto 0 auto;
-  }
-
-  @media only screen and (min-width: $bp-medium) {
-    margin: 16rem auto 0 auto;
-  }
-
-
-  //@media only screen and (min-width: $bp-smallest) {
-  //  margin-top: 16rem;
-  //}
-  //
-  //@media only screen and (min-width: $bp-small-medium) {
-  //  margin-top: 20rem;
-  //}
-  //
-  //
-  //@media only screen and  (min-width: $bp-medium) {
-  //  margin-top: 10rem;
-  //  margin-left: 2rem;
-  //}
-  //
-  //@media only screen and  (min-width: $bp-large) {
-  //  margin-top: 20rem;
-  //  margin-left: 2rem;
-  //
-  //}
-  //
-  //@media only screen and (min-width: $bp-largest) {
-  //  margin-top: 12rem;
-  //  margin-left: 0;
-  //  padding: 0 0;
-  //
-  //}
-
-
-}
-
-@mixin heading-secondary-settings {
-  font-size: 3.8rem;
-  font-weight: 500;
-  margin: 0 auto 4rem 1.5rem;
-
-
-
-  //@media only screen and (min-width: $bp-largest) {
-  //  margin: 0 5rem 5rem;
-  //}
-}
-
-@mixin heading-secondary-bottom-dash {
-  content: "";
-  display: block;
-  width: 25rem;
-  margin-top: 1rem;
-  height: .2rem;
-  background-color: var(--color-primary);
-  border-radius: 5px;
-
-  //@media only screen and (min-width: $bp-largest) {
-  //  margin-top: 0;
-  //
-  //}
-}
 
 
