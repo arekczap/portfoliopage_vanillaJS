@@ -215,9 +215,10 @@
 
       @media only screen and (min-width: $bp-medium) {
         text-align: left ;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         width: 70%;
       }
+
 
 
 
@@ -248,6 +249,7 @@
       }
     }
   }
+
 
   //======================== SECTION SKILLS ====================================
   .skills-content {
@@ -551,6 +553,7 @@
       font-weight: 300;
       text-align: center;
       padding: 0 2rem 0 2rem;
+      z-index: 4;
 
       @media only screen and (min-width: $bp-medium) {
         font-size: 2.2rem;
@@ -561,12 +564,13 @@
 
     &__email,
     &__phone-number {
+      position: relative;
       display: inline-block;
       width: 100%;
       text-align: center;
       font-size: 2rem;
       margin-top: 5rem;
-      z-index: 2;
+      z-index: 5;
 
 
       @media only screen and (min-width: $bp-large) {
@@ -584,7 +588,7 @@
       border-radius: 2px;
       margin-top: 1rem;
       margin-left: -5rem;
-
+      z-index: 100 !important;
 
       @media only screen and (min-width: $bp-medium) {
         width: 40rem;
@@ -610,12 +614,29 @@
       }
     }
 
+    &__email-link,
+    &__phone-link {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--color-primary);
+    }
+
+    &__email-copied {
+      position: absolute;
+      left: 30%;
+      display: block;
+      top: -2rem;
+      opacity: 0;
+      font-size: 1rem;
+      transition: opacity .5s;
+    }
+
     &__image-background {
       position: absolute;
       width: 25rem;
       opacity: .2;
       bottom: 2rem;
       right: .5rem;
-      z-index: 3;
+      z-index: 0 !important;
     }
   }

@@ -1,6 +1,8 @@
     let selectors = {
         hamburgerNavigation : document.querySelector(".navigation-global"),
-        navigationWrapper : document.querySelector(".navigation-wrapper")
+        navigationWrapper : document.querySelector(".navigation-wrapper"),
+        copyEmailToCLickBoard : document.querySelector('.contact-content__email-link'),
+        copiedToClickBoardMessage : document.querySelector(".contact-content__email-copied")
     }
 
     let scrollDir = 0;
@@ -45,15 +47,13 @@
     let scrollTopNavigation = (actualScrollDirection) => {
         let {navigationWrapper, hamburgerNavigation} = selectors;
 
-        if (actualScrollDirection === -1 && hamburgerNavigation.dataset.active === "no") {
+        if (actualScrollDirection === -1 || hamburgerNavigation.dataset.active === "yes" && window.pageYOffset !== 0) {
             navigationWrapper.style.top = "0";
             navigationWrapper.style.backgroundColor = "rgba(84,74,84,.7)";
 
-            if (window.scrollY === 0) {
-                navigationWrapper.style.backgroundColor = "transparent";
-            }
         } else {
-            navigationWrapper.style.top = "-6rem";
+            hideNavBar();
+            navigationWrapper.style.backgroundColor = "transparent";
         }
     };
 
@@ -63,18 +63,20 @@
     }
 
     let showNavBar = () => {
-        let {navigationWrapper} = selectors;
+        let { navigationWrapper } = selectors;
+
         navigationWrapper.style.top = "0";
         navigationWrapper.style.backgroundColor = "transparent";
     }
 
     let hideAndShowNav = () => {
-        let {hamburgerNavigation} = selectors;
+        let {navigationWrapper, hamburgerNavigation} = selectors;
 
          if (hamburgerNavigation.style.top === "-100vh") {
              document.body.classList.add("transparent-scrollBar");
              hamburgerNavigation.style.top = "0"
              hamburgerNavigation.dataset.active = "yes";
+
          } else {
             hamburgerNavigation.style.top = "-100vh";
             document.body.classList.remove("transparent-scrollBar");
@@ -83,4 +85,19 @@
         }
     }
 
+    let copyToClickBoard = (text) => {
+        let {copyEmailToCLickBoard, copiedToClickBoardMessage } = selectors;
+
+        let rangeOfCopiedText = document.createRange();
+        rangeOfCopiedText.selectNode(copyEmailToCLickBoard);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(rangeOfCopiedText);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        copiedToClickBoardMessage.style.opacity = "1";
+
+        setTimeout(() => {
+            copiedToClickBoardMessage.style.opacity = "0";
+        }, 1000);
+    }
 
