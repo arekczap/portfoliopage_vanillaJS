@@ -1,9 +1,9 @@
   .top {
-    height: 100vh;
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+
+
     background: url("../assets/background.jpg") no-repeat 82% 20%;
-    background-size: cover;
-    background-attachment: fixed;
-    //position: fixed;
     position: relative;
     z-index: 2;
     overflow: hidden;
@@ -47,6 +47,7 @@
   .about,
   .project-one,
   .project-two,
+  .project-three,
   .skills,
   .contact
   {

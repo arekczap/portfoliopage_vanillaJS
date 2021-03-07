@@ -43,8 +43,8 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    background-color: transparent;
     justify-content: space-between;
+    background-color: rgba(84,74,84,.7);
     padding: 1rem 2rem ;
     transition: top 0.4s, background-color .3s;
     z-index: 200;
@@ -370,7 +370,7 @@
     @include section-padding;
 
     &__small-margin {
-      margin: 10rem auto 0 0;
+      margin: 6rem auto 0 0;
     }
 
     &__heading-secondary {
@@ -456,10 +456,10 @@
       text-align: right;
 
 
+
       @media only screen and (min-width: $bp-medium) {
         width: 60%;
 
-        //temporary
         display: flex;
         flex-direction: column;
         margin-right: -2rem;
@@ -469,6 +469,7 @@
 
     &__image {
       width: 100%;
+      border-radius: 10px;
 
       @media only screen and (min-width: $bp-small-medium) {
         width: 85%;

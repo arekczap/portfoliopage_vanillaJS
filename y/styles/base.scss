@@ -2,6 +2,7 @@
     --color-primary: #e6e9d6;
     --color-primary-lighter: rgba(56,49,56, .1);
     --color-secondary: #383138;
+
   }
 
   body::-webkit-scrollbar {
@@ -48,7 +49,7 @@
     color: var(--color-primary);
     width: 100%;
     scroll-behavior: smooth;
-
+    height: -webkit-fill-available;
 
     @media only screen and (min-width: $bp-micro) {
       font-size: 67%;
@@ -82,6 +83,8 @@
 
   body {
     font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     letter-spacing: .1rem;
     background: var(--color-secondary);
     color: var(--color-primary);

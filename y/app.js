@@ -5,57 +5,24 @@
         copiedToClickBoardMessage : document.querySelector(".contact-content__email-copied")
     }
 
-    let scrollDir = 0;
-    let canScroll = true;
-    let touchStart = 0;
-    let touchEnd = 0;
+    window.addEventListener('resize', () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
 
-    let checkRefresh = () => {
-        if (window.scrollY !== 0) {
-            selectors.navigationWrapper.style.top = "0";
-            selectors.navigationWrapper.style.backgroundColor = "rgba(84,74,84,.7)";
-        }
-    }
 
     document.addEventListener('wheel', (event) => {
-        if (!canScroll) {
-            return;
-        }
-        canScroll = false;
-
-        setTimeout(() => {
-            canScroll = true;
-        }, 100);
-
-        scrollDir = event.deltaY > 0 ? 1 : -1;
-        scrollTopNavigation(scrollDir);
+        showNavBar();
     });
 
     document.addEventListener('touchstart', (event) => {
-        touchStart = event.changedTouches[0].clientY;
+        showNavBar();
     });
 
     document.addEventListener('touchend', (event) => {
-        touchEnd = event.changedTouches[0].clientY;
-        if (touchStart > touchEnd) {
-            scrollTopNavigation(1);
-        } else {
-            scrollTopNavigation(-1);
-        }
+        showNavBar();
     });
 
-    let scrollTopNavigation = (actualScrollDirection) => {
-        let {navigationWrapper, hamburgerNavigation} = selectors;
-
-        if (actualScrollDirection === -1 || hamburgerNavigation.dataset.active === "yes" && window.pageYOffset !== 0) {
-            navigationWrapper.style.top = "0";
-            navigationWrapper.style.backgroundColor = "rgba(84,74,84,.7)";
-
-        } else {
-            hideNavBar();
-            navigationWrapper.style.backgroundColor = "transparent";
-        }
-    };
 
     let hideNavBar = () => {
         let {navigationWrapper} = selectors;
@@ -64,13 +31,11 @@
 
     let showNavBar = () => {
         let { navigationWrapper } = selectors;
-
         navigationWrapper.style.top = "0";
-        navigationWrapper.style.backgroundColor = "transparent";
     }
 
     let hideAndShowNav = () => {
-        let {navigationWrapper, hamburgerNavigation} = selectors;
+        let {hamburgerNavigation} = selectors;
 
          if (hamburgerNavigation.style.top === "-100vh") {
              document.body.classList.add("transparent-scrollBar");
@@ -85,7 +50,7 @@
         }
     }
 
-    let copyToClickBoard = (text) => {
+    let copyToClickBoard = () => {
         let {copyEmailToCLickBoard, copiedToClickBoardMessage } = selectors;
 
         let rangeOfCopiedText = document.createRange();

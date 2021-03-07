@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
 
-    <body onLoad="checkRefresh()">
+    <body">
         <div class="top" id="top">
             <div class="main-text">
                 <span class="main-text__primary">portfolio 2021</span>
@@ -30,7 +30,7 @@
                 <div class="navigation-wrapper">
                     <div class="logo-box">
                         <a href="#top" class="logo-box__link">
-                            <img class="logo-box__image" src="assets/logo.png" alt="logo image" onclick="showNavBar()">
+                            <img class="logo-box__image" src="assets/logo.png" alt="logo image"">
                         </a>
                     </div>
                     <div onclick="hideAndShowNav()" class="nav-wrapper">
@@ -40,7 +40,7 @@
                             <div class="hamburger__floor-three"></div>
                             <div class="hamburger__floor-four"></div>
                         </div>
-                        <nav class="navigation-global" style="top: -100vh" data-active="no">
+                        <nav class="navigation-global" style="top: -100vh">
                             <ul>
                                 <li><a href="#top" class="navigation-global__link" onclick="showNavBar()" >przywitanie</a></li>
                                 <li><a href="#about" class="navigation-global__link" onclick="hideNavBar()">o mnie</a></li>
@@ -141,6 +141,25 @@
                     <div class="project-content project-content__small-margin">
                         <div class="project-content__wrapper">
                             <div class="project-content__text-wrapper">
+                                <p class="project-content__content-first">oneTapGolf to prosta gra internetowa zbudowana w ramach zadania rekrutacyjnego, zadaniem było skonfigurowanie Webpack, oraz poznanie Canvas.</p>
+                                <p class="project-content__content-second">Technologie których użyłem to HTML5, CSS, JavaScript, Canvas oraz module bundler Webpack </p>
+                                <div class="project-content__button-wrapper">
+                                    <a href="http://onetapgolf.arekczapski.site/" class="project-content__link" target="_blank">live</a>
+                                    <a href="https://github.com/arekczap/oneTapGolff" class="project-content__link" target="_blank">kod</a>
+                                </div>
+                            </div>
+                            <div class="project-content__image-wrapper">
+                                <img src="assets/project_three_bgc.png" alt="projekt 3" class="project-content__image">
+                                <span class="project-content__project-name">oneTapGolf</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-three">
+                    <div class="project-content project-content__small-margin">
+                        <div class="project-content__wrapper">
+                            <div class="project-content__text-wrapper">
                                 <p class="project-content__content-first">ToDo List zbudowałem na samym początku mojej przygody z programowaniem. Zapoznałem się z podstawowymi zagadnieniami związanymi z tablicami w JacaScripcie. </p>
                                 <p class="project-content__content-second">Technologie których użyłem to HTML5, CSS, JavaScript.</p>
                                 <div class="project-content__button-wrapper">
@@ -155,6 +174,8 @@
                         </div>
                     </div>
                 </section>
+
+
 
             <!--            ==================SECTION CONTACT=====================-->
                 <section class="contact" >
