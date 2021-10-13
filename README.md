@@ -1,1 +1,1 @@
-LIVE: arekczapski.pl
+LIVE:  http://arekczapski.pl
